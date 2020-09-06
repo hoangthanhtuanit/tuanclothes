@@ -74,15 +74,8 @@
       <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/js/thng-k-tnh-trng-n-hng.xls" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Tuan_MVC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Tuan_MVC.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/BannerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/BannerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/SupplierController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/SupplierController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/Banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Banner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/suppliers/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/suppliers/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/suppliers/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/suppliers/detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/suppliers/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/suppliers/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/suppliers/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/suppliers/update.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,17 +84,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/controllers/BannerController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="3" column="34" lean-forward="true" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -178,6 +161,7 @@
         <option value="$PROJECT_DIR$/backend/views/suppliers/index.php" />
         <option value="$PROJECT_DIR$/backend/views/suppliers/detail.php" />
         <option value="$PROJECT_DIR$/backend/models/Banner.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/phpstorm64.exe.vmoptions" />
         <option value="$PROJECT_DIR$/backend/controllers/BannerController.php" />
       </list>
     </option>
@@ -202,24 +186,7 @@
           <expand>
             <path>
               <item name="Tuan_MVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tuan_MVC" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tuan_MVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tuan_MVC" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tuan_MVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tuan_MVC" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tuan_MVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tuan_MVC" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -229,10 +196,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/Doan_PHP44_New" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exam" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -288,18 +256,19 @@
       <workItem from="1599202364213" duration="1622000" />
       <workItem from="1599380728428" duration="4029000" />
       <workItem from="1599391262133" duration="62000" />
-      <workItem from="1599394496447" duration="798000" />
+      <workItem from="1599394496447" duration="876000" />
+      <workItem from="1599420823398" duration="148000" />
+      <workItem from="1599421047465" duration="1127000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74795000" />
+    <option name="totallyTimeSpent" value="76148000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21689188" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21351351" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -312,7 +281,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32991204" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32991204" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -347,50 +316,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/php1019e2/Day30_Demo_Project_MVC_Part_5/backend/controllers/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-620">
-          <caret line="186" column="66" selection-start-line="186" selection-start-column="33" selection-end-line="186" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/models/Model.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Tuan_Laravel/resources/views/admin/products/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="57" column="90" lean-forward="true" selection-start-line="56" selection-start-column="32" selection-end-line="57" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/PHP0520E/Day28_Project_Part4_Backend_Resgister_Login/Codes_demo/mvc_demo/backend/views/categories/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-651" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/PHP0520E/Day28_Project_Part4_Backend_Resgister_Login/Codes_demo/mvc_demo/backend/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1410" />
-      </provider>
-    </entry>
-    <entry file="file://E:/Devpro/php441/php44/Day26_MVC_OOP_Build_Web_Part_7/Codes_demo/mvc_demo/backend/views/layouts/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1674" />
-      </provider>
-    </entry>
-    <entry file="file://E:/Devpro/php441/php44/Day26_MVC_OOP_Build_Web_Part_7/Codes_demo/mvc_demo/backend/views/categories/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-372" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Tuan_Laravel/resources/views/layouts/error.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="5" column="10" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Tuan_Laravel/resources/views/admin/layouts/error.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -606,19 +531,76 @@
     <entry file="file://$PROJECT_DIR$/backend/controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/phpstorm64.exe.vmoptions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend/controllers/SupplierController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
+        <state relative-caret-position="2662">
           <caret line="100" column="22" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/controllers/BannerController.php">
+    <entry file="file://$USER_HOME$/Desktop/PHP0520E/Day29_Project_Part5_Resgister_Search_Pagination/Codes_demo/mvc_demo/backend/controllers/ProductController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="3" column="34" lean-forward="true" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        <state relative-caret-position="-93">
+          <caret line="81" column="7" lean-forward="true" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/php1019e2/Day30_Demo_Project_MVC_Part_5/backend/controllers/ProductController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3162" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../exam/demo_pdo/insert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-759" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../exam/demo_DB/insert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-338" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../exam/demo_DB/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1100" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/BannerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../exam/demo2.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../exam/demo1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-558" />
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

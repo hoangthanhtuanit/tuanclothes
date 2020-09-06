@@ -10,5 +10,7 @@
     <orderEntry type="module" module-name="Tuan_Laravel" />
     <orderEntry type="module" module-name="php44" />
     <orderEntry type="module" module-name="Day28_Project_Part4_Backend_Resgister_Login" />
+    <orderEntry type="module" module-name="Day29_Project_Part5_Resgister_Search_Pagination" />
+    <orderEntry type="module" module-name="exam" />
   </component>
 </module>

@@ -45,10 +45,12 @@
                                                         <div class="dropdown-menu" x-placement="bottom-start"
                                                              style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(81px, 38px, 0px);">
                                                             <a class="dropdown-item"
-                                                               href="index.php?controller=category&action=update&id=<?php echo $supplier['id'] ?>">Cập nhật</a>
+                                                               href="index.php?controller=supplier&action=detail&id=<?php echo $supplier['id'] ?>">Xem chi tiết</a>
+                                                            <a class="dropdown-item"
+                                                               href="index.php?controller=supplier&action=update&id=<?php echo $supplier['id'] ?>">Cập nhật</a>
                                                             <a class="dropdown-item"
                                                                onclick="return confirm('Bạn có muốn tiếp tục xóa không?')"
-                                                               href="index.php?controller=category&action=delete&id=<?php echo $supplier['id'] ?>">Xóa</a>
+                                                               href="index.php?controller=supplier&action=delete&id=<?php echo $supplier['id'] ?>">Xóa</a>
                                                         </div>
                                                     </div>
                                                 </div>

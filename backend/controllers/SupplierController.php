@@ -58,7 +58,7 @@ class SupplierController extends Controller
         require_once 'views/layouts/main.php';
     }
 
-    public function update($id){
+    public function update(){
         if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
             Helper::flash('error', 'ID không hợp lệ');
             header('Location: index.php?controller=supplier&action=index');
@@ -113,11 +113,23 @@ class SupplierController extends Controller
         require_once 'views/layouts/main.php';
     }
 
-    public function detail($id){
-
+    public function detail(){
+        if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
+            Helper::flash('error', 'ID không hợp lệ');
+            header('Location: index.php?controller=supplier&action=index');
+            exit();
+        }
+        $id = $_GET['id'];
+        $supplierModel = new Supplier();
+        $supplier = $supplierModel->getSupplierById($id);
+        $this->title_page = 'Chi tiết nhà cung cấp';
+        $this->content = $this->render('views/suppliers/detail.php', [
+            'supplier' => $supplier
+        ]);
+        require_once 'views/layouts/main.php';
     }
 
-    public function delete($id){
+    public function delete(){
         if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
             Helper::flash('error', 'ID không hợp lệ');
             header('Location: index.php?controller=supplier&action=index');

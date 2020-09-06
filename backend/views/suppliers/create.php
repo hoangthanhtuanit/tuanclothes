@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="d-sm-flex align-items-center justify-content-between mb-4 text-right">
-                        <a href="index.php?controller=category&action=index" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-chevron-left fa-sm text-white-50"></i> Quay lại</a>
+                        <a href="index.php?controller=supplier&action=index" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-chevron-left fa-sm text-white-50"></i> Quay lại</a>
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -22,7 +22,7 @@
                                                 style="color: red;">*</span>)</label>
                                     </div>
                                     <div class="col-12 col-md-9">
-                                        <input type="text" id="text-input" name="name" value="<?php isset($_POST['name']) ? $_POST['name'] : '' ?>" placeholder="Tên nhà cung cấp"
+                                        <input type="text" id="text-input" name="name" value="<?php echo isset($_POST['name']) ? $_POST['name'] : '' ?>" placeholder="Tên nhà cung cấp"
                                                class="form-control">
                                     </div>
                                 </div>
@@ -32,7 +32,7 @@
                                                 style="color: red;">*</span>)</label>
                                     </div>
                                     <div class="col-12 col-md-9">
-                                        <input type="text" id="text-input" name="phone_number" value="<?php isset($_POST['phone_number']) ? $_POST['phone_number'] : '' ?>" placeholder="Số điện thoại"
+                                        <input type="text" id="text-input" name="phone_number" value="<?php echo isset($_POST['phone_number']) ? $_POST['phone_number'] : '' ?>" placeholder="Số điện thoại"
                                                class="form-control">
                                     </div>
                                 </div>
@@ -42,7 +42,7 @@
                                                 style="color: red;">*</span>)</label>
                                     </div>
                                     <div class="col-12 col-md-9">
-                                        <input type="text" id="text-input" name="address" value="<?php isset($_POST['address']) ? $_POST['address'] : '' ?>" placeholder="Địa chỉ"
+                                        <input type="text" id="text-input" name="address" value="<?php echo isset($_POST['address']) ? $_POST['address'] : '' ?>" placeholder="Địa chỉ"
                                                class="form-control">
                                     </div>
                                 </div>
@@ -52,7 +52,7 @@
                                                 style="color: red;">*</span>)</label>
                                     </div>
                                     <div class="col-12 col-md-9">
-                                        <input type="text" id="text-input" name="email" value="<?php isset($_POST['email']) ? $_POST['email'] : '' ?>" placeholder="Email"
+                                        <input type="text" id="text-input" name="email" value="<?php echo isset($_POST['email']) ? $_POST['email'] : '' ?>" placeholder="Email"
                                                class="form-control">
                                     </div>
                                 </div>

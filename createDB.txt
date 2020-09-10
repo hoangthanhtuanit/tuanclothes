@@ -86,7 +86,7 @@ updated_at DATETIME COMMENT "Ngày cập nhật cuối"
 CREATE TABLE IF NOT EXISTS suppliers (
 id INT(11) PRIMARY KEY AUTO_INCREMENT,
 name VARCHAR(255) NOT NULL COMMENT "Tên nhà phân phối",
-phone_number INT(11) NOT NULL COMMENT 'SĐT nhà phân phối' ,
+phone_number VARCHAR(20) NOT NULL COMMENT 'SĐT nhà phân phối' ,
 address VARCHAR(255) NOT NULL COMMENT 'Địa chỉ nhà phân phối' ,
 email VARCHAR(255) NOT NULL COMMENT 'Email của nhà phân phối' ,
 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT "Ngày tạo",

@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Desktop/PHP0520E/Day28_Project_Part4_Backend_Resgister_Login/.idea/Day28_Project_Part4_Backend_Resgister_Login.iml" filepath="$USER_HOME$/Desktop/PHP0520E/Day28_Project_Part4_Backend_Resgister_Login/.idea/Day28_Project_Part4_Backend_Resgister_Login.iml" />
-      <module fileurl="file://$USER_HOME$/Desktop/PHP0520E/Day29_Project_Part5_Resgister_Search_Pagination/.idea/Day29_Project_Part5_Resgister_Search_Pagination.iml" filepath="$USER_HOME$/Desktop/PHP0520E/Day29_Project_Part5_Resgister_Search_Pagination/.idea/Day29_Project_Part5_Resgister_Search_Pagination.iml" />
-      <module fileurl="file://$USER_HOME$/Desktop/php1019e2/Day30_Demo_Project_MVC_Part_5/.idea/Day30_Demo_Project_MVC_Part_5.iml" filepath="$USER_HOME$/Desktop/php1019e2/Day30_Demo_Project_MVC_Part_5/.idea/Day30_Demo_Project_MVC_Part_5.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../Tuan_Laravel/.idea/Tuan_Laravel.iml" filepath="$PROJECT_DIR$/../Tuan_Laravel/.idea/Tuan_Laravel.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/PHP0520E/Day31_Project_Part7_Frontend_Cart/.idea/Day31_Project_Part7_Frontend_Cart.iml" filepath="$USER_HOME$/Desktop/PHP0520E/Day31_Project_Part7_Frontend_Cart/.idea/Day31_Project_Part7_Frontend_Cart.iml" />
+      <module fileurl="file://E:/Data Now Project/Now Project/Tuan_Laravel/.idea/Tuan_Laravel.iml" filepath="E:/Data Now Project/Now Project/Tuan_Laravel/.idea/Tuan_Laravel.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Tuan_MVC.iml" filepath="$PROJECT_DIR$/.idea/Tuan_MVC.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../exam/.idea/exam.iml" filepath="$PROJECT_DIR$/../exam/.idea/exam.iml" />
-      <module fileurl="file://E:/Devpro/php441/php44/.idea/php44.iml" filepath="E:/Devpro/php441/php44/.idea/php44.iml" />
     </modules>
   </component>
 </project>

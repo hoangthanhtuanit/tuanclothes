@@ -5,8 +5,7 @@ require_once 'helpers/Helper.php';
 
 class CategoryController extends Controller
 {
-    public function index()
-    {
+    public function index(){
         $categoryModel = new Category();
         $categories = $categoryModel->index();
         $this->title_page = 'Danh sách danh mục sản phẩm';
@@ -16,8 +15,7 @@ class CategoryController extends Controller
         require_once 'views/layouts/main.php';
     }
 
-    public function create()
-    {
+    public function create(){
         $categoryModel = new Category();
         $categories = $categoryModel->index();
         foreach ($categories as $item) {
@@ -96,8 +94,7 @@ class CategoryController extends Controller
         require_once 'views/layouts/main.php';
     }
 
-    public function delete()
-    {
+    public function delete(){
         if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
             Helper::flash('error', 'ID không hợp lệ');
             header('Location: index.php?controller=category&action=index');

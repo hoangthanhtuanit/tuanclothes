@@ -16,8 +16,7 @@ class Supplier extends Model
         $sqlSelect = "SELECT * FROM suppliers";
         $objSelect = $this->connection->prepare($sqlSelect);
         $objSelect->execute();
-        $suppliers = $objSelect->fetchAll(PDO::FETCH_ASSOC);
-        return $suppliers;
+        return $objSelect->fetchAll(PDO::FETCH_ASSOC);
     }
 
     public function insert()
@@ -41,8 +40,7 @@ class Supplier extends Model
             ':id' => $id
         ];
         $objSelect->execute($arrSelect);
-        $supplier = $objSelect->fetch(PDO::FETCH_ASSOC);
-        return $supplier;
+        return $objSelect->fetch(PDO::FETCH_ASSOC);
     }
 
     public function update($id)

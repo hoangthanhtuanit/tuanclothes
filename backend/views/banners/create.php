@@ -28,11 +28,11 @@
                                 </div>
                                 <div class="row form-group">
                                     <div class="col col-md-3">
-                                        <label for="text-input" class=" form-control-label">Mô tả ngắn (<span
+                                        <label for="text-input" class=" form-control-label">Mô tả (<span
                                                 style="color: red;">*</span>)</label>
                                     </div>
                                     <div class="col-12 col-md-9">
-                                        <input type="text" id="text-input" name="summary" value="<?php isset($_POST['summary']) ? $_POST['summary'] : '' ?>" placeholder="Mô tả ngắn"
+                                        <input type="text" id="text-input" name="summary" value="<?php isset($_POST['summary']) ? $_POST['summary'] : '' ?>" placeholder="Mô tả"
                                                class="form-control">
                                     </div>
                                 </div>

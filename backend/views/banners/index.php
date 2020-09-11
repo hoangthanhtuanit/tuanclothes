@@ -32,7 +32,7 @@
                                             <td><?php echo $banner['title']; ?></td>
                                             <td>
                                                 <?php if (!empty($banner['image'])): ?>
-                                                    <img height="150" src="assets/uploads/<?php echo $banner['image'] ?>"/>
+                                                    <img height="150" src="assets/uploads/banners/<?php echo $banner['image'] ?>"/>
                                                 <?php endif; ?>
                                             </td>
                                             <td>
@@ -70,6 +70,8 @@
                                                                 <a class="dropdown-item"
                                                                    href="">Vô hiệu hoá</a>
                                                             <?php endif; ?>
+                                                            <a class="dropdown-item"
+                                                               href="index.php?controller=banner&action=detail&id=<?php echo $banner['id'] ?>">Xem chi tiết</a>
                                                             <a class="dropdown-item"
                                                                href="index.php?controller=banner&action=update&id=<?php echo $banner['id'] ?>">Cập nhật</a>
                                                             <a class="dropdown-item"

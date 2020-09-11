@@ -35,6 +35,14 @@
                                         <td>Email</td>
                                         <td><?php echo $supplier['email']; ?></td>
                                     </tr>
+                                    <tr>
+                                        <td>Ngày tạo</td>
+                                        <td><?php echo date('d/m/Y H:i:s', strtotime($supplier['created_at'])); ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ngày cập nhật</td>
+                                        <td><?php echo !empty($supplier['updated_at']) ? time('d/m/Y H:i:s', strtotime($supplier['updated_at'])) : '---'; ?></td>
+                                    </tr>
                                 </table>
                             </div>
                         </div>

@@ -14,8 +14,7 @@ class Category extends Model
         $sqlSelect = "SELECT * FROM categories";
         $objSelect = $this->connection->prepare($sqlSelect);
         $objSelect->execute();
-        $categories = $objSelect->fetchAll(PDO::FETCH_ASSOC);
-        return $categories;
+        return $objSelect->fetchAll(PDO::FETCH_ASSOC);
     }
 
     public function insert()
@@ -37,8 +36,7 @@ class Category extends Model
             ':id' => $id
         ];
         $objSelect->execute($arrSelect);
-        $category = $objSelect->fetch(PDO::FETCH_ASSOC);
-        return $category;
+        return $objSelect->fetch(PDO::FETCH_ASSOC);
     }
 
     public function update($id)

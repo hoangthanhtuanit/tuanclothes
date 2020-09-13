@@ -20,7 +20,7 @@
                                     <tr style="text-align: center;">
                                         <th>ID</th>
                                         <th>Tên sản phẩm</th>
-                                        <th>Ảnh</th>
+                                        <th>Ảnh sản phẩm</th>
                                         <th>Giá</th>
                                         <th>Số lượng</th>
                                         <th>Trạng thái</th>
@@ -39,7 +39,7 @@
                                                     <img height="200" src="assets/uploads/products/<?php echo $product['image'] ?>"/>
                                                 <?php endif; ?>
                                             </td>
-                                            <td>$ <?php echo number_format($product->price, 0, '.', '.') ?></td>
+                                            <td><?php echo number_format($product['price'], 0, '.', '.') ?> VNĐ</td>
                                             <td><?php echo $product['quantity_in_stock']; ?></td>
                                             <td>
                                                 <?php

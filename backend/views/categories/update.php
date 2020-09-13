@@ -16,7 +16,7 @@
                         </div>
                         <div class="card-body card-block">
                             <?php if (empty($category)) : ?>
-                                <h2>Không tồn tại bản ghi</h2>
+                                <h3>Không tồn tại bản ghi</h3>
                             <?php else : ?>
                                 <?php require_once 'views/layouts/error.php'; ?>
                                 <form action="" method="post" class="form-horizontal">

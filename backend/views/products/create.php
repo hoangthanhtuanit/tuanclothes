@@ -28,6 +28,46 @@
                                 </div>
                                 <div class="row form-group">
                                     <div class="col col-md-3">
+                                        <label for="select" class=" form-control-label">Danh mục (<span
+                                                    style="color: red;">*</span>)</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <select name="category_id" id="select" class="form-control">
+                                            <?php foreach ($categories as $category):
+                                                $selected = '';
+                                                if (isset($_POST['category_id']) && $category['id'] == $_POST['category_id']) {
+                                                    $selected = 'selected';
+                                                }
+                                                ?>
+                                                <option value="<?php echo $category['id'] ?>" <?php echo $selected; ?>>
+                                                    <?php echo $category['name'] ?>
+                                                </option>
+                                            <?php endforeach; ?>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="select" class=" form-control-label">Nhà cung cấp (<span
+                                                    style="color: red;">*</span>)</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <select name="supplier_id" id="select" class="form-control">
+                                            <?php foreach ($suppliers as $supplier):
+                                                $selected = '';
+                                                if (isset($_POST['supplier_id']) && $supplier['id'] == $_POST['supplier_id']) {
+                                                    $selected = 'selected';
+                                                }
+                                                ?>
+                                                <option value="<?php echo $supplier['id'] ?>" <?php echo $selected; ?>>
+                                                    <?php echo $supplier['name'] ?>
+                                                </option>
+                                            <?php endforeach; ?>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
                                         <label for="text-input" class=" form-control-label">Ảnh sản phẩm (<span
                                                     style="color: red;">*</span>)</label>
                                     </div>
@@ -42,6 +82,46 @@
                                     </div>
                                     <div class="col-12 col-md-9">
                                         <input type="text" id="text-input" name="price" value="<?php isset($_POST['price']) ? $_POST['price'] : '' ?>" placeholder="Giá sản phẩm"
+                                               class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="text-input" class=" form-control-label">Giảm giá (<span
+                                                    style="color: red;">*</span>)</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="text" id="text-input" name="discount" value="<?php isset($_POST['discount']) ? $_POST['discount'] : '' ?>" placeholder="Giảm giá"
+                                               class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="text-input" class=" form-control-label">Số lượng nhập (<span
+                                                    style="color: red;">*</span>)</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="text" id="text-input" name="quantity_in_stock" value="<?php isset($_POST['quantity_in_stock']) ? $_POST['quantity_in_stock'] : '' ?>" placeholder="Số lượng nhập"
+                                               class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="text-input" class=" form-control-label">Mô tả ngắn (<span
+                                                    style="color: red;">*</span>)</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="text" id="text-input" name="summary" value="<?php isset($_POST['summary']) ? $_POST['summary'] : '' ?>" placeholder="Mô tả ngắn"
+                                               class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="text-input" class=" form-control-label">Chi tiết sản phẩm (<span
+                                                    style="color: red;">*</span>)</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="text" id="text-input" name="description" value="<?php isset($_POST['description']) ? $_POST['description'] : '' ?>" placeholder="Chi tiết sản phẩm"
                                                class="form-control">
                                     </div>
                                 </div>

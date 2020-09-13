@@ -16,14 +16,15 @@ class CategoryController extends Controller
     }
 
     public function create(){
-        $categoryModel = new Category();
-        $categories = $categoryModel->index();
-        foreach ($categories as $item) {
-            $category_name[] = $item['name'];
-        }
+        $category_name = [];
         if (isset($_POST['submit'])) {
             $name = $_POST['name'];
             $status = $_POST['status'];
+            $categoryModel = new Category();
+            $categories = $categoryModel->index();
+            foreach ($categories as $item) {
+                $category_name[] = $item['name'];
+            }
             if (empty($name)) {
                 $this->error = 'Tên không được để trống';
             } elseif (strlen($name) < 5) {

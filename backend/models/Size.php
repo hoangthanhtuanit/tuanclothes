@@ -1,5 +1,5 @@
 <?php
-require_once 'mdoels/Model.php';
+require_once 'models/Model.php';
 
 class Size extends Model
 {

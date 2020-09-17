@@ -90,11 +90,22 @@
                                     </div>
                                     <div class="row form-group">
                                         <div class="col col-md-3">
+                                            <label for="text-input" class=" form-control-label">Màu (<span
+                                                        style="color: red;">*</span>)</label>
+                                        </div>
+                                        <div class="col-12 col-md-9">
+                                            <input type="text" id="text-input" name="color" placeholder="Màu"
+                                                   value="<?php echo isset($_POST['color']) ? $_POST['color'] : $product['color']; ?>"
+                                                   class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3">
                                             <label for="text-input" class=" form-control-label">Giá sản phẩm (<span
                                                         style="color: red;">*</span>)</label>
                                         </div>
                                         <div class="col-12 col-md-9">
-                                            <input type="text" id="text-input" name="price" placeholder="Mô tả"
+                                            <input type="text" id="text-input" name="price" placeholder="Giá sản phẩm"
                                                    value="<?php echo isset($_POST['price']) ? $_POST['price'] : $product['price']; ?>"
                                                    class="form-control">
                                         </div>

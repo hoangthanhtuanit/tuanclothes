@@ -19,6 +19,7 @@ supplier_id INT(11) NOT NULL COMMENT "Id của nhà phân phối, là khóa ngo�
 #news_id INT(11) COMMENT "Id của tin tức mà gắn với sản phẩm, là khóa ngoại liên kết với bảng news",
 name VARCHAR(255) NOT NULL COMMENT "Tên sản phẩm",
 image VARCHAR(255) COMMENT "Tên file ảnh sản phẩm",
+color VARCHAR(255) COMMENT "Màu sản phẩm",
 price INT(11) NOT NULL COMMENT "Giá sản phẩm",
 discount INT(11) DEFAULT 0 COMMENT "Giảm giá",
 quantity_in_stock INT(11) COMMENT "Số lượng sản phẩm trong kho",
@@ -100,14 +101,6 @@ title VARCHAR(255) COMMENT "Tiêu đề banner",
 summary VARCHAR(255) COMMENT "Mô tả ngắn banner",
 image VARCHAR(255) COMMENT "File ảnh banner",
 status TINYINT(3) DEFAULT 0 COMMENT "Trạng thái danh mục: 0 - Inactive, 1 - Active",
-created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT "Ngày tạo",
-updated_at DATETIME COMMENT "Ngày cập nhật cuối"
-);
-
-#colors
-CREATE TABLE IF NOT EXISTS colors (
-id INT(11) PRIMARY KEY AUTO_INCREMENT,
-color VARCHAR(255) COMMENT "Màu",
 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT "Ngày tạo",
 updated_at DATETIME COMMENT "Ngày cập nhật cuối"
 );

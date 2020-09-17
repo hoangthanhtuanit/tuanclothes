@@ -28,6 +28,10 @@
                                         <td><img width="200" src="assets/uploads/products/<?php echo $product['image']; ?>" alt=""></td>
                                     </tr>
                                     <tr>
+                                        <td>Màu</td>
+                                        <td><?php echo $product['color']; ?></td>
+                                    </tr>
+                                    <tr>
                                         <td>Giá</td>
                                         <td><?php echo number_format($product['price'], 0, '.', '.') ?> VNĐ</td>
                                     </tr>

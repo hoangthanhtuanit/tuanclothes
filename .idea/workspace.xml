@@ -4,16 +4,28 @@
     <list default="true" id="ddd07b90-d0b1-4d47-ad23-156aa4ad7f6b" name="Default Changelist" comment="">
       <change beforePath="$USER_HOME$/Desktop/PHP0320E/Day30_Demo_Project_Part2_Backend_Ckeditor_Ckfinder_Search/Slides/2_Setup_CKFinder.ppt" beforeDir="false" afterPath="$USER_HOME$/Desktop/PHP0320E/Day30_Demo_Project_Part2_Backend_Ckeditor_Ckfinder_Search/Slides/2_Setup_CKFinder.ppt" afterDir="false" />
       <change beforePath="$USER_HOME$/Desktop/PHP0320E/Day35_Demo_Project_Frontend_Part2_Cart_Payment/mvc/backend/views/products/update.php" beforeDir="false" afterPath="$USER_HOME$/Desktop/PHP0320E/Day35_Demo_Project_Frontend_Part2_Cart_Payment/mvc/backend/views/products/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/ColorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/ColorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/assets/uploads/banners/1600259300-banner-5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/assets/uploads/banners/1600260475-banner-47259435_1153060474853663_6071567100512567296_o.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/assets/uploads/banners/1600261090-banner-5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/assets/uploads/banners/1600261106-banner-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/assets/uploads/banners/1600261118-banner-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/assets/uploads/banners/1600261128-banner-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/assets/uploads/banners/1600261138-banner-4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/assets/uploads/products/1600259433-product-5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/ColorController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/SizeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/SizeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/Color.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Color.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Color.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/models/Size.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Size.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/banners/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/banners/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/layouts/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views/layouts/side-bar.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/layouts/side-bar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/views/colors/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/views/colors/index.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/views/products/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/products/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/views/products/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/products/detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/views/products/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/products/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/views/sizes/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/sizes/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/createDB.txt" beforeDir="false" afterPath="$PROJECT_DIR$/createDB.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,10 +36,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/views/sizes/index.php">
+        <entry file="file://$PROJECT_DIR$/backend/views/products/update.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="28" column="70" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
+            <state relative-caret-position="231">
+              <caret line="97" column="127" selection-start-line="97" selection-start-column="127" selection-end-line="97" selection-end-column="127" />
             </state>
           </provider>
         </entry>
@@ -65,8 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../TestDataTable/resources/views/admin/categories/index.blade.php" />
-        <option value="$PROJECT_DIR$/../TestDataTable/routes/web.php" />
         <option value="$PROJECT_DIR$/../TestDataTable/app/Http/Controllers/CategoryController.php" />
         <option value="$PROJECT_DIR$/../TestDataTable/resources/views/admin/layouts/header.blade.php" />
         <option value="$PROJECT_DIR$/../TestDataTable/resources/views/admin/layouts/index.blade.php" />
@@ -88,34 +98,36 @@
         <option value="$PROJECT_DIR$/backend/views/suppliers/index.php" />
         <option value="$PROJECT_DIR$/backend/models/Banner.php" />
         <option value="$APPLICATION_CONFIG_DIR$/phpstorm64.exe.vmoptions" />
-        <option value="$PROJECT_DIR$/createDB.txt" />
         <option value="$PROJECT_DIR$/backend/views/suppliers/detail.php" />
         <option value="$PROJECT_DIR$/backend/views/banners/create.php" />
         <option value="$PROJECT_DIR$/backend/controllers/BannerController.php" />
         <option value="$PROJECT_DIR$/backend/views/banners/detail.php" />
         <option value="$PROJECT_DIR$/backend/models/Category.php" />
         <option value="$PROJECT_DIR$/backend/models/Supplier.php" />
-        <option value="$PROJECT_DIR$/backend/models/Product.php" />
         <option value="$PROJECT_DIR$/backend/controllers/Controller.php" />
         <option value="$PROJECT_DIR$/backend/controllers/CategoryController.php" />
-        <option value="$PROJECT_DIR$/backend/views/products/detail.php" />
         <option value="$PROJECT_DIR$/backend/views/products/index.php" />
         <option value="$PROJECT_DIR$/backend/views/suppliers/update.php" />
         <option value="$PROJECT_DIR$/backend/views/categories/update.php" />
         <option value="$PROJECT_DIR$/backend/views/banners/update.php" />
         <option value="$USER_HOME$/Desktop/PHP0320E/Day35_Demo_Project_Frontend_Part2_Cart_Payment/mvc/backend/views/products/update.php" />
-        <option value="$PROJECT_DIR$/backend/views/products/update.php" />
-        <option value="$PROJECT_DIR$/backend/controllers/ProductController.php" />
         <option value="$PROJECT_DIR$/backend/views/layouts/side-bar.php" />
         <option value="$PROJECT_DIR$/backend/views/banners/index.php" />
         <option value="$PROJECT_DIR$/backend/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/backend/views/products/create.php" />
-        <option value="$PROJECT_DIR$/backend/models/Color.php" />
-        <option value="$PROJECT_DIR$/backend/models/Size.php" />
-        <option value="$PROJECT_DIR$/backend/controllers/SizeController.php" />
-        <option value="$PROJECT_DIR$/backend/controllers/ColorController.php" />
         <option value="$PROJECT_DIR$/backend/views/colors/index.php" />
         <option value="$PROJECT_DIR$/backend/views/sizes/index.php" />
+        <option value="$PROJECT_DIR$/backend/views/sizes/create.php" />
+        <option value="$PROJECT_DIR$/backend/views/colors/create.php" />
+        <option value="$PROJECT_DIR$/backend/models/Color.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/ColorController.php" />
+        <option value="$PROJECT_DIR$/backend/models/Size.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/SizeController.php" />
+        <option value="$PROJECT_DIR$/createDB.txt" />
+        <option value="$PROJECT_DIR$/backend/models/Product.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/ProductController.php" />
+        <option value="$PROJECT_DIR$/backend/views/products/create.php" />
+        <option value="$PROJECT_DIR$/backend/views/products/detail.php" />
+        <option value="$PROJECT_DIR$/backend/views/products/update.php" />
       </list>
     </option>
   </component>
@@ -157,21 +169,7 @@
               <item name="Tuan_MVC" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="categories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tuan_MVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tuan_MVC" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="colors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tuan_MVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tuan_MVC" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="sizes" type="462c0819:PsiDirectoryNode" />
+              <item name="products" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -260,12 +258,12 @@
       <workItem from="1599986992534" duration="2744000" />
       <workItem from="1600156445466" duration="91000" />
       <workItem from="1600258876517" duration="2793000" />
-      <workItem from="1600318354555" duration="2241000" />
+      <workItem from="1600318354555" duration="5317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103875000" />
+    <option name="totallyTimeSpent" value="106951000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -325,19 +323,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/Data Now Project/Now Project/Tuan_Laravel/app/Http/Controllers/BannerController.php" />
-    <entry file="file://$USER_HOME$/Desktop/PHP0320E/Day35_Demo_Project_Frontend_Part2_Cart_Payment/mvc/backend/views/products/detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1089" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/banners/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="44" column="118" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="118" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/assets/uploads/banners/1599816426-banner-61419974_2240730079305996_965052088822267904_n.png" />
     <entry file="file://$USER_HOME$/Desktop/PHP0320E/Day35_Demo_Project_Frontend_Part2_Cart_Payment/mvc/backend/models/Model.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -407,13 +392,6 @@
       </provider>
     </entry>
     <entry file="file://E:/Data Now Project/Now Project/Tuan_Laravel/resources/views/admin/products/index.blade.php" />
-    <entry file="file://$PROJECT_DIR$/backend/views/products/detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/suppliers/update.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -436,13 +414,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/assets/uploads/products/1599987056-product-1.jpg" />
-    <entry file="file://$PROJECT_DIR$/backend/views/products/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1095">
-          <caret line="43" column="101" lean-forward="true" selection-start-line="43" selection-start-column="101" selection-end-line="43" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/controllers/BannerController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
@@ -450,24 +421,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/controllers/ProductController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="230" column="57" selection-start-line="230" selection-start-column="57" selection-end-line="230" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/layouts/side-bar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-66">
           <caret line="61" column="59" selection-start-line="61" selection-start-column="59" selection-end-line="61" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/products/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="22" column="56" selection-end-line="100" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -518,27 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/products/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="123" column="85" selection-start-line="123" selection-start-column="85" selection-end-line="123" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/models/Product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2541">
-          <caret line="77" column="59" selection-start-line="77" selection-start-column="59" selection-end-line="77" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/models/Color.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/models/Model.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -555,37 +491,6 @@
           <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/models/Size.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/controllers/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="48" column="46" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="48" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/controllers/SizeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/controllers/ColorController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/colors/create.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/categories/index.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -605,6 +510,111 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="28" column="70" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/categories/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/sizes/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="24" column="85" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/colors/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="24" column="86" selection-start-line="24" selection-start-column="86" selection-end-line="24" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="48" column="46" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="48" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/models/Color.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/ColorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/models/Size.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-264">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/SizeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/createDB.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/models/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-242">
+          <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/ProductController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1755">
+          <caret line="183" column="46" selection-start-line="183" selection-start-column="46" selection-end-line="183" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/products/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="83" column="167" selection-start-line="83" selection-start-column="167" selection-end-line="83" selection-end-column="167" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/products/detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="31" column="70" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/products/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="25" column="59" lean-forward="true" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/products/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="97" column="127" selection-start-line="97" selection-start-column="127" selection-end-line="97" selection-end-column="127" />
         </state>
       </provider>
     </entry>

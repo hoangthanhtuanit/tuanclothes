@@ -24,9 +24,10 @@ class SizeController extends Controller
             foreach ($sizes as $value) {
                 $size_name[] = $value['size'];
             }
+            $arrSize = ['S', 'M', 'L', 'XL', 'XXL'];
             if (empty($size)) {
                 Helper::flash('error', 'Kích thước không được trống');
-            } elseif ($size != 'S' || $size != 'M' || $size != 'L' || $size != 'XL' || $size != 'XXL') {
+            } elseif (!in_array($size, $arrSize)) {
                 Helper::flash('error', 'Kích thước không đúng định dạng');
             } elseif (in_array($size, $size_name)) {
                 Helper::flash('error', 'Kích thước đã tồn tại');

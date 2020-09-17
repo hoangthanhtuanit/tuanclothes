@@ -77,6 +77,16 @@
                                 </div>
                                 <div class="row form-group">
                                     <div class="col col-md-3">
+                                        <label for="text-input" class=" form-control-label">Màu (<span
+                                                    style="color: red;">*</span>)</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="text" id="text-input" name="color" value="<?php isset($_POST['color']) ? $_POST['color'] : '' ?>" placeholder="Màu"
+                                               class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
                                         <label for="text-input" class=" form-control-label">Giá sản phẩm (<span
                                                 style="color: red;">*</span>)</label>
                                     </div>

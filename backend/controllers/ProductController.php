@@ -23,6 +23,7 @@ class ProductController extends Controller
             $category_id = $_POST['category_id'];
             $supplier_id = $_POST['supplier_id'];
             $name = $_POST['name'];
+            $color = $_POST['color'];
             $price = $_POST['price'];
             $discount = $_POST['discount'];
             $quantity_in_stock = $_POST['quantity_in_stock'];
@@ -42,6 +43,8 @@ class ProductController extends Controller
                 $this->error = 'Tên sản phẩm không được để trống';
             } elseif (in_array($name, $arrName)) {
                 $this->error = 'Sản phẩm đã tồn tại';
+            } elseif (empty($color)) {
+                $this->error = 'Màu không được để trống';
             } elseif (empty($price)) {
                 $this->error = 'Giá sản phẩm không được để trống';
             } elseif (!is_numeric($price)) {
@@ -76,6 +79,7 @@ class ProductController extends Controller
                 $productModel->supplier_id = $supplier_id;
                 $productModel->name = $name;
                 $productModel->image = $filename;
+                $productModel->color = $color;
                 $productModel->price = $price;
                 $productModel->discount = $discount;
                 $productModel->quantity_in_stock = $quantity_in_stock;
@@ -119,6 +123,7 @@ class ProductController extends Controller
             $category_id = $_POST['category_id'];
             $supplier_id = $_POST['supplier_id'];
             $name = $_POST['name'];
+            $color = $_POST['color'];
             $price = $_POST['price'];
             $discount = $_POST['discount'];
             $quantity_in_stock = $_POST['quantity_in_stock'];
@@ -139,6 +144,8 @@ class ProductController extends Controller
                 $this->error = 'Tên sản phẩm không được để trống';
             } elseif (in_array($name, $arrName)) {
                 $this->error = 'Sản phẩm đã tồn tại';
+            } elseif (empty($color)) {
+                $this->error = 'Màu không được để trống';
             } elseif (empty($price)) {
                 $this->error = 'Giá sản phẩm không được để trống';
             } elseif (!is_numeric($price)) {
@@ -174,6 +181,7 @@ class ProductController extends Controller
                 $productModel->supplier_id = $supplier_id;
                 $productModel->name = $name;
                 $productModel->image = $filename;
+                $productModel->color = $color;
                 $productModel->price = $price;
                 $productModel->discount = $discount;
                 $productModel->quantity_in_stock = $quantity_in_stock;

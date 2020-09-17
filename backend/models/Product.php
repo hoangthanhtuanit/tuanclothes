@@ -8,6 +8,7 @@ class Product extends Model
     public $supplier_id;
     public $name;
     public $image;
+    public $color;
     public $price;
     public $discount;
     public $quantity_in_stock;
@@ -28,13 +29,14 @@ class Product extends Model
     }
 
     public function insert(){
-        $sqlInsert = "INSERT INTO products (`category_id`, `supplier_id`, `name`, `image`, `price`, `discount`, `quantity_in_stock`, `summary`, `description`, `status`) VALUES (:category_id, :supplier_id, :name, :image, :price, :discount, :quantity_in_stock, :summary, :description, :status)";
+        $sqlInsert = "INSERT INTO products (`category_id`, `supplier_id`, `name`, `image`, `color`,`price`, `discount`, `quantity_in_stock`, `summary`, `description`, `status`) VALUES (:category_id, :supplier_id, :name, :image, :color,:price, :discount, :quantity_in_stock, :summary, :description, :status)";
         $objInsert = $this->connection->prepare($sqlInsert);
         $arrInsert = [
             ':category_id' => $this->category_id,
             ':supplier_id' => $this->supplier_id,
             ':name' => $this->name,
             ':image' => $this->image,
+            ':color' => $this->color,
             ':price' => $this->price,
             ':discount' => $this->discount,
             ':quantity_in_stock' => $this->quantity_in_stock,
@@ -56,13 +58,14 @@ class Product extends Model
     }
 
     public function update($id){
-        $sqlUpdate = "UPDATE products SET category_id = :category_id, supplier_id = :supplier_id, name = :name, image = :image, price = :price, discount = :discount, quantity_in_stock = :quantity_in_stock, summary = :summary, description = :description, status = :status WHERE id = :id";
+        $sqlUpdate = "UPDATE products SET category_id = :category_id, supplier_id = :supplier_id, name = :name, image = :image, color = :color, price = :price, discount = :discount, quantity_in_stock = :quantity_in_stock, summary = :summary, description = :description, status = :status WHERE id = :id";
         $objUpdate = $this->connection->prepare($sqlUpdate);
         $arrUpdate = [
             ':category_id' => $this->category_id,
             ':supplier_id' => $this->supplier_id,
             ':name' => $this->name,
             ':image' => $this->image,
+            ':color' => $this->color,
             ':price' => $this->price,
             ':discount' => $this->discount,
             ':quantity_in_stock' => $this->quantity_in_stock,

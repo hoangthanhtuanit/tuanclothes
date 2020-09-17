@@ -17,49 +17,49 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="index.php?controller=category&action=index">
             <i class="fas fa-fw fa-folder"></i>
             <span>Quản lý danh mục</span>
         </a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="index.php?controller=supplier&action=index">
             <i class="fas fa-fw fa-folder"></i>
             <span>Quản lý nhà cung cấp</span>
         </a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="index.php?controller=product&action=index">
             <i class="fas fa-fw fa-folder"></i>
             <span>Quản lý sản phẩm</span>
         </a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="index.php?controller=order&action=index">
             <i class="fas fa-fw fa-folder"></i>
             <span>Quản lý đơn hàng</span>
         </a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="index.php?controller=user&action=index">
             <i class="fas fa-fw fa-folder"></i>
             <span>Quản lý tài khoản</span>
         </a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="index.php?controller=banner&action=index">
             <i class="fas fa-fw fa-folder"></i>
-            <span>Quản lý Banner</span>
+            <span>Quản lý banner</span>
         </a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="index.php?controller=blog&action=index">
             <i class="fas fa-fw fa-folder"></i>
             <span>Quản lý tin tức</span>
         </a>

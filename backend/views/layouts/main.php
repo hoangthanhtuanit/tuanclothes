@@ -74,6 +74,7 @@
 <script src="assets/js/toastr.min.js"></script>
 <!-- Custom scripts for all pages-->
 <script src="assets/js/sb-admin-2.min.js"></script>
+<script src="assets/ckeditor/ckeditor.js"></script>
 <!-- DataTable JavaScript-->
 <script src="assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
@@ -85,6 +86,11 @@
     <?php elseif (isset($_SESSION['error'])) : ?>
         toastr.error("<?php echo Helper::flash('error') ?>");
     <?php endif; ?>
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        CKEDITOR.replace('description');
+    });
 </script>
 </body>
 </html>

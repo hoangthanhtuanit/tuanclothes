@@ -62,9 +62,12 @@ class Supplier extends Model
     {
         $sqlDelete = "DELETE FROM suppliers WHERE id = :id";
         $objDelete = $this->connection->prepare($sqlDelete);
+        $sqlDeleteProduct = "DELETE FROM products WHERE supplier_id = :id";
+        $objDeleteProduct = $this->connection->prepare($sqlDeleteProduct);
         $arrDelete = [
             ':id' => $id
         ];
+        $objDeleteProduct->execute($arrDelete);
         return $objDelete->execute($arrDelete);
     }
 }

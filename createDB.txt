@@ -97,8 +97,6 @@ updated_at DATETIME COMMENT "Ngày cập nhật cuối"
 #slides
 CREATE TABLE IF NOT EXISTS banners (
 id INT(11) PRIMARY KEY AUTO_INCREMENT,
-title VARCHAR(255) COMMENT "Tiêu đề banner",
-summary VARCHAR(255) COMMENT "Mô tả ngắn banner",
 image VARCHAR(255) COMMENT "File ảnh banner",
 status TINYINT(3) DEFAULT 0 COMMENT "Trạng thái danh mục: 0 - Inactive, 1 - Active",
 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT "Ngày tạo",

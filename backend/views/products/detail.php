@@ -76,7 +76,7 @@
                                     </tr>
                                     <tr>
                                         <td>Ngày cập nhật</td>
-                                        <td><?php echo !empty($product['updated_at']) ? time('d/m/Y H:i:s', strtotime($supplier['updated_at'])) : '---'; ?></td>
+                                        <td><?php echo !empty($product['updated_at']) ? time('d/m/Y H:i:s', strtotime($product['updated_at'])) : '---'; ?></td>
                                     </tr>
                                 </table>
                             </div>

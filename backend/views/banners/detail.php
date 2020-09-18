@@ -20,16 +20,8 @@
                                         <td><?php echo $banner['id']; ?></td>
                                     </tr>
                                     <tr>
-                                        <td>Tiêu đề</td>
-                                        <td><?php echo $banner['title']; ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mô tả</td>
-                                        <td><?php echo $banner['summary']; ?></td>
-                                    </tr>
-                                    <tr>
                                         <td>Ảnh</td>
-                                        <td><img width="200" src="assets/uploads/banners/<?php echo $banner['image']; ?>" alt=""></td>
+                                        <td><img width="500" src="assets/uploads/banners/<?php echo $banner['image']; ?>" alt=""></td>
                                     </tr>
                                     <tr>
                                         <td>Trạng thái</td>

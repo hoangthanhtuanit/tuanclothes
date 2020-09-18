@@ -3,8 +3,6 @@ require_once 'models/Model.php';
 class Banner extends Model
 {
     public $id;
-    public $title;
-    public $summary;
     public $image;
     public $status;
     public $created_at;
@@ -19,11 +17,9 @@ class Banner extends Model
     }
 
     public function insert(){
-        $sqlInsert = "INSERT INTO banners (`title`, `summary`, `image`, `status`) VALUES (:title, :summary, :image, :status)";
+        $sqlInsert = "INSERT INTO banners (`image`, `status`) VALUES (:image, :status)";
         $objInsert = $this->connection->prepare($sqlInsert);
         $arrInsert = [
-            ':title' => $this->title,
-            ':summary' => $this->summary,
             ':image' => $this->image,
             ':status' => $this->status
         ];
@@ -42,11 +38,9 @@ class Banner extends Model
     }
 
     public function update($id){
-        $sqlUpdate = "UPDATE banners SET title = :title, summary = :summary, image = :image, status = :status WHERE id = :id";
+        $sqlUpdate = "UPDATE banners SET image = :image, status = :status WHERE id = :id";
         $objUpdate = $this->connection->prepare($sqlUpdate);
         $arrUpdate = [
-            ':title' => $this->title,
-            ':summary' => $this->summary,
             ':image' => $this->image,
             ':status' => $this->status,
             ':id' => $id

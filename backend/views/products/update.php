@@ -149,8 +149,7 @@
                                                         style="color: red;">*</span>)</label>
                                         </div>
                                         <div class="col-12 col-md-9">
-                                            <input type="text" id="text-input" name="description" value="<?php echo isset($_POST['description']) ? $_POST['description'] : $product['description'] ?>" placeholder="Chi tiết sản phẩm"
-                                                   class="form-control">
+                                            <textarea name="description" id="description" rows="10"><?php echo isset($_POST['description']) ? $_POST['description'] : $product['description']; ?></textarea>
                                         </div>
                                     </div>
                                     <div class="row form-group">

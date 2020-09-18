@@ -23,28 +23,6 @@
                                     <!--                                                                    <input type="hidden" name="_token" value="{{csrf_token()}}">-->
                                     <div class="row form-group">
                                         <div class="col col-md-3">
-                                            <label for="text-input" class=" form-control-label">Tiêu đề (<span
-                                                    style="color: red;">*</span>)</label>
-                                        </div>
-                                        <div class="col-12 col-md-9">
-                                            <input type="text" id="text-input" name="title" placeholder="Tiêu đề"
-                                                   value="<?php echo isset($_POST['title']) ? $_POST['title'] : $banner['title']; ?>"
-                                                   class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col col-md-3">
-                                            <label for="text-input" class=" form-control-label">Mô tả (<span
-                                                    style="color: red;">*</span>)</label>
-                                        </div>
-                                        <div class="col-12 col-md-9">
-                                            <input type="text" id="text-input" name="summary" placeholder="Mô tả"
-                                                   value="<?php echo isset($_POST['summary']) ? $_POST['summary'] : $banner['summary']; ?>"
-                                                   class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col col-md-3">
                                             <label for="text-input" class=" form-control-label">Ảnh (<span
                                                     style="color: red;">*</span>)</label>
                                         </div>

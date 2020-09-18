@@ -19,7 +19,6 @@
                                     <thead>
                                     <tr style="text-align: center;">
                                         <th>ID</th>
-                                        <th>Tiêu đề</th>
                                         <th>Ảnh</th>
                                         <th>Trạng thái</th>
                                         <th>Action</th>
@@ -30,11 +29,8 @@
                                         <tr style="text-align: center;">
                                             <td><?php echo $banner['id']; ?></td>
                                             <td>
-                                                <?php echo $banner['title']; ?>
-                                            </td>
-                                            <td>
                                                 <?php if (!empty($banner['image'])): ?>
-                                                    <img height="200" src="assets/uploads/banners/<?php echo $banner['image'] ?>"/>
+                                                    <img width="450" height="200" src="assets/uploads/banners/<?php echo $banner['image'] ?>"/>
                                                 <?php endif; ?>
                                             </td>
                                             <td>
@@ -73,12 +69,12 @@
                                                                    href="">Vô hiệu hoá</a>
                                                             <?php endif; ?>
                                                             <a class="dropdown-item"
-                                                               href="index.php?controller=banner&action=detail&id=<?php echo $product['id'] ?>">Xem chi tiết</a>
+                                                               href="index.php?controller=banner&action=detail&id=<?php echo $banner['id'] ?>">Xem chi tiết</a>
                                                             <a class="dropdown-item"
-                                                               href="index.php?controller=banner&action=update&id=<?php echo $product['id'] ?>">Cập nhật</a>
+                                                               href="index.php?controller=banner&action=update&id=<?php echo $banner['id'] ?>">Cập nhật</a>
                                                             <a class="dropdown-item"
                                                                onclick="return confirm('Bạn có muốn tiếp tục xóa không?')"
-                                                               href="index.php?controller=banner&action=delete&id=<?php echo $product['id'] ?>">Xóa</a>
+                                                               href="index.php?controller=banner&action=delete&id=<?php echo $banner['id'] ?>">Xóa</a>
                                                         </div>
                                                     </div>
                                                 </div>

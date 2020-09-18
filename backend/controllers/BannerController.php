@@ -17,14 +17,8 @@ class BannerController extends Controller
 
     public function create(){
         if (isset($_POST['submit'])) {
-            $title = $_POST['title'];
-            $summary = $_POST['summary'];
             $status = $_POST['status'];
-            if (empty($title)) {
-                $this->error = 'Tiêu đề không được để trống';
-            } elseif (empty($summary)) {
-                $this->error = 'Mô tả không được để trống';
-            } elseif ($_FILES['image']['error'] == 0) {
+            if ($_FILES['image']['error'] == 0) {
                 $extension = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
                 $extension = strtolower($extension);
                 $arrExtension = ['jpg', 'png', 'jpeg', 'gif'];
@@ -49,8 +43,6 @@ class BannerController extends Controller
                     move_uploaded_file($tmp_name, $destination);
                 }
                 $bannerModel = new Banner();
-                $bannerModel->title = $title;
-                $bannerModel->summary = $summary;
                 $bannerModel->image = $filename;
                 $bannerModel->status = $status;
                 $isInsert = $bannerModel->insert();
@@ -78,14 +70,8 @@ class BannerController extends Controller
         $bannerModel = new Banner();
         $banner = $bannerModel->getBannerById($id);
         if (isset($_POST['submit'])) {
-            $title = $_POST['title'];
-            $summary = $_POST['summary'];
             $status = $_POST['status'];
-            if (empty($title)) {
-                $this->error = 'Tiêu đề không được để trống';
-            } elseif (empty($summary)) {
-                $this->error = 'Mô tả không được để trống';
-            } elseif ($_FILES['image']['error'] == 0) {
+            if ($_FILES['image']['error'] == 0) {
                 $extension = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
                 $extension = strtolower($extension);
                 $arrExtension = ['jpg', 'png', 'jpeg', 'gif'];
@@ -111,8 +97,6 @@ class BannerController extends Controller
                     move_uploaded_file($tmp_name, $destination);
                 }
 
-                $bannerModel->title = $title;
-                $bannerModel->summary = $summary;
                 $bannerModel->image = $filename;
                 $bannerModel->status = $status;
                 $bannerModel->updated_at = date('Y-m-d H:i:s');

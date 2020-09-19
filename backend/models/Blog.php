@@ -7,33 +7,33 @@ class Blog extends Model
     public $title;
     public $image;
     public $summary;
-    public $content;
+    public $description;
     public $status;
     public $created_at;
     public $updated_at;
 
     public function index(){
-        $sqlSelect = "SELECT * FROM blog";
+        $sqlSelect = "SELECT * FROM blogs";
         $objSelect = $this->connection->prepare($sqlSelect);
         $objSelect->execute();
         return $objSelect->fetchAll(PDO::FETCH_ASSOC);
     }
 
     public function insert(){
-        $sqlInsert = "INSERT INTO blog (`title`, `image`, `summary`, `content`, `status`) VALUES (:title, :image, :summary, :sontent,:status)";
+        $sqlInsert = "INSERT INTO blogs (`title`, `image`, `summary`, `description`, `status`) VALUES (:title, :image, :summary, :description,:status)";
         $objInsert = $this->connection->prepare($sqlInsert);
         $arrInsert = [
             ':title' => $this->title,
             ':image' => $this->image,
             ':summary' => $this->summary,
-            ':content' => $this->content,
+            ':description' => $this->description,
             ':status' => $this->status
         ];
         return $objInsert->execute($arrInsert);
     }
 
     public function getBlogById($id){
-        $sqlSelect = "SELECT * FROM blog WHERE id = :id";
+        $sqlSelect = "SELECT * FROM blogs WHERE id = :id";
         $objSelect = $this->connection->prepare($sqlSelect);
         $arrSelect = [
             ':id' => $id
@@ -43,13 +43,13 @@ class Blog extends Model
     }
 
     public function update($id){
-        $sqlUpdate = "UPDATE blog SET title = :title, image = :image, summary = :summary, content = :content, status = :status, updated_at = :updated_at WHERE id = :id";
+        $sqlUpdate = "UPDATE blogs SET title = :title, image = :image, summary = :summary, description = :description, status = :status, updated_at = :updated_at WHERE id = :id";
         $objUpdate = $this->connection->prepare($sqlUpdate);
         $arrUpdate = [
             ':title' => $this->title,
             ':image' => $this->image,
             ':summary' => $this->summary,
-            ':content' => $this->content,
+            ':description' => $this->description,
             ':status' => $this->status,
             ':updated_at' => $this->updated_at,
             ':id' => $id
@@ -58,7 +58,7 @@ class Blog extends Model
     }
 
     public function delete($id){
-        $sqlDelete = "DELETE FROM blog WHERE id = :id";
+        $sqlDelete = "DELETE FROM blogs WHERE id = :id";
         $objDelete = $this->connection->prepare($sqlDelete);
         $arrDelete = [
             ':id' => $id

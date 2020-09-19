@@ -110,3 +110,15 @@ size VARCHAR(255) COMMENT "Kích thước",
 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT "Ngày tạo",
 updated_at DATETIME COMMENT "Ngày cập nhật cuối"
 );
+
+#blog
+CREATE TABLE IF NOT EXISTS blogs (
+id INT(11) PRIMARY KEY AUTO_INCREMENT,
+title VARCHAR(255) COMMENT "Tiêu đề blog",
+image VARCHAR(255) COMMENT "File ảnh blog",
+summary VARCHAR(255) COMMENT "Mô tả ngắn blog",
+content TEXT COMMENT "Nội dung blog",
+status TINYINT(3) DEFAULT 0 COMMENT "Trạng thái danh mục: 0 - Inactive, 1 - Active",
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT "Ngày tạo",
+updated_at DATETIME COMMENT "Ngày cập nhật cuối"
+);

@@ -51,7 +51,7 @@ class User extends Model
     }
 
     public function update($id){
-        $sqlUpdate = "UPDATE users SET email = :email, password = :password, full_name = :fullname, phone_number = :phone_number, address = :address, avatar = :avatar, level = :level, status = :status, updated_at = :updated_at WHERE id = :id";
+        $sqlUpdate = "UPDATE users SET email = :email, password = :password, full_name = :full_name, phone_number = :phone_number, address = :address, avatar = :avatar, level = :level, status = :status, updated_at = :updated_at WHERE id = :id";
         $objUpdate = $this->connection->prepare($sqlUpdate);
         $arrUpdate = [
             ':email' => $this->email,

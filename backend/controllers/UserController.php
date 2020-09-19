@@ -189,12 +189,39 @@ class UserController extends Controller
     }
 
     public function detail(){
+        if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
+            Helper::flash('error', 'ID không hợp lệ');
+            header('Location: index.php?controller=user&action=index');
+            exit();
+        }
+        $id = $_GET['id'];
+        $userModel = new User();
+        $user = $userModel->getUserById($id);
         $this->title_page = 'Chi tiết người dùng';
-        $this->content = $this->render('views/users/detail.php');
+        $this->content = $this->render('views/users/detail.php', [
+            'user' => $user
+        ]);
         require_once 'views/layouts/main.php';
     }
 
     public function delete(){
-
+        if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
+            Helper::flash('error', 'ID không hợp lệ');
+            header('Location: index.php?controller=user&action=index');
+            exit();
+        }
+        $id = $_GET['id'];
+        $userModel = new User();
+        $user = $userModel->getUserById($id);
+        $file_url = 'assets/uploads/users/' . $user['avatar'];
+        @unlink($file_url);
+        $isDelete = $userModel->delete($id);
+        if ($isDelete) {
+            Helper::flash('success', 'Xoá thành công');
+        } else {
+            Helper::flash('error', 'Xoá thành công');
+        }
+        header('Location: index.php?controller=user&action=index');
+        exit();
     }
 }

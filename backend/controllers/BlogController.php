@@ -161,7 +161,7 @@ class BlogController extends Controller
         $id = $_GET['id'];
         $blogModel = new Blog();
         $blog = $blogModel->getBlogById($id);
-        $file_url = 'assets/uploads/banners/' . $blog['image'];
+        $file_url = 'assets/uploads/blogs/' . $blog['image'];
         @unlink($file_url);
         $isDelete = $blogModel->delete($id);
         if ($isDelete) {

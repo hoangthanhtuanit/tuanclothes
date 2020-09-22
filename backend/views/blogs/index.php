@@ -34,7 +34,7 @@
                                             </td>
                                             <td>
                                                 <?php if (!empty($blog['image'])): ?>
-                                                    <img height="200" src="assets/uploads/blogs/<?php echo $blog['image'] ?>"/>
+                                                    <img height="150" width="250" src="assets/uploads/blogs/<?php echo $blog['image'] ?>"/>
                                                 <?php endif; ?>
                                             </td>
                                             <td>
@@ -73,7 +73,7 @@
                                                                    href="">Vô hiệu hoá</a>
                                                             <?php endif; ?>
                                                             <a class="dropdown-item"
-                                                               href="index.php?controller=blog&action=detail&id=<?php echo $product['id'] ?>">Xem chi tiết</a>
+                                                               href="index.php?controller=blog&action=detail&id=<?php echo $blog['id'] ?>">Xem chi tiết</a>
                                                             <a class="dropdown-item"
                                                                href="index.php?controller=blog&action=update&id=<?php echo $blog['id'] ?>">Cập nhật</a>
                                                             <a class="dropdown-item"

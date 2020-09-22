@@ -60,7 +60,7 @@
                                     </tr>
                                     <tr>
                                         <td>Ngày cập nhật</td>
-                                        <td><?php echo !empty($blog['updated_at']) ? time('d/m/Y H:i:s', strtotime($blog['updated_at'])) : '---'; ?></td>
+                                        <td><?php echo !empty($blog['updated_at']) ? date('d/m/Y H:i:s', strtotime($blog['updated_at'])) : '---'; ?></td>
                                     </tr>
                                 </table>
                             </div>

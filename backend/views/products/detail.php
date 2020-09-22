@@ -33,7 +33,7 @@
                                     </tr>
                                     <tr>
                                         <td>Giá</td>
-                                        <td><?php echo number_format($product['price'], 0, '.', '.') ?> VNĐ</td>
+                                        <td>$<?php echo number_format($product['price'], 0, '.', '.') ?></td>
                                     </tr>
                                     <tr>
                                         <td>Giảm giá</td>

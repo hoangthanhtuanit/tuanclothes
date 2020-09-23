@@ -28,7 +28,7 @@ class UserController extends Controller
             $userModel = new User();
             $users = $userModel->index();
             foreach ($users as $item) {
-                $user_info[] = $item['username'];
+                $user_info[] = $item['email'];
             }
             if (empty($email)) {
                 $this->error = 'Email không được để trống';

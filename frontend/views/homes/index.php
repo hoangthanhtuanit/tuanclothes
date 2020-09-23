@@ -273,7 +273,7 @@
                                 <img width="400" height="287" src="assets/uploads/blogs/<?php echo $blog['image']; ?>" alt="blog images">
                             </a>
                         </div>
-                        <div class="blog__details">
+                        <div class="blog__details text-justify">
                             <div class="bl__date">
                                 <span><?php echo date('d/m/Y', strtotime($blog['created_at'])) ?></span>
                             </div>

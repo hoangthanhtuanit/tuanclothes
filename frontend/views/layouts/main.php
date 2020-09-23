@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- User style -->
     <link rel="stylesheet" href="assets/css/custom.css">
-
+    <link rel="stylesheet" href="assets/css/toastr.css"/>
 
     <!-- Modernizr JS -->
     <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
@@ -58,11 +58,18 @@
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/slick.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/toastr.min.js"></script>
 <!-- Waypoints.min.js. -->
 <script src="assets/js/waypoints.min.js"></script>
 <!-- Main js file that contents all jQuery plugins activation. -->
 <script src="assets/js/main.js"></script>
-
+<script type="text/javascript">
+    <?php if (isset($_SESSION['success'])) : ?>
+    toastr.success("<?php echo Helper::flash('success') ?>");
+    <?php elseif (isset($_SESSION['error'])) : ?>
+    toastr.error("<?php echo Helper::flash('error') ?>");
+    <?php endif; ?>
+</script>
 </body>
 
 </html>

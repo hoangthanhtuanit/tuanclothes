@@ -29,7 +29,7 @@
                     <div class="blog__details">
                         <h2><?php echo $blog['title'] ?></h2>
                     </div>
-                    <div class="bl__dtl" style="padding-top: 30px;">
+                    <div class="bl__dtl text-justify" style="padding-top: 30px;">
                         <?php echo $blog['description'] ?>
                     </div>
                     <!-- Start Comment Area -->

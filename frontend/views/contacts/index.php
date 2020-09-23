@@ -68,29 +68,27 @@
                 </div>
                 <div class="col-xs-12">
                     <form id="contact-form" action="#" method="post">
+                        <?php require_once 'views/layouts/error.php'; ?>
                         <div class="single-contact-form">
                             <div class="contact-box name">
-                                <input type="text" name="name" placeholder="Họ tên*">
-                                <input type="email" name="email" placeholder="Email*">
+                                <input type="text" name="full_name" value="<?php isset($_POST['full_name']) ? $_POST['full_name'] : '' ?>" placeholder="Họ tên (*)">
+                                <input type="text" name="email" value="<?php isset($_POST['email']) ? $_POST['email'] : '' ?>" placeholder="Email (*)">
                             </div>
                         </div>
                         <div class="single-contact-form">
                             <div class="contact-box subject">
-                                <input type="text" name="subject" placeholder="Tiêu đề*">
+                                <input type="text" name="subject" value="<?php isset($_POST['subject']) ? $_POST['subject'] : '' ?>" placeholder="Tiêu đề (*)">
                             </div>
                         </div>
                         <div class="single-contact-form">
                             <div class="contact-box message">
-                                <textarea name="message" placeholder="Tin nhắn*"></textarea>
+                                <textarea name="message" placeholder="Tin nhắn (*)"><?php isset($_POST['message']) ? $_POST['message'] : '' ?></textarea>
                             </div>
                         </div>
                         <div class="contact-btn">
-                            <button type="submit" class="fv-btn">GỬI</button>
+                            <input type="submit" class="fv-btn" name="submit" value="GỬI">
                         </div>
                     </form>
-                    <div class="form-output">
-                        <p class="form-messege"></p>
-                    </div>
                 </div>
             </div>
         </div>

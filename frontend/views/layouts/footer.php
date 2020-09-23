@@ -4,22 +4,18 @@
         <div class="container">
             <div class="row">
                 <!-- Start Single Footer Widget -->
-                <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="col-md-5 col-sm-6 col-xs-12">
                     <div class="footer">
-                        <h2 class="title__line--2">ABOUT US</h2>
+                        <h2 class="title__line--2">VỀ CHÚNG TÔI</h2>
                         <div class="ft__details">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+                            <p class="text-justify">Tuan Clothes luôn đặt uy tín lên hàng đầu. Với đội ngũ nhân viên chất lượng, nhiệt tình. Cam kêt trao tận tay khách hàng những sản phẩm chất lượng nhất.</p>
                             <div class="ft__social__link">
                                 <ul class="social__link">
-                                    <li><a href="#"><i class="icon-social-twitter icons"></i></a></li>
-
-                                    <li><a href="#"><i class="icon-social-instagram icons"></i></a></li>
-
-                                    <li><a href="#"><i class="icon-social-facebook icons"></i></a></li>
-
-                                    <li><a href="#"><i class="icon-social-google icons"></i></a></li>
-
-                                    <li><a href="#"><i class="icon-social-linkedin icons"></i></a></li>
+                                    <li><a><i class="icon-social-twitter icons"></i></a></li>
+                                    <li><a><i class="icon-social-instagram icons"></i></a></li>
+                                    <li><a><i class="icon-social-facebook icons"></i></a></li>
+                                    <li><a><i class="icon-social-google icons"></i></a></li>
+                                    <li><a><i class="icon-social-linkedin icons"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -29,46 +25,28 @@
                 <!-- Start Single Footer Widget -->
                 <div class="col-md-2 col-sm-6 col-xs-12 xmt-40">
                     <div class="footer">
-                        <h2 class="title__line--2">information</h2>
+                        <h2 class="title__line--2">THÔNG TIN</h2>
                         <div class="ft__inner">
                             <ul class="ft__list">
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Delivery Information</a></li>
-                                <li><a href="#">Privacy & Policy</a></li>
-                                <li><a href="#">Terms  & Condition</a></li>
-                                <li><a href="#">Manufactures</a></li>
+                                <li><a href="#">Thông tin giao hàng</a></li>
+                                <li><a href="#">Chính sách bảo mật</a></li>
+                                <li><a href="#">Chính sách đổi trả</a></li>
+                                <li><a href="#">Liên hệ</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <!-- End Single Footer Widget -->
                 <!-- Start Single Footer Widget -->
-                <div class="col-md-2 col-sm-6 col-xs-12 xmt-40 smt-40">
+                <div class="col-md-2 col-sm-6 col-xs-12 xmt-40">
                     <div class="footer">
-                        <h2 class="title__line--2">my account</h2>
+                        <h2 class="title__line--2">DỊCH VỤ</h2>
                         <div class="ft__inner">
                             <ul class="ft__list">
-                                <li><a href="#">My Account</a></li>
-                                <li><a href="cart.html">My Cart</a></li>
-                                <li><a href="#">Login</a></li>
-                                <li><a href="wishlist.html">Wishlist</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Footer Widget -->
-                <!-- Start Single Footer Widget -->
-                <div class="col-md-2 col-sm-6 col-xs-12 xmt-40 smt-40">
-                    <div class="footer">
-                        <h2 class="title__line--2">Our service</h2>
-                        <div class="ft__inner">
-                            <ul class="ft__list">
-                                <li><a href="#">My Account</a></li>
-                                <li><a href="cart.html">My Cart</a></li>
-                                <li><a href="#">Login</a></li>
-                                <li><a href="wishlist.html">Wishlist</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
+                                <li><a href="#">Thông tin tài khoản</a></li>
+                                <li><a href="#">Đăng nhập</a></li>
+                                <li><a href="#">Giỏ hàng</a></li>
+                                <li><a href="#">Thanh toán</a></li>
                             </ul>
                         </div>
                     </div>
@@ -77,12 +55,12 @@
                 <!-- Start Single Footer Widget -->
                 <div class="col-md-3 col-sm-6 col-xs-12 xmt-40 smt-40">
                     <div class="footer">
-                        <h2 class="title__line--2">NEWSLETTER </h2>
+                        <h2 class="title__line--2">ĐĂNG KÝ NHẬN TIN </h2>
                         <div class="ft__inner">
                             <div class="news__input">
-                                <input type="text" placeholder="Your Mail*">
+                                <input type="text" placeholder="Email (*)">
                                 <div class="send__btn">
-                                    <a class="fr__btn" href="#">Send Mail</a>
+                                    <a class="fr__btn">GỬI</a>
                                 </div>
                             </div>
 

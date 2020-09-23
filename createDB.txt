@@ -111,7 +111,7 @@ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT "Ngày tạo",
 updated_at DATETIME COMMENT "Ngày cập nhật cuối"
 );
 
-#blog
+#blogs
 CREATE TABLE IF NOT EXISTS blogs (
 id INT(11) PRIMARY KEY AUTO_INCREMENT,
 title VARCHAR(255) COMMENT "Tiêu đề blog",
@@ -122,3 +122,14 @@ status TINYINT(3) DEFAULT 0 COMMENT "Trạng thái danh mục: 0 - Inactive, 1 -
 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT "Ngày tạo",
 updated_at DATETIME COMMENT "Ngày cập nhật cuối"
 );
+
+#contacts
+CREATE TABLE IF NOT EXISTS contacts (
+id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+full_name VARCHAR(255) NOT NULL COMMENT "Họ tên",
+email VARCHAR(255) NOT NULL COMMENT "Email",
+subject VARCHAR(255) NOT NULL COMMENT "Tiêu đề",
+message VARCHAR(255) NOT NULL COMMENT "Tin nhắn",
+created_at TIMESTAMP DEFAULT  CURRENT_TIMESTAMP COMMENT "Ngày nhận tin nhắn",
+);
+

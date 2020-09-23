@@ -48,7 +48,7 @@
                     <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                         <div class="category">
                             <div class="ht__cat__thumb">
-                                <a href="product-details.html">
+                                <a href="index.php?controller=product&action=detail&id=<?php echo $newProduct['id']; ?>">
                                     <img width="290" height="385" src="assets/uploads/products/<?php echo $newProduct['image']; ?>" alt="product images">
                                 </a>
                             </div>
@@ -60,7 +60,7 @@
                                 </ul>
                             </div>
                             <div class="fr__product__inner">
-                                <h4><a href="product-details.html"><?php echo $newProduct['name']; ?></a></h4>
+                                <h4><a href="index.php?controller=product&action=detail&id=<?php echo $newProduct['id']; ?>"><?php echo $newProduct['name']; ?></a></h4>
                                 <ul class="fr__pro__prize">
                                     <li class="old__prize">$<?php echo number_format($newProduct['price'], 0, '.', '.') ?></li>
                                     <li>$<?php echo number_format($newProduct['price']*(100-$newProduct['discount'])/100, 0, '.', '.') ?></li>
@@ -93,7 +93,7 @@
                 <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                     <div class="category">
                         <div class="ht__cat__thumb">
-                            <a href="product-details.html">
+                            <a href="index.php?controller=product&action=detail&id=<?php echo $hotProduct['id']; ?>">
                                 <img width="290" height="385" src="assets/uploads/products/<?php echo $hotProduct['image'] ?>" alt="product images">
                             </a>
                         </div>
@@ -105,7 +105,7 @@
                             </ul>
                         </div>
                         <div class="fr__product__inner">
-                            <h4><a href="product-details.html"><?php echo $hotProduct['name']; ?></a></h4>
+                            <h4><a href="index.php?controller=product&action=detail&id=<?php echo $hotProduct['id']; ?>"><?php echo $hotProduct['name']; ?></a></h4>
                             <ul class="fr__pro__prize">
                                 <li class="old__prize">$<?php echo number_format($hotProduct['price'], 0, '.', '.') ?></li>
                                 <li>$<?php echo number_format($hotProduct['price']*(100-$hotProduct['discount'])/100, 0, '.', '.') ?></li>
@@ -198,12 +198,12 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <div class="htc__best__product">
                     <div class="htc__best__pro__thumb">
-                        <a href="product-details.html">
+                        <a href="index.php?controller=product&action=detail&id=<?php echo $topProduct['id']; ?>">
                             <img width="180" height="239" src="assets/uploads/products/<?php echo $topProduct['image']; ?>" alt="small product">
                         </a>
                     </div>
                     <div class="htc__best__product__details">
-                        <h2><a href="product-details.html"><?php echo $topProduct['name']; ?></a></h2>
+                        <h2><a href="index.php?controller=product&action=detail&id=<?php echo $topProduct['id']; ?>"><?php echo $topProduct['name']; ?></a></h2>
                         <ul class="rating">
                             <li><i class="icon-star icons"></i></li>
                             <li><i class="icon-star icons"></i></li>

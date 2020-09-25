@@ -111,4 +111,85 @@ class Pagination
         $pagination .= "</ul>";
         return $pagination;
     }
+
+    public function getPrevCat(){
+        $prev_page = '';
+        $current_page = $this->getCurrentPage();
+        if ($current_page >= 2) {
+            $controller = $this->params['controller'];
+            $action = $this->params['action'];
+            $id = $this->params['category_id'];
+            $prev_url =
+                "index.php?controller=$controller&action=$action&id=$id&page=" . ($current_page - 1);
+            $prev_page = "<li><a href='$prev_url'><i class='zmdi zmdi-chevron-left'></i></a></li>";
+        }
+        return $prev_page;
+    }
+
+    public function getNextCat(){
+        $next_page = '';
+        $total_page = $this->getTotalPage();
+        $current_page = $this->getCurrentPage();
+        if ($current_page < $total_page) {
+            $controller = $this->params['controller'];
+            $action = $this->params['action'];
+            $id = $this->params['category_id'];
+            $next_url =
+                "index.php?controller=$controller&action=$action&id=$id&page=" . ($current_page + 1);
+            $next_page = "<li><a href='$next_url'><i class='zmdi zmdi-chevron-right'></i></a></li>";
+        }
+        return $next_page;
+    }
+
+    public function getPaginationCat(){
+        $pagination = '';
+        $total_page = $this->getTotalPage();
+        if ($total_page == 1) {
+            return '';
+        }
+        $pagination .= "<ul class='htc__pagenation'>";
+        $prev_page = $this->getPrevCat();
+        $pagination .= $prev_page;
+
+        $full_mode = $this->params['full_mode'];
+        $controller = $this->params['controller'];
+        $action = $this->params['action'];
+        $id = $this->params['category_id'];
+        if ($full_mode) {
+            for ($page = 1; $page <= $total_page; $page++) {
+                $current_page = $this->getCurrentPage();
+                if ($current_page == $page) {
+                    $pagination .=
+                        "<li class='active'><a>$page</a></li>";
+                } else {
+                    $page_url =
+                        "index.php?controller=$controller&action=$action&id=$id&page=$page";
+                    $pagination .= "<li><a href='$page_url'>$page</a></li>";
+                }
+            }
+        } else {
+            for ($page = 1; $page <= $total_page; $page++) {
+                $current_page = $this->getCurrentPage();
+                if ($current_page == $page) {
+                    $pagination .=
+                        "<li class='active'><a>$page</a></li>";
+                } elseif ($page == 1 || $page == $total_page
+                    || ($page == $current_page - 1)
+                    || ($page == $current_page + 1)) {
+                    $page_url =
+                        "index.php?controller=$controller&action=$action&id=$id&page=$page";
+                    $pagination .= "<li><a href='$page_url'>$page</a></li>";
+                } elseif ($page == 2 || $page == 3
+                    || $page == ($total_page - 1)
+                    || $page == ($total_page - 2)
+                ) {
+                    $pagination .= "<li><a>...</a></li>";
+                }
+            }
+        }
+        $next_page = $this->getNextCat();
+        $pagination .= $next_page;
+        $pagination .= "</ul>";
+        return $pagination;
+    }
 }

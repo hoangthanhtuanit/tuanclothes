@@ -40,65 +40,87 @@
                     </div>
                 </div>
                 <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12 smt-40 xmt-40">
-                    <div class="ht__product__dtl">
-                        <h2><?php echo $product['name']; ?></h2>
-                        <h6></h6>
-                        <ul class="rating">
-                            <li><i class="icon-star icons"></i></li>
-                            <li><i class="icon-star icons"></i></li>
-                            <li><i class="icon-star icons"></i></li>
-                            <li><i class="icon-star icons"></i></li>
-                            <li class="old"><i class="icon-star icons"></i></li>
-                        </ul>
-                        <ul class="pro__prize">
-                            <li class="old__prize">$<?php echo number_format($product['price'], 0, '.', '.') ?></li>
-                            <li>$<?php echo number_format($product['price']*(100-$product['discount'])/100, 0, '.', '.') ?></li>
-                        </ul>
-                        <p class="pro__info"><?php echo $product['summary']; ?></p>
-                        <div class="ht__pro__desc">
-                            <div class="sin__desc">
-                                <p><span>Tình trạng:</span> In Stock</p>
-                            </div>
-                            <div class="sin__desc align--left">
-                                <p><span>Màu: </span><?php echo $product['color']; ?></p>
-                            </div>
-                            <div class="sin__desc align--left">
-                                <p><span>Kích thước</span></p>
-                                <select class="select__size">
-                                    <option>s</option>
-                                </select>
-                            </div>
-                            <div class="sin__desc align--left">
-                                <p><span>Danh mục:</span></p>
-                                <ul class="pro__cat__list">
-                                    <li><a><?php echo $product['category_name']; ?></a></li>
-                                </ul>
-                            </div>
-                            <div class="sin__desc align--left">
-                                <p><span>Nhà phân phối:</span></p>
-                                <ul class="pro__cat__list">
-                                    <li><a><?php echo $product['supplier_name']; ?></a></li>
-                                </ul>
-                            </div>
+                    <form action="" method="post">
+                        <div class="ht__product__dtl">
+                            <h2><?php echo $product['name']; ?></h2>
+                            <h6></h6>
+                            <ul class="rating">
+                                <li><i class="icon-star icons"></i></li>
+                                <li><i class="icon-star icons"></i></li>
+                                <li><i class="icon-star icons"></i></li>
+                                <li><i class="icon-star icons"></i></li>
+                                <li class="old"><i class="icon-star icons"></i></li>
+                            </ul>
+                            <ul class="pro__prize">
+                                <li class="old__prize">$<?php echo number_format($product['price'], 0, '.', '.') ?></li>
+                                <li>$<?php echo number_format($product['price']*(100-$product['discount'])/100, 0, '.', '.') ?></li>
+                            </ul>
+                            <p class="pro__info"><?php echo $product['summary']; ?></p>
+                            <div class="ht__pro__desc">
+                                <div class="sin__desc">
+                                    <p><span>Tình trạng:</span> In Stock</p>
+                                </div>
+                                <div class="sin__desc align--left">
+                                    <p><span>Màu: </span><?php echo $product['color']; ?></p>
+                                </div>
+                                <div class="sin__desc align--left">
+                                    <p><span>Kích thước: </span></p>
+                                    <select class="select__size">
+                                        <?php foreach ($sizes as $size) : ?>
+                                            <option value="<?php echo $size['size']; ?>"><?php echo $size['size']; ?></option>
+                                        <?php endforeach; ?>
+                                    </select>
+                                </div>
+                                <div class="sin__desc align--left quantity-area">
+                                    <p><span style="float: left;  margin: 7px 10px 0 0;">Số lượng: </span></p>
+                                    <div class="cart-quantity">
+                                        <div class="product-qty">
+                                            <div class="cart-quantity">
+                                                <div class="cart-plus-minus">
+                                                    <div class="dec qtybutton">-</div>
+                                                    <input type="text" value="1" name="qtybutton"
+                                                           class="cart-plus-minus-box">
+                                                    <div class="inc qtybutton">+</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sin__desc align--left">
+                                    <p><span>Danh mục:</span></p>
+                                    <ul class="pro__cat__list">
+                                        <li><a><?php echo $product['category_name']; ?></a></li>
+                                    </ul>
+                                </div>
+                                <div class="sin__desc align--left">
+                                    <p><span>Nhà phân phối:</span></p>
+                                    <ul class="pro__cat__list">
+                                        <li><a><?php echo $product['supplier_name']; ?></a></li>
+                                    </ul>
+                                </div>
 
-                            <div class="sin__desc product__share__link">
-                                <p><span>Chia sẻ:</span></p>
-                                <ul class="pro__share">
-                                    <li><a title="Twitter"><i class="icon-social-twitter icons"></i></a></li>
+                                <div class="sin__desc product__share__link">
+                                    <p><span>Chia sẻ:</span></p>
+                                    <ul class="pro__share">
+                                        <li><a title="Twitter"><i class="icon-social-twitter icons"></i></a></li>
 
-                                    <li><a title="Instagram"><i class="icon-social-instagram icons"></i></a></li>
+                                        <li><a title="Instagram"><i class="icon-social-instagram icons"></i></a></li>
 
-                                    <li><a title="Facebook"><i class="icon-social-facebook icons"></i></a></li>
+                                        <li><a title="Facebook"><i class="icon-social-facebook icons"></i></a></li>
 
-                                    <li><a title="Google"><i class="icon-social-google icons"></i></a></li>
+                                        <li><a title="Google"><i class="icon-social-google icons"></i></a></li>
 
-                                    <li><a title="Linkedin"><i class="icon-social-linkedin icons"></i></a></li>
+                                        <li><a title="Linkedin"><i class="icon-social-linkedin icons"></i></a></li>
 
-                                    <li><a title="Printerest"><i class="icon-social-pinterest icons"></i></a></li>
-                                </ul>
+                                        <li><a title="Printerest"><i class="icon-social-pinterest icons"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="contact-btn">
+                                    <input type="submit" class="fv-btn" name="submit" value="Mua hàng">
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>

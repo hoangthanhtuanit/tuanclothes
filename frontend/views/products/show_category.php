@@ -46,31 +46,31 @@
                         <div class="shop__grid__view__wrap">
                             <div role="tabpanel" id="grid-view" class="single-grid-view tab-pane fade in active clearfix">
                                 <?php foreach ($products as $product) : ?>
-                                <!-- Start Single Product -->
-                                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                                    <div class="category">
-                                        <div class="ht__cat__thumb">
-                                            <a href="index.php?controller=product&action=detail&id=<?php echo $product['id']; ?>">
-                                                <img width="290" height="360" src="assets/uploads/products/<?php echo $product['image']; ?>" alt="product images">
-                                            </a>
-                                        </div>
-                                        <div class="fr__hover__info">
-                                            <ul class="product__action">
-                                                <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
+                                    <!-- Start Single Product -->
+                                    <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                                        <div class="category">
+                                            <div class="ht__cat__thumb">
+                                                <a href="index.php?controller=product&action=detail&id=<?php echo $product['id']; ?>">
+                                                    <img width="290" height="360" src="assets/uploads/products/<?php echo $product['image']; ?>" alt="product images">
+                                                </a>
+                                            </div>
+                                            <div class="fr__hover__info">
+                                                <ul class="product__action">
+                                                    <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
 
-                                                <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="fr__product__inner">
-                                            <h4><a href="index.php?controller=product&action=detail&id=<?php echo $product['id']; ?>"><?php echo $product['name']; ?></a></h4>
-                                            <ul class="fr__pro__prize">
-                                                <li class="old__prize">$<?php echo number_format($product['price'], 0, '.', '.') ?></li>
-                                                <li>$<?php echo number_format($product['price']*(100-$product['discount'])/100, 0, '.', '.') ?></li>
-                                            </ul>
+                                                    <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="fr__product__inner">
+                                                <h4><a href="index.php?controller=product&action=detail&id=<?php echo $product['id']; ?>"><?php echo $product['name']; ?></a></h4>
+                                                <ul class="fr__pro__prize">
+                                                    <li class="old__prize">$<?php echo number_format($product['price'], 0, '.', '.') ?></li>
+                                                    <li>$<?php echo number_format($product['price']*(100-$product['discount'])/100, 0, '.', '.') ?></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- End Single Product -->
+                                    <!-- End Single Product -->
                                 <?php endforeach; ?>
                             </div>
                         </div>
@@ -114,7 +114,7 @@
                         <h4 class="title__line--4">Danh mục sản phẩm</h4>
                         <ul class="ht__cat__list">
                             <?php foreach ($categories as $category) : ?>
-                            <li><a href="index.php?controller=product&action=showCategory&id=<?php echo $category['id']; ?>"><?php echo $category['name']; ?></a></li>
+                                <li><a href="index.php?controller=product&action=showCategory&id=<?php echo $category['id']; ?>"><?php echo $category['name']; ?></a></li>
                             <?php endforeach; ?>
                         </ul>
                     </div>
@@ -124,29 +124,29 @@
                         <h2 class="title__line--4">best seller</h2>
                         <div class="htc__recent__product__inner">
                             <?php foreach ($topProducts as $topProduct) : ?>
-                            <!-- Start Single Product -->
-                            <div class="htc__best__product">
-                                <div class="htc__best__pro__thumb">
-                                    <a href="index.php?controller=product&action=detail&id=<?php echo $topProduct['id']; ?>">
-                                        <img width="99" height="119" src="assets/uploads/products/<?php echo $topProduct['image']; ?>" alt="small image">
-                                    </a>
+                                <!-- Start Single Product -->
+                                <div class="htc__best__product">
+                                    <div class="htc__best__pro__thumb">
+                                        <a href="index.php?controller=product&action=detail&id=<?php echo $topProduct['id']; ?>">
+                                            <img width="99" height="119" src="assets/uploads/products/<?php echo $topProduct['image']; ?>" alt="small image">
+                                        </a>
+                                    </div>
+                                    <div class="htc__best__product__details">
+                                        <h2><a href="index.php?controller=product&action=detail&id=<?php echo $topProduct['id']; ?>"><?php echo $topProduct['name']; ?></a></h2>
+                                        <ul class="rating">
+                                            <li><i class="icon-star icons"></i></li>
+                                            <li><i class="icon-star icons"></i></li>
+                                            <li><i class="icon-star icons"></i></li>
+                                            <li><i class="icon-star icons"></i></li>
+                                            <li class="old"><i class="icon-star icons"></i></li>
+                                        </ul>
+                                        <ul class="fr__pro__prize">
+                                            <li class="old__prize">$<?php echo number_format($topProduct['price'], 0, '.', '.') ?></li>
+                                            <li>$<?php echo number_format($topProduct['price']*(100-$topProduct['discount'])/100, 0, '.', '.') ?></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="htc__best__product__details">
-                                    <h2><a href="index.php?controller=product&action=detail&id=<?php echo $topProduct['id']; ?>"><?php echo $topProduct['name']; ?></a></h2>
-                                    <ul class="rating">
-                                        <li><i class="icon-star icons"></i></li>
-                                        <li><i class="icon-star icons"></i></li>
-                                        <li><i class="icon-star icons"></i></li>
-                                        <li><i class="icon-star icons"></i></li>
-                                        <li class="old"><i class="icon-star icons"></i></li>
-                                    </ul>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize">$<?php echo number_format($topProduct['price'], 0, '.', '.') ?></li>
-                                        <li>$<?php echo number_format($topProduct['price']*(100-$topProduct['discount'])/100, 0, '.', '.') ?></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- End Single Product -->
+                                <!-- End Single Product -->
                             <?php endforeach; ?>
                         </div>
                     </div>

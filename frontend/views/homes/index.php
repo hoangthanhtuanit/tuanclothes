@@ -12,7 +12,7 @@
                                     <h2>TUAN CLOTHES</h2>
                                     <h1 style="font-size: 60px;">collection 2020</h1>
                                     <div class="cr__btn">
-                                        <a href="">Mua ngay</a>
+                                        <a href="index.php?controller=product&action=showAll">Mua ngay</a>
                                     </div>
                                 </div>
                             </div>

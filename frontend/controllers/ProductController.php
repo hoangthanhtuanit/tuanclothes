@@ -4,6 +4,7 @@ require_once 'models/Category.php';
 require_once 'models/Product.php';
 require_once 'helpers/Helper.php';
 require_once 'models/Pagination.php';
+require_once 'models/Size.php';
 
 class ProductController extends Controller
 {
@@ -40,6 +41,42 @@ class ProductController extends Controller
         require_once 'views/layouts/main.php';
     }
 
+    public function showCategory(){
+        $params = [
+            'total' => 5,
+            'limit' => 12,
+            'category_id' => 1,
+            'controller' => 'product',
+            'action' => 'showCategory',
+            'full_mode' => FALSE
+        ];
+        $page = 1;
+        if (isset($_GET['page'])) {
+            $page = $_GET['page'];
+        }
+        $id = $_GET['id'];
+        $params['category_id'] = $id;
+        $productModel = new Product();
+        $count_total = $productModel->countTotalByCat($id);
+        $params['total'] = $count_total;
+        $params['page'] = $page;
+        $pagination = new Pagination($params);
+        $pages = $pagination->getPaginationCat();
+        $products = $productModel->getProductByCategory($params);
+        $topProducts = $productModel->getHotProduct();
+        $categoryModel = new Category();
+        $categories = $categoryModel->getAllCategory();
+
+        $this->content = $this->render('views/products/show_category.php', [
+            'products' => $products,
+            'categories' => $categories,
+            'topProducts' => $topProducts,
+            'pages' => $pages
+        ]);
+
+        require_once 'views/layouts/main.php';
+    }
+
     public function detail(){
         $categoryModel = new Category();
         $categories = $categoryModel->getAllCategory();
@@ -54,11 +91,15 @@ class ProductController extends Controller
         $product = $productModel->getProductById($id);
         $newProducts = $productModel->getNewProduct();
 
+        $sizeModel = new Size();
+        $sizes = $sizeModel->getAll();
+
         $this->title_page = 'Chi tiết sản phẩm';
         $this->content = $this->render('views/products/detail.php',[
             'categories' => $categories,
             'product' => $product,
-            'newProducts' => $newProducts
+            'newProducts' => $newProducts,
+            'sizes' => $sizes
         ]);
         require_once 'views/layouts/main.php';
     }

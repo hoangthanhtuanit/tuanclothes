@@ -63,11 +63,26 @@ class Product extends Model
         $limit = $params['limit'];
         $page = $params['page'];
         $start = ($page - 1) * $limit;
-        $obj_select = $this->connection->prepare("SELECT * FROM products LIMIT $start, $limit");
+        $obj_select = $this->connection->prepare("SELECT * FROM products WHERE status = 1 LIMIT $start, $limit");
 
         $obj_select->execute();
-        $categories = $obj_select->fetchAll(PDO::FETCH_ASSOC);
+        return $obj_select->fetchAll(PDO::FETCH_ASSOC);
+    }
 
-        return $categories;
+    public function countTotalByCat($id){
+        $obj_select = $this->connection->prepare("SELECT COUNT(id) FROM products WHERE status = 1 AND category_id = $id");
+        $obj_select->execute();
+        return $obj_select->fetchColumn();
+    }
+
+    public function getProductByCategory($params = [])
+    {
+        $limit = $params['limit'];
+        $page = $params['page'];
+        $id = $params['category_id'];
+        $start = ($page - 1) * $limit;
+        $objSelect = $this->connection->prepare("SELECT * FROM products WHERE status = 1 AND category_id = $id LIMIT $start, $limit");
+        $objSelect->execute();
+        return $objSelect->fetchAll(PDO::FETCH_ASSOC);
     }
 }

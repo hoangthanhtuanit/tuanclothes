@@ -89,7 +89,7 @@
                 <div class="htc__product__leftsidebar">
                     <!-- Start Prize Range -->
                     <div class="htc-grid-range">
-                        <h4 class="title__line--4">Price</h4>
+                        <h4 class="title__line--4">Giá</h4>
                         <div class="content-shopby">
                             <div class="price_filter s-filter clear">
                                 <form action="#" method="GET">
@@ -100,7 +100,7 @@
                                                 <span>Giá :</span><input type="text" id="amount" readonly>
                                             </div>
                                             <div class="price--filter">
-                                                <a href="#">Lọc</a>
+                                                <button type="submit"><a>Lọc</a></button>
                                             </div>
                                         </div>
                                     </div>

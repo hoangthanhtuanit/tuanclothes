@@ -48,13 +48,13 @@ updated_at DATETIME COMMENT "Ngày cập nhật cuối"
 CREATE TABLE IF NOT EXISTS orders(
 id INT(11) PRIMARY KEY AUTO_INCREMENT,
 user_id INT(11) NULL COMMENT "Id của user trong trường hợp đã login và đặt hàng, là khóa ngoại liên kết với bảng users",
-full_name VARCHAR(255) COMMENT "Tên khách hàng",
-address VARCHAR(255) COMMENT "Địa chỉ khách hàng",
-phone_number INT(11) COMMENT "SĐT khách hàng",
-email VARCHAR(255) COMMENT "Email khách hàng",
+full_name VARCHAR(255) NOT NULL COMMENT "Tên khách hàng",
+address VARCHAR(255) NOT NULL COMMENT "Địa chỉ khách hàng",
+phone_number INT(11) NOT NULL COMMENT "SĐT khách hàng",
+email VARCHAR(255) NOT NULL COMMENT "Email khách hàng",
 note TEXT NULL COMMENT "Ghi chú từ khách hàng",
 price_total INT(11) COMMENT "Tổng giá trị đơn hàng",
-status TINYINT(2) COMMENT "Trạng thái đơn hàng: 0 - Chưa thành toán, 1 - Đã thành toán",
+status TINYINT(2) DEFAULT 0 COMMENT "Trạng thái đơn hàng: 0 - Chưa thành toán, 1 - Đã thành toán",
 created_at TIMESTAMP DEFAULT  CURRENT_TIMESTAMP COMMENT "Ngày tạo đơn",
 updated_at DATETIME COMMENT "Ngày cập nhật cuối"
 );

@@ -1,6 +1,7 @@
 <?php
 //File index.php gốc của ứng dụng
 session_start();
+require_once 'helpers/Helper.php';
 //set múi giờ việt nam
 date_default_timezone_set("Asia/Ho_Chi_Minh");
 //index.php?controller=category&action=index

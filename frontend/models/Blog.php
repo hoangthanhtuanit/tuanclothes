@@ -4,7 +4,7 @@ require_once 'models/Model.php';
 class Blog extends Model
 {
     public function getAllBlog(){
-        $sqlSelect = "SELECT * FROM blogs WHERE status = 1 ORDER BY RAND()";
+        $sqlSelect = "SELECT * FROM blogs WHERE status = 1";
         $objSelect = $this->connection->prepare($sqlSelect);
         $objSelect->execute();
         return $objSelect->fetchAll(PDO::FETCH_ASSOC);

@@ -7,9 +7,13 @@
                 <div class="col-xs-12">
                     <div class="bradcaump__inner">
                         <nav class="bradcaump-inner">
-                            <a class="breadcrumb-item" href="index.html">Trang chủ</a>
+                            <a class="breadcrumb-item" href="trang-chu.html">Trang chủ</a>
                             <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
-                            <a class="breadcrumb-item" href="product-grid.html">Sản phẩm</a>
+                            <?php
+                            $cat_name = Helper::getSlug($product['category_name']);
+                            $cat_link = 'danh-muc/' . $product['category_id'] . '/' . $cat_name . '.html';
+                            ?>
+                            <a class="breadcrumb-item" href="<?php echo $cat_link; ?>"><?php echo $product['category_name']; ?></a>
                             <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
                             <span class="breadcrumb-item active"><?php echo $product['name']; ?></span>
                         </nav>
@@ -279,12 +283,15 @@
         </div>
         <div class="row">
             <div class="product__wrap clearfix">
-                <?php foreach ($newProducts as $newProduct) : ?>
+                <?php foreach ($newProducts as $newProduct) :
+                    $new_pro_name = Helper::getSlug($newProduct['name']);
+                    $new_pro_link = 'san-pham/' . $newProduct['id'] . '/' . $new_pro_name . '.html';
+                    ?>
                 <!-- Start Single Product -->
                 <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
                     <div class="category">
                         <div class="ht__cat__thumb">
-                            <a href="index.php?controller=product&action=detail&id=<?php echo $newProduct['id']; ?>">
+                            <a href="<?php echo $new_pro_link; ?>">
                                 <img width="290" height="385" src="assets/uploads/products/<?php echo $newProduct['image']; ?>" alt="product images">
                             </a>
                         </div>
@@ -298,7 +305,7 @@
                             </ul>
                         </div>
                         <div class="fr__product__inner">
-                            <h4><a href="index.php?controller=product&action=detail&id=<?php echo $newProduct['id']; ?>"><?php echo $newProduct['name']; ?> </a></h4>
+                            <h4><a href="<?php echo $new_pro_link; ?>"><?php echo $newProduct['name']; ?> </a></h4>
                             <ul class="fr__pro__prize">
                                 <li class="old__prize">$<?php echo number_format($newProduct['price'], 0, '.', '.') ?></li>
                                 <li>$<?php echo number_format($newProduct['price']*(100-$newProduct['discount'])/100, 0, '.', '.') ?></li>

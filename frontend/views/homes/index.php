@@ -12,7 +12,7 @@
                                     <h2>TUAN CLOTHES</h2>
                                     <h1 style="font-size: 60px;">collection 2020</h1>
                                     <div class="cr__btn">
-                                        <a href="index.php?controller=product&action=showAll">Mua ngay</a>
+                                        <a href="danh-sach-san-pham.html">Mua ngay</a>
                                     </div>
                                 </div>
                             </div>
@@ -43,12 +43,15 @@
         <div class="htc__product__container">
             <div class="row">
                 <div class="product__list clearfix mt--30">
-                    <?php foreach ($newProducts as $newProduct) : ?>
+                    <?php foreach ($newProducts as $newProduct) :
+                        $pro_name = Helper::getSlug($newProduct['name']);
+                        $new_product_link = 'san-pham/' . $newProduct['id'] . '/' . $pro_name . '.html';
+                    ?>
                     <!-- Start Single Category -->
                     <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                         <div class="category">
                             <div class="ht__cat__thumb">
-                                <a href="index.php?controller=product&action=detail&id=<?php echo $newProduct['id']; ?>">
+                                <a href="<?php echo $new_product_link; ?>">
                                     <img width="290" height="385" src="assets/uploads/products/<?php echo $newProduct['image']; ?>" alt="product images">
                                 </a>
                             </div>
@@ -60,7 +63,7 @@
                                 </ul>
                             </div>
                             <div class="fr__product__inner">
-                                <h4><a href="index.php?controller=product&action=detail&id=<?php echo $newProduct['id']; ?>"><?php echo $newProduct['name']; ?></a></h4>
+                                <h4><a href="<?php echo $new_product_link; ?>"><?php echo $newProduct['name']; ?></a></h4>
                                 <ul class="fr__pro__prize">
                                     <li class="old__prize">$<?php echo number_format($newProduct['price'], 0, '.', '.') ?></li>
                                     <li>$<?php echo number_format($newProduct['price']*(100-$newProduct['discount'])/100, 0, '.', '.') ?></li>
@@ -88,12 +91,15 @@
         </div>
         <div class="row">
             <div class="product__wrap clearfix">
-                <?php foreach ($hotProducts as $hotProduct) : ?>
+                <?php foreach ($hotProducts as $hotProduct) :
+                    $pro_name = Helper::getSlug($hotProduct['name']);
+                    $hot_product_link = 'san-pham/' . $hotProduct['id'] . '/' . $pro_name . '.html';
+                    ?>
                 <!-- Start Single Category -->
                 <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                     <div class="category">
                         <div class="ht__cat__thumb">
-                            <a href="index.php?controller=product&action=detail&id=<?php echo $hotProduct['id']; ?>">
+                            <a href="<?php echo $hot_product_link; ?>">
                                 <img width="290" height="385" src="assets/uploads/products/<?php echo $hotProduct['image'] ?>" alt="product images">
                             </a>
                         </div>
@@ -105,7 +111,7 @@
                             </ul>
                         </div>
                         <div class="fr__product__inner">
-                            <h4><a href="index.php?controller=product&action=detail&id=<?php echo $hotProduct['id']; ?>"><?php echo $hotProduct['name']; ?></a></h4>
+                            <h4><a href="<?php echo $hot_product_link; ?>"><?php echo $hotProduct['name']; ?></a></h4>
                             <ul class="fr__pro__prize">
                                 <li class="old__prize">$<?php echo number_format($hotProduct['price'], 0, '.', '.') ?></li>
                                 <li>$<?php echo number_format($hotProduct['price']*(100-$hotProduct['discount'])/100, 0, '.', '.') ?></li>
@@ -193,17 +199,20 @@
             </div>
         </div>
         <div class="row mt--20">
-            <?php foreach ($topProducts as $topProduct) : ?>
+            <?php foreach ($topProducts as $topProduct) :
+                $pro_name = Helper::getSlug($topProduct['name']);
+                $top_product_link = 'san-pham/' . $topProduct['id'] . '/' . $pro_name . '.html';
+                ?>
             <!-- Start Single Product -->
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <div class="htc__best__product">
                     <div class="htc__best__pro__thumb">
-                        <a href="index.php?controller=product&action=detail&id=<?php echo $topProduct['id']; ?>">
+                        <a href="<?php echo $top_product_link; ?>">
                             <img width="180" height="239" src="assets/uploads/products/<?php echo $topProduct['image']; ?>" alt="small product">
                         </a>
                     </div>
                     <div class="htc__best__product__details">
-                        <h2><a href="index.php?controller=product&action=detail&id=<?php echo $topProduct['id']; ?>"><?php echo $topProduct['name']; ?></a></h2>
+                        <h2><a href="<?php echo $top_product_link; ?>"><?php echo $topProduct['name']; ?></a></h2>
                         <ul class="rating">
                             <li><i class="icon-star icons"></i></li>
                             <li><i class="icon-star icons"></i></li>
@@ -264,12 +273,15 @@
         </div>
         <div class="row">
             <div class="ht__blog__wrap clearfix">
-                <?php foreach ($blogs as $blog) : ?>
+                <?php foreach ($blogs as $blog) :
+                    $blog_title = Helper::getSlug($blog['title']);
+                    $blog_link = 'tin-tuc/' . $blog['id'] . '/' . $blog_title . '.html';
+                    ?>
                 <!-- Start Single Blog -->
                 <div class="col-md-6 col-lg-4 col-sm-6 col-xs-12">
                     <div class="blog">
                         <div class="blog__thumb">
-                            <a href="index.php?controller=blog&action=detail&id=<?php echo $blog['id']; ?>">
+                            <a href="<?php echo $blog_link; ?>">
                                 <img width="400" height="287" src="assets/uploads/blogs/<?php echo $blog['image']; ?>" alt="blog images">
                             </a>
                         </div>
@@ -277,10 +289,10 @@
                             <div class="bl__date">
                                 <span><?php echo date('d/m/Y', strtotime($blog['created_at'])) ?></span>
                             </div>
-                            <h2><a href="index.php?controller=blog&action=detail&id=<?php echo $blog['id']; ?>"><?php echo $blog['title'] ?></a></h2>
+                            <h2><a href="<?php echo $blog_link; ?>"><?php echo $blog['title'] ?></a></h2>
                             <p><?php echo $blog['summary']; ?></p>
                             <div class="blog__btn">
-                                <a href="index.php?controller=blog&action=detail&id=<?php echo $blog['id']; ?>">Xem thêm</a>
+                                <a href="<?php echo $blog_link; ?>">Xem thêm</a>
                             </div>
                         </div>
                     </div>

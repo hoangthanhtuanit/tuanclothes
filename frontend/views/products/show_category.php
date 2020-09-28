@@ -6,7 +6,7 @@
                 <div class="col-xs-12">
                     <div class="bradcaump__inner">
                         <nav class="bradcaump-inner">
-                            <a class="breadcrumb-item" href="index.php?controller=home&action=index">Trang chủ</a>
+                            <a class="breadcrumb-item" href="trang-chu.html">Trang chủ</a>
                             <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
                             <span class="breadcrumb-item active">Sản phẩm</span>
                         </nav>
@@ -45,12 +45,15 @@
                     <div class="row">
                         <div class="shop__grid__view__wrap">
                             <div role="tabpanel" id="grid-view" class="single-grid-view tab-pane fade in active clearfix">
-                                <?php foreach ($products as $product) : ?>
+                                <?php foreach ($products as $product) :
+                                    $pro_name = Helper::getSlug($product['name']);
+                                    $pro_link = 'san-pham/' . $product['id'] . '/' . $pro_name . '.html';
+                                    ?>
                                     <!-- Start Single Product -->
                                     <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                                         <div class="category">
                                             <div class="ht__cat__thumb">
-                                                <a href="index.php?controller=product&action=detail&id=<?php echo $product['id']; ?>">
+                                                <a href="<?php echo $pro_link; ?>">
                                                     <img width="290" height="360" src="assets/uploads/products/<?php echo $product['image']; ?>" alt="product images">
                                                 </a>
                                             </div>
@@ -62,7 +65,7 @@
                                                 </ul>
                                             </div>
                                             <div class="fr__product__inner">
-                                                <h4><a href="index.php?controller=product&action=detail&id=<?php echo $product['id']; ?>"><?php echo $product['name']; ?></a></h4>
+                                                <h4><a href="<?php echo $pro_link; ?>"><?php echo $product['name']; ?></a></h4>
                                                 <ul class="fr__pro__prize">
                                                     <li class="old__prize">$<?php echo number_format($product['price'], 0, '.', '.') ?></li>
                                                     <li>$<?php echo number_format($product['price']*(100-$product['discount'])/100, 0, '.', '.') ?></li>
@@ -113,8 +116,11 @@
                     <div class="htc__category">
                         <h4 class="title__line--4">Danh mục sản phẩm</h4>
                         <ul class="ht__cat__list">
-                            <?php foreach ($categories as $category) : ?>
-                                <li><a href="index.php?controller=product&action=showCategory&id=<?php echo $category['id']; ?>"><?php echo $category['name']; ?></a></li>
+                            <?php foreach ($categories as $category) :
+                                $cat_name = Helper::getSlug($category['name']);
+                                $cat_link = 'danh-muc/' . $category['id'] . '/' . $cat_name . '.html';
+                                ?>
+                                <li><a href="<?php echo $cat_link; ?>"><?php echo $category['name']; ?></a></li>
                             <?php endforeach; ?>
                         </ul>
                     </div>
@@ -123,16 +129,19 @@
                     <div class="htc__recent__product">
                         <h2 class="title__line--4">best seller</h2>
                         <div class="htc__recent__product__inner">
-                            <?php foreach ($topProducts as $topProduct) : ?>
+                            <?php foreach ($topProducts as $topProduct) :
+                                $top_pro_name = Helper::getSlug($topProduct['name']);
+                                $top_pro_link = 'san-pham/' . $topProduct['id'] . '/' . $top_pro_name . '.html';
+                                ?>
                                 <!-- Start Single Product -->
                                 <div class="htc__best__product">
                                     <div class="htc__best__pro__thumb">
-                                        <a href="index.php?controller=product&action=detail&id=<?php echo $topProduct['id']; ?>">
+                                        <a href="<?php echo $top_pro_link; ?>">
                                             <img width="99" height="119" src="assets/uploads/products/<?php echo $topProduct['image']; ?>" alt="small image">
                                         </a>
                                     </div>
                                     <div class="htc__best__product__details">
-                                        <h2><a href="index.php?controller=product&action=detail&id=<?php echo $topProduct['id']; ?>"><?php echo $topProduct['name']; ?></a></h2>
+                                        <h2><a href="<?php echo $top_pro_link; ?>"><?php echo $topProduct['name']; ?></a></h2>
                                         <ul class="rating">
                                             <li><i class="icon-star icons"></i></li>
                                             <li><i class="icon-star icons"></i></li>

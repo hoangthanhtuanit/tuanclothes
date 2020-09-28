@@ -1,0 +1,18 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME}% !-f
+RewriteCond %{REQUEST_FILENAME}% !-d
+#Cart
+RewriteRule ^gio-hang-cua-ban.html$ index.php?controller=cart&action=index
+RewriteRule ^xoa-san-pham/([0-9]+).html$ index.php?controller=cart&action=delete&id=$1
+
+#Home
+RewriteRule ^trang-chu.html$ index.php?controller=home&action=index
+#Blog
+RewriteRule ^tin-tuc.html$ index.php?controller=blog&action=index
+RewriteRule ^tin-tuc/([0-9]+)/([a-zA-Z0-9_-]+).html$ index.php?controller=blog&action=detail&id=$1 [QSA]
+#Contact
+RewriteRule ^lien-he.html$ index.php?controller=contact&action=index
+#Product
+RewriteRule ^danh-sach-san-pham.html$ index.php?controller=product&action=showAll
+RewriteRule ^danh-muc/([0-9]+)/([a-zA-Z0-9_-]+).html$ index.php?controller=product&action=showCategory&id=$1 [QSA]
+RewriteRule ^san-pham/([0-9]+)/([a-zA-Z0-9_-]+).html$ index.php?controller=product&action=detail&id=$1 [QSA]

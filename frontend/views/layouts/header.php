@@ -6,18 +6,21 @@
                 <div class="menumenu__container clearfix">
                     <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5">
                         <div class="logo">
-                            <a href="index.php?controller=home&action=index"><img src="assets/images/logo/4.png" alt="logo images"></a>
+                            <a href="trang-chu.html"><img src="assets/images/logo/4.png" alt="logo images"></a>
                         </div>
                     </div>
                     <div class="col-md-7 col-lg-8 col-sm-5 col-xs-3">
                         <nav class="main__menu__nav hidden-xs hidden-sm">
                             <ul class="main__menu">
-                                <li class="drop"><a href="index.php?controller=home&action=index">Trang chủ</a></li>
-                                <?php foreach ($categories as $category) : ?>
-                                    <li class="drop"><a href="index.php?controller=product&action=showCategory&id=<?php echo $category['id']; ?>"><?php echo $category['name']; ?></a></li>
+                                <li class="drop"><a href="trang-chu.html">Trang chủ</a></li>
+                                <?php foreach ($categories as $category) :
+                                        $cat_name = Helper::getSlug($category['name']);
+                                        $menu_link = 'danh-muc/' . $category['id'] . '/' . $cat_name . '.html';
+                                    ?>
+                                    <li class="drop"><a href="<?php echo $menu_link; ?>"><?php echo $category['name']; ?></a></li>
                                 <?php endforeach; ?>
-                                <li class="drop"><a href="index.php?controller=blog&action=index">blog</a></li>
-                                <li><a href="index.php?controller=contact&action=index">Liên hệ</a></li>
+                                <li class="drop"><a href="tin-tuc.html">blog</a></li>
+                                <li><a href="lien-he.html">Liên hệ</a></li>
                             </ul>
                         </nav>
 

@@ -7,7 +7,7 @@
                 <div class="col-xs-12">
                     <div class="bradcaump__inner">
                         <nav class="bradcaump-inner">
-                            <a class="breadcrumb-item" href="index.php?controller=home&action=index">Trang chủ</a>
+                            <a class="breadcrumb-item" href="trang-chu.html">Trang chủ</a>
                             <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
                             <span class="breadcrumb-item active">Liên hệ</span>
                         </nav>

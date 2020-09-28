@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
+    <base href="http://localhost/Tuan_MVC/frontend/" />
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?php echo $this->title_page; ?></title>

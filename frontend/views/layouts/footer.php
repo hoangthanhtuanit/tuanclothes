@@ -79,7 +79,7 @@
                 <div class="col-xs-12">
                     <div class="copyright__inner">
                         <p>Copyright © Tuan Clothes 2020. All right reserved.</p>
-                        <a href="#"><img src="assets/images/others/shape/paypol.png" alt="payment images"></a>
+                        <a href="#"><img src="../backend/assets/images/others/shape/paypol.png" alt="payment images"></a>
                     </div>
                 </div>
             </div>

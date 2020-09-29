@@ -1,6 +1,6 @@
 <!-- Start Bradcaump area -->
 <div class="ht__bradcaump__area"
-     style="background: rgba(0, 0, 0, 0) url(assets/images/bg/4.jpg) no-repeat scroll center center / cover ;">
+     style="background: rgba(0, 0, 0, 0) url(../backend/assets/images/bg/4.jpg) no-repeat scroll center center / cover ;">
     <div class="ht__bradcaump__wrap">
         <div class="container">
             <div class="row">
@@ -13,7 +13,8 @@
                             $cat_name = Helper::getSlug($product['category_name']);
                             $cat_link = 'danh-muc/' . $product['category_id'] . '/' . $cat_name . '.html';
                             ?>
-                            <a class="breadcrumb-item" href="<?php echo $cat_link; ?>"><?php echo $product['category_name']; ?></a>
+                            <a class="breadcrumb-item"
+                               href="<?php echo $cat_link; ?>"><?php echo $product['category_name']; ?></a>
                             <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
                             <span class="breadcrumb-item active"><?php echo $product['name']; ?></span>
                         </nav>
@@ -36,7 +37,9 @@
                         <div class="product__big__images">
                             <div class="portfolio-full-image tab-content">
                                 <div role="tabpanel" class="tab-pane fade in active" id="img-tab-1">
-                                    <img width="450" height="600" src="assets/uploads/products/<?php echo $product['image']; ?>" alt="full-image">
+                                    <img id="anh" width="450" height="600"
+                                         src="../backend/assets/uploads/products/<?php echo $product['image']; ?>"
+                                         alt="full-image">
                                 </div>
                             </div>
                         </div>
@@ -44,87 +47,86 @@
                     </div>
                 </div>
                 <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12 smt-40 xmt-40">
-                    <form action="" method="post">
-                        <div class="ht__product__dtl">
-                            <h2><?php echo $product['name']; ?></h2>
-                            <h6></h6>
-                            <ul class="rating">
-                                <li><i class="icon-star icons"></i></li>
-                                <li><i class="icon-star icons"></i></li>
-                                <li><i class="icon-star icons"></i></li>
-                                <li><i class="icon-star icons"></i></li>
-                                <li class="old"><i class="icon-star icons"></i></li>
-                            </ul>
-                            <ul class="pro__prize">
-                                <li class="old__prize">$<?php echo number_format($product['price'], 0, '.', '.') ?></li>
-                                <li>$<?php echo number_format($product['price']*(100-$product['discount'])/100, 0, '.', '.') ?></li>
-                            </ul>
-                            <p class="pro__info"><?php echo $product['summary']; ?></p>
-                            <div class="ht__pro__desc">
-                                <div class="sin__desc">
-                                    <p><span>Tình trạng:</span> In Stock</p>
-                                </div>
-                                <div class="sin__desc align--left">
-                                    <p><span>Màu: </span><?php echo $product['color']; ?></p>
-                                </div>
-                                <div class="sin__desc align--left">
-                                    <p><span>Kích thước: </span></p>
-                                    <select class="select__size">
-                                        <?php foreach ($sizes as $size) : ?>
-                                            <option value="<?php echo $size['size']; ?>"><?php echo $size['size']; ?></option>
-                                        <?php endforeach; ?>
-                                    </select>
-                                </div>
-                                <div class="sin__desc align--left quantity-area">
-                                    <p><span style="float: left;  margin: 7px 10px 0 0;">Số lượng: </span></p>
-                                    <div class="cart-quantity">
-                                        <div class="product-qty">
-                                            <div class="cart-quantity">
-                                                <div class="cart-plus-minus">
-                                                    <div class="dec qtybutton">-</div>
-                                                    <input type="text" value="1" name="qtybutton"
-                                                           class="cart-plus-minus-box">
-                                                    <div class="inc qtybutton">+</div>
-                                                </div>
+                    <div class="ht__product__dtl">
+                        <h2 id="ten"><?php echo $product['name']; ?></h2>
+                        <h6></h6>
+                        <ul class="rating">
+                            <li><i class="icon-star icons"></i></li>
+                            <li><i class="icon-star icons"></i></li>
+                            <li><i class="icon-star icons"></i></li>
+                            <li><i class="icon-star icons"></i></li>
+                            <li class="old"><i class="icon-star icons"></i></li>
+                        </ul>
+                        <ul class="pro__prize">
+                            <li id="gia" class="old__prize">$<?php echo number_format($product['price'], 0, '.', '.') ?></li>
+                            <li>
+                                $<?php echo number_format($product['price'] * (100 - $product['discount']) / 100, 0, '.', '.') ?></li>
+                        </ul>
+                        <p class="pro__info"><?php echo $product['summary']; ?></p>
+                        <div class="ht__pro__desc">
+                            <div class="sin__desc">
+                                <p><span>Tình trạng:</span> In Stock</p>
+                            </div>
+                            <div class="sin__desc align--left">
+                                <p><span>Màu: </span><?php echo $product['color']; ?></p>
+                            </div>
+                            <div class="sin__desc align--left">
+                                <p><span>Kích thước: </span></p>
+                                <select class="select__size" name="size" id="size">
+                                    <?php foreach ($sizes as $size) : ?>
+                                        <option value="<?php echo $size['size']; ?>"><?php echo $size['size']; ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </div>
+                            <div class="sin__desc align--left quantity-area">
+                                <p><span style="float: left;  margin: 7px 10px 0 0;">Số lượng: </span></p>
+                                <div class="cart-quantity">
+                                    <div class="product-qty">
+                                        <div class="cart-quantity">
+                                            <div class="cart-plus-minus">
+                                                <div class="dec qtybutton">-</div>
+                                                <input type="text" value="1" name="quantity"
+                                                       class="cart-plus-minus-box" id="quantity">
+                                                <div class="inc qtybutton">+</div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="sin__desc align--left">
-                                    <p><span>Danh mục:</span></p>
-                                    <ul class="pro__cat__list">
-                                        <li><a><?php echo $product['category_name']; ?></a></li>
-                                    </ul>
-                                </div>
-                                <div class="sin__desc align--left">
-                                    <p><span>Nhà phân phối:</span></p>
-                                    <ul class="pro__cat__list">
-                                        <li><a><?php echo $product['supplier_name']; ?></a></li>
-                                    </ul>
-                                </div>
+                            </div>
+                            <div class="sin__desc align--left">
+                                <p><span>Danh mục:</span></p>
+                                <ul class="pro__cat__list">
+                                    <li><a><?php echo $product['category_name']; ?></a></li>
+                                </ul>
+                            </div>
+                            <div class="sin__desc align--left">
+                                <p><span>Nhà phân phối:</span></p>
+                                <ul class="pro__cat__list">
+                                    <li><a><?php echo $product['supplier_name']; ?></a></li>
+                                </ul>
+                            </div>
 
-                                <div class="sin__desc product__share__link">
-                                    <p><span>Chia sẻ:</span></p>
-                                    <ul class="pro__share">
-                                        <li><a title="Twitter"><i class="icon-social-twitter icons"></i></a></li>
+                            <div class="sin__desc product__share__link">
+                                <p><span>Chia sẻ:</span></p>
+                                <ul class="pro__share">
+                                    <li><a title="Twitter"><i class="icon-social-twitter icons"></i></a></li>
 
-                                        <li><a title="Instagram"><i class="icon-social-instagram icons"></i></a></li>
+                                    <li><a title="Instagram"><i class="icon-social-instagram icons"></i></a></li>
 
-                                        <li><a title="Facebook"><i class="icon-social-facebook icons"></i></a></li>
+                                    <li><a title="Facebook"><i class="icon-social-facebook icons"></i></a></li>
 
-                                        <li><a title="Google"><i class="icon-social-google icons"></i></a></li>
+                                    <li><a title="Google"><i class="icon-social-google icons"></i></a></li>
 
-                                        <li><a title="Linkedin"><i class="icon-social-linkedin icons"></i></a></li>
+                                    <li><a title="Linkedin"><i class="icon-social-linkedin icons"></i></a></li>
 
-                                        <li><a title="Printerest"><i class="icon-social-pinterest icons"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="contact-btn">
-                                    <input type="submit" class="fv-btn" name="submit" value="Mua hàng">
-                                </div>
+                                    <li><a title="Printerest"><i class="icon-social-pinterest icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="contact-btn">
+                                <button data-id="<?php echo $product['id']; ?>" class="fv-btn add-to-cart">Mua hàng</button>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -143,7 +145,8 @@
                                                                           data-toggle="tab">description</a></li>
                     <li role="presentation" class="review"><a href="#review" role="tab" data-toggle="tab">review</a>
                     </li>
-                    <li role="presentation" class="shipping"><a href="#shipping" role="tab" data-toggle="tab">shipping</a>
+                    <li role="presentation" class="shipping"><a href="#shipping" role="tab"
+                                                                data-toggle="tab">shipping</a>
                     </li>
                 </ul>
                 <!-- End List And Grid View -->
@@ -287,33 +290,37 @@
                     $new_pro_name = Helper::getSlug($newProduct['name']);
                     $new_pro_link = 'san-pham/' . $newProduct['id'] . '/' . $new_pro_name . '.html';
                     ?>
-                <!-- Start Single Product -->
-                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
-                    <div class="category">
-                        <div class="ht__cat__thumb">
-                            <a href="<?php echo $new_pro_link; ?>">
-                                <img width="290" height="385" src="assets/uploads/products/<?php echo $newProduct['image']; ?>" alt="product images">
-                            </a>
-                        </div>
-                        <div class="fr__hover__info">
-                            <ul class="product__action">
-                                <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
+                    <!-- Start Single Product -->
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                        <div class="category">
+                            <div class="ht__cat__thumb">
+                                <a href="<?php echo $new_pro_link; ?>">
+                                    <img width="290" height="385"
+                                         src="assets/uploads/products/<?php echo $newProduct['image']; ?>"
+                                         alt="product images">
+                                </a>
+                            </div>
+                            <div class="fr__hover__info">
+                                <ul class="product__action">
+                                    <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
 
-                                <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
+                                    <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
 
-                                <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="fr__product__inner">
-                            <h4><a href="<?php echo $new_pro_link; ?>"><?php echo $newProduct['name']; ?> </a></h4>
-                            <ul class="fr__pro__prize">
-                                <li class="old__prize">$<?php echo number_format($newProduct['price'], 0, '.', '.') ?></li>
-                                <li>$<?php echo number_format($newProduct['price']*(100-$newProduct['discount'])/100, 0, '.', '.') ?></li>
-                            </ul>
+                                    <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="fr__product__inner">
+                                <h4><a href="<?php echo $new_pro_link; ?>"><?php echo $newProduct['name']; ?> </a></h4>
+                                <ul class="fr__pro__prize">
+                                    <li class="old__prize">
+                                        $<?php echo number_format($newProduct['price'], 0, '.', '.') ?></li>
+                                    <li>
+                                        $<?php echo number_format($newProduct['price'] * (100 - $newProduct['discount']) / 100, 0, '.', '.') ?></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- End Single Product -->
+                    <!-- End Single Product -->
                 <?php endforeach; ?>
             </div>
         </div>
@@ -327,14 +334,14 @@
             <div class="col-md-12">
                 <div class="ht__brand__inner">
                     <ul class="brand__list owl-carousel clearfix">
-                        <li><a><img src="assets/images/brand/1.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/2.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/3.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/4.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/5.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/5.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/1.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/2.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/1.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/2.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/3.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/4.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/5.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/5.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/1.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/2.png" alt="brand images"></a></li>
                     </ul>
                 </div>
             </div>

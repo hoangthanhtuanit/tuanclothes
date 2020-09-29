@@ -2,9 +2,9 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME}% !-f
 RewriteCond %{REQUEST_FILENAME}% !-d
 #Cart
-RewriteRule ^gio-hang-cua-ban.html$ index.php?controller=cart&action=index
-RewriteRule ^xoa-san-pham/([0-9]+).html$ index.php?controller=cart&action=delete&id=$1
-
+RewriteRule ^gio-hang.html$ index.php?controller=cart&action=index
+RewriteRule ^them-gio-hang.html$ index.php?controller=cart&action=addCart
+RewriteRule ^xoa-san-pham/([0-9]+).html$ index.php?controller=cart&action=delete&id=$1 [QSA]
 #Home
 RewriteRule ^trang-chu.html$ index.php?controller=home&action=index
 #Blog

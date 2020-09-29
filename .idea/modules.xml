@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://F:/Devpro/php441/php44/Day26_MVC_OOP_Build_Web_Part_7/.idea/Day26_MVC_OOP_Build_Web_Part_7.iml" filepath="F:/Devpro/php441/php44/Day26_MVC_OOP_Build_Web_Part_7/.idea/Day26_MVC_OOP_Build_Web_Part_7.iml" />
-      <module fileurl="file://$USER_HOME$/Desktop/PHP0520E/Day32_Project_Part8_Frontend_Cart_CRUD_Git_Teamwork/.idea/Day32_Project_Part8_Frontend_Cart_CRUD_Git_Teamwork.iml" filepath="$USER_HOME$/Desktop/PHP0520E/Day32_Project_Part8_Frontend_Cart_CRUD_Git_Teamwork/.idea/Day32_Project_Part8_Frontend_Cart_CRUD_Git_Teamwork.iml" />
-      <module fileurl="file://$USER_HOME$/Desktop/PHP0520E/Day33_Project_Part9_Frontend_Payment/.idea/Day33_Project_Part9_Frontend_Payment.iml" filepath="$USER_HOME$/Desktop/PHP0520E/Day33_Project_Part9_Frontend_Payment/.idea/Day33_Project_Part9_Frontend_Payment.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/PHP0320E/Day36_Demo_Project_Frontend_Part3_Payment_Teamwork_Laravel/.idea/Day36_Demo_Project_Frontend_Part3_Payment_Teamwork_Laravel.iml" filepath="$USER_HOME$/Desktop/PHP0320E/Day36_Demo_Project_Frontend_Part3_Payment_Teamwork_Laravel/.idea/Day36_Demo_Project_Frontend_Part3_Payment_Teamwork_Laravel.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Tuan_MVC.iml" filepath="$PROJECT_DIR$/.idea/Tuan_MVC.iml" />
     </modules>
   </component>

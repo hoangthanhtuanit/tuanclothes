@@ -124,7 +124,7 @@
                     <div class="order-details__item">
                         <div class="single-item">
                             <div class="single-item__thumb">
-                                <img src="assets/images/cart/1.png" alt="ordered item">
+                                <img src="../backend/assets/images/cart/1.png" alt="ordered item">
                             </div>
                             <div class="single-item__content">
                                 <a href="#">Santa fe jacket for men</a>
@@ -136,7 +136,7 @@
                         </div>
                         <div class="single-item">
                             <div class="single-item__thumb">
-                                <img src="assets/images/cart/2.png" alt="ordered item">
+                                <img src="../backend/assets/images/cart/2.png" alt="ordered item">
                             </div>
                             <div class="single-item__content">
                                 <a href="#">Santa fe jacket for men</a>
@@ -174,14 +174,14 @@
             <div class="col-md-12">
                 <div class="ht__brand__inner">
                     <ul class="brand__list owl-carousel clearfix">
-                        <li><a><img src="assets/images/brand/1.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/2.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/3.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/4.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/5.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/5.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/1.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/2.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/1.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/2.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/3.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/4.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/5.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/5.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/1.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/2.png" alt="brand images"></a></li>
                     </ul>
                 </div>
             </div>

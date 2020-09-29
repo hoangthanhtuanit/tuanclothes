@@ -38,7 +38,7 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td class="product-thumbnail"><a href="#"><img src="assets/images/product-2/cart-img/1.jpg"
+                                <td class="product-thumbnail"><a href="#"><img src="../backend/assets/images/product-2/cart-img/1.jpg"
                                                                                alt="product img"/></a></td>
                                 <td class="product-name"><a href="#">New Dress For Sunday</a>
                                     <ul class="pro__prize">
@@ -116,14 +116,14 @@
             <div class="col-md-12">
                 <div class="ht__brand__inner">
                     <ul class="brand__list owl-carousel clearfix">
-                        <li><a><img src="assets/images/brand/1.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/2.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/3.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/4.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/5.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/5.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/1.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/2.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/1.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/2.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/3.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/4.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/5.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/5.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/1.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/2.png" alt="brand images"></a></li>
                     </ul>
                 </div>
             </div>
@@ -134,14 +134,14 @@
 <!-- Start Banner Area -->
 <div class="htc__banner__area">
     <ul class="banner__list owl-carousel owl-theme clearfix">
-        <li><a><img src="assets/images/banner/bn-3/1.jpg" alt="banner images"></a></li>
-        <li><a><img src="assets/images/banner/bn-3/2.jpg" alt="banner images"></a></li>
-        <li><a><img src="assets/images/banner/bn-3/3.jpg" alt="banner images"></a></li>
-        <li><a><img src="assets/images/banner/bn-3/4.jpg" alt="banner images"></a></li>
-        <li><a><img src="assets/images/banner/bn-3/5.jpg" alt="banner images"></a></li>
-        <li><a><img src="assets/images/banner/bn-3/6.jpg" alt="banner images"></a></li>
-        <li><a><img src="assets/images/banner/bn-3/1.jpg" alt="banner images"></a></li>
-        <li><a><img src="assets/images/banner/bn-3/2.jpg" alt="banner images"></a></li>
+        <li><a><img src="../backend/assets/images/banner/bn-3/1.jpg" alt="banner images"></a></li>
+        <li><a><img src="../backend/assets/images/banner/bn-3/2.jpg" alt="banner images"></a></li>
+        <li><a><img src="../backend/assets/images/banner/bn-3/3.jpg" alt="banner images"></a></li>
+        <li><a><img src="../backend/assets/images/banner/bn-3/4.jpg" alt="banner images"></a></li>
+        <li><a><img src="../backend/assets/images/banner/bn-3/5.jpg" alt="banner images"></a></li>
+        <li><a><img src="../backend/assets/images/banner/bn-3/6.jpg" alt="banner images"></a></li>
+        <li><a><img src="../backend/assets/images/banner/bn-3/1.jpg" alt="banner images"></a></li>
+        <li><a><img src="../backend/assets/images/banner/bn-3/2.jpg" alt="banner images"></a></li>
     </ul>
 </div>
 <!-- End Banner Area -->

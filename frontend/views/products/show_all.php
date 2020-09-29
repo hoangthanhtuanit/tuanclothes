@@ -54,7 +54,7 @@
                                     <div class="category">
                                         <div class="ht__cat__thumb">
                                             <a href="<?php echo $pro_link; ?>">
-                                                <img width="290" height="360" src="assets/uploads/products/<?php echo $product['image']; ?>" alt="product images">
+                                                <img width="290" height="360" src="../backend/assets/uploads/products/<?php echo $product['image']; ?>" alt="product images">
                                             </a>
                                         </div>
                                         <div class="fr__hover__info">
@@ -137,7 +137,7 @@
                             <div class="htc__best__product">
                                 <div class="htc__best__pro__thumb">
                                     <a href="<?php echo $hot_pro_link; ?>">
-                                        <img width="99" height="119" src="assets/uploads/products/<?php echo $topProduct['image']; ?>" alt="small image">
+                                        <img width="99" height="119" src="../backend/assets/uploads/products/<?php echo $topProduct['image']; ?>" alt="small image">
                                     </a>
                                 </div>
                                 <div class="htc__best__product__details">
@@ -173,14 +173,14 @@
             <div class="col-md-12">
                 <div class="ht__brand__inner">
                     <ul class="brand__list owl-carousel clearfix">
-                        <li><a href="#"><img src="assets/images/brand/1.png" alt="brand images"></a></li>
-                        <li><a href="#"><img src="assets/images/brand/2.png" alt="brand images"></a></li>
-                        <li><a href="#"><img src="assets/images/brand/3.png" alt="brand images"></a></li>
-                        <li><a href="#"><img src="assets/images/brand/4.png" alt="brand images"></a></li>
-                        <li><a href="#"><img src="assets/images/brand/5.png" alt="brand images"></a></li>
-                        <li><a href="#"><img src="assets/images/brand/5.png" alt="brand images"></a></li>
-                        <li><a href="#"><img src="assets/images/brand/1.png" alt="brand images"></a></li>
-                        <li><a href="#"><img src="assets/images/brand/2.png" alt="brand images"></a></li>
+                        <li><a href="#"><img src="../backend/assets/images/brand/1.png" alt="brand images"></a></li>
+                        <li><a href="#"><img src="../backend/assets/images/brand/2.png" alt="brand images"></a></li>
+                        <li><a href="#"><img src="../backend/assets/images/brand/3.png" alt="brand images"></a></li>
+                        <li><a href="#"><img src="../backend/assets/images/brand/4.png" alt="brand images"></a></li>
+                        <li><a href="#"><img src="../backend/assets/images/brand/5.png" alt="brand images"></a></li>
+                        <li><a href="#"><img src="../backend/assets/images/brand/5.png" alt="brand images"></a></li>
+                        <li><a href="#"><img src="../backend/assets/images/brand/1.png" alt="brand images"></a></li>
+                        <li><a href="#"><img src="../backend/assets/images/brand/2.png" alt="brand images"></a></li>
                     </ul>
                 </div>
             </div>
@@ -191,14 +191,14 @@
 <!-- Start Banner Area -->
 <div class="htc__banner__area">
     <ul class="banner__list owl-carousel owl-theme clearfix">
-        <li><a href="product-details.html"><img src="assets/images/banner/bn-3/1.jpg" alt="banner images"></a></li>
-        <li><a href="product-details.html"><img src="assets/images/banner/bn-3/2.jpg" alt="banner images"></a></li>
-        <li><a href="product-details.html"><img src="assets/images/banner/bn-3/3.jpg" alt="banner images"></a></li>
-        <li><a href="product-details.html"><img src="assets/images/banner/bn-3/4.jpg" alt="banner images"></a></li>
-        <li><a href="product-details.html"><img src="assets/images/banner/bn-3/5.jpg" alt="banner images"></a></li>
-        <li><a href="product-details.html"><img src="assets/images/banner/bn-3/6.jpg" alt="banner images"></a></li>
-        <li><a href="product-details.html"><img src="assets/images/banner/bn-3/1.jpg" alt="banner images"></a></li>
-        <li><a href="product-details.html"><img src="assets/images/banner/bn-3/2.jpg" alt="banner images"></a></li>
+        <li><a><img src="../backend/assets/images/banner/bn-3/1.jpg" alt="banner images"></a></li>
+        <li><a><img src="../backend/assets/images/banner/bn-3/2.jpg" alt="banner images"></a></li>
+        <li><a><img src="../backend/assets/images/banner/bn-3/3.jpg" alt="banner images"></a></li>
+        <li><a><img src="../backend/assets/images/banner/bn-3/4.jpg" alt="banner images"></a></li>
+        <li><a><img src="../backend/assets/images/banner/bn-3/5.jpg" alt="banner images"></a></li>
+        <li><a><img src="../backend/assets/images/banner/bn-3/6.jpg" alt="banner images"></a></li>
+        <li><a><img src="../backend/assets/images/banner/bn-3/1.jpg" alt="banner images"></a></li>
+        <li><a><img src="../backend/assets/images/banner/bn-3/2.jpg" alt="banner images"></a></li>
     </ul>
 </div>
 <!-- End Banner Area -->

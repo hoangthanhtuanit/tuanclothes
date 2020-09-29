@@ -19,7 +19,7 @@
                         </div>
                         <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
                             <div class="slide__thumb">
-                                <img width="628" height="300" src="assets/uploads/banners/<?php echo $banner['image']; ?>" alt="slider images">
+                                <img width="628" height="300" src="../backend/assets/uploads/banners/<?php echo $banner['image']; ?>" alt="slider images">
                             </div>
                         </div>
                     </div>
@@ -46,27 +46,28 @@
                     <?php foreach ($newProducts as $newProduct) :
                         $pro_name = Helper::getSlug($newProduct['name']);
                         $new_product_link = 'san-pham/' . $newProduct['id'] . '/' . $pro_name . '.html';
+                        $add_link = 'them-gio-hang.html';
                     ?>
                     <!-- Start Single Category -->
                     <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                         <div class="category">
                             <div class="ht__cat__thumb">
                                 <a href="<?php echo $new_product_link; ?>">
-                                    <img width="290" height="385" src="assets/uploads/products/<?php echo $newProduct['image']; ?>" alt="product images">
+                                    <img id="anh" width="290" height="385" src="../backend/assets/uploads/products/<?php echo $newProduct['image']; ?>" alt="product images">
                                 </a>
                             </div>
                             <div class="fr__hover__info">
                                 <ul class="product__action">
                                     <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
 
-                                    <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
+                                    <li class="add-to-cart" data-id="<?php echo $newProduct['id']; ?>"><a href="#"><i class="icon-handbag icons"></i></a></li>
                                 </ul>
                             </div>
                             <div class="fr__product__inner">
-                                <h4><a href="<?php echo $new_product_link; ?>"><?php echo $newProduct['name']; ?></a></h4>
+                                <h4 id="ten"><a href="<?php echo $new_product_link; ?>"><?php echo $newProduct['name']; ?></a></h4>
                                 <ul class="fr__pro__prize">
                                     <li class="old__prize">$<?php echo number_format($newProduct['price'], 0, '.', '.') ?></li>
-                                    <li>$<?php echo number_format($newProduct['price']*(100-$newProduct['discount'])/100, 0, '.', '.') ?></li>
+                                    <li id="gia">$<?php echo number_format($newProduct['price']*(100-$newProduct['discount'])/100, 0, '.', '.') ?></li>
                                 </ul>
                             </div>
                         </div>
@@ -100,7 +101,7 @@
                     <div class="category">
                         <div class="ht__cat__thumb">
                             <a href="<?php echo $hot_product_link; ?>">
-                                <img width="290" height="385" src="assets/uploads/products/<?php echo $hotProduct['image'] ?>" alt="product images">
+                                <img width="290" height="385" src="../backend/assets/uploads/products/<?php echo $hotProduct['image'] ?>" alt="product images">
                             </a>
                         </div>
                         <div class="fr__hover__info">
@@ -135,7 +136,7 @@
                 <div class="col-lg-6 col-md-6 single__tes">
                     <div class="testimonial">
                         <div class="testimonial__thumb">
-                            <img src="assets/images/test/client/1.png" alt="testimonial images">
+                            <img src="../backend/assets/images/test/client/1.png" alt="testimonial images">
                         </div>
                         <div class="testimonial__details">
                             <h4><a href="#">Mr.Mike Band</a></h4>
@@ -148,7 +149,7 @@
                 <div class="col-lg-6 col-md-6 single__tes">
                     <div class="testimonial">
                         <div class="testimonial__thumb">
-                            <img src="assets/images/test/client/2.png" alt="testimonial images">
+                            <img src="../backend/assets/images/test/client/2.png" alt="testimonial images">
                         </div>
                         <div class="testimonial__details">
                             <h4><a href="#">Ms.Lucy Barton</a></h4>
@@ -161,7 +162,7 @@
                 <div class="col-lg-6 col-md-6 single__tes">
                     <div class="testimonial">
                         <div class="testimonial__thumb">
-                            <img src="assets/images/test/client/1.png" alt="testimonial images">
+                            <img src="../backend/assets/images/test/client/1.png" alt="testimonial images">
                         </div>
                         <div class="testimonial__details">
                             <h4><a href="#">Ms.Lucy Barton</a></h4>
@@ -174,7 +175,7 @@
                 <div class="col-lg-6 col-md-6 single__tes">
                     <div class="testimonial">
                         <div class="testimonial__thumb">
-                            <img src="assets/images/test/client/2.png" alt="testimonial images">
+                            <img src="../backend/assets/images/test/client/2.png" alt="testimonial images">
                         </div>
                         <div class="testimonial__details">
                             <h4><a href="#">Ms.Lucy Barton</a></h4>
@@ -208,7 +209,7 @@
                 <div class="htc__best__product">
                     <div class="htc__best__pro__thumb">
                         <a href="<?php echo $top_product_link; ?>">
-                            <img width="180" height="239" src="assets/uploads/products/<?php echo $topProduct['image']; ?>" alt="small product">
+                            <img width="180" height="239" src="../backend/assets/uploads/products/<?php echo $topProduct['image']; ?>" alt="small product">
                         </a>
                     </div>
                     <div class="htc__best__product__details">
@@ -246,14 +247,14 @@
             <div class="col-md-12">
                 <div class="ht__brand__inner">
                     <ul class="brand__list owl-carousel clearfix">
-                        <li><a><img src="assets/images/brand/1.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/2.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/3.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/4.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/5.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/5.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/1.png" alt="brand images"></a></li>
-                        <li><a><img src="assets/images/brand/2.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/1.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/2.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/3.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/4.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/5.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/5.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/1.png" alt="brand images"></a></li>
+                        <li><a><img src="../backend/assets/images/brand/2.png" alt="brand images"></a></li>
                     </ul>
                 </div>
             </div>
@@ -282,7 +283,7 @@
                     <div class="blog">
                         <div class="blog__thumb">
                             <a href="<?php echo $blog_link; ?>">
-                                <img width="400" height="287" src="assets/uploads/blogs/<?php echo $blog['image']; ?>" alt="blog images">
+                                <img width="400" height="287" src="../backend/assets/uploads/blogs/<?php echo $blog['image']; ?>" alt="blog images">
                             </a>
                         </div>
                         <div class="blog__details text-justify">

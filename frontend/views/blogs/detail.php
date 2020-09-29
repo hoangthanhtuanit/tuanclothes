@@ -24,7 +24,7 @@
             <div class="col-xs-12 col-lg-12">
                 <div class="htc__blog__details__wrap">
                     <div class="ht__bl__thumb">
-                        <img width="870" height="600" src="assets/uploads/blogs/<?php echo $blog['image']; ?>" alt="blog images">
+                        <img width="870" height="600" src="../backend/assets/uploads/blogs/<?php echo $blog['image']; ?>" alt="blog images">
                     </div>
                     <div class="blog__details">
                         <h2><?php echo $blog['title'] ?></h2>
@@ -39,7 +39,7 @@
                             <!-- Start Single Comment -->
                             <div class="comment">
                                 <div class="comment__thumb">
-                                    <img src="assets/images/comment/1.png" alt="comment images">
+                                    <img src="../backend/assets/images/comment/1.png" alt="comment images">
                                 </div>
                                 <div class="ht__comment__details">
                                     <div class="ht__comment__title">
@@ -56,7 +56,7 @@
                             <!-- Start Single Comment -->
                             <div class="comment comment--reply">
                                 <div class="comment__thumb">
-                                    <img src="assets/images/comment/2.png" alt="comment images">
+                                    <img src="../backend/assets/images/comment/2.png" alt="comment images">
                                 </div>
                                 <div class="ht__comment__details">
                                     <div class="ht__comment__title">
@@ -73,7 +73,7 @@
                             <!-- Start Single Comment -->
                             <div class="comment">
                                 <div class="comment__thumb">
-                                    <img src="assets/images/comment/3.png" alt="comment images">
+                                    <img src="../backend/assets/images/comment/3.png" alt="comment images">
                                 </div>
                                 <div class="ht__comment__details">
                                     <div class="ht__comment__title">

@@ -30,7 +30,7 @@
                         <div class="blog">
                             <div class="blog__thumb">
                                 <a href="<?php echo $blog_link; ?>">
-                                    <img width="400" height="287" src="assets/uploads/blogs/<?php echo $blog['image']; ?>" alt="blog images">
+                                    <img width="400" height="287" src="../backend/assets/uploads/blogs/<?php echo $blog['image']; ?>" alt="blog images">
                                 </a>
                             </div>
                             <div class="blog__details text-justify">

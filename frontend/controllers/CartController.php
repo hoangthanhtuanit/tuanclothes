@@ -5,7 +5,22 @@ require_once 'models/Product.php';
 
 class CartController extends Controller
 {
-    public function index(){
+    public function index() {
+        if (isset($_POST['submit'])) {
+            foreach ($_SESSION['cart'] AS $product_id => $cart) {
+                if ($_POST[$product_id] < 0) {
+                    Helper::flash('error', 'Số lượng phải > 0');
+                    header("Location: gio-hang.html");
+                    exit();
+                }
+            }
+
+            foreach ($_SESSION['cart'] AS $product_id => $cart) {
+                $_SESSION['cart'][$product_id]['quantity']
+                    = $_POST[$product_id];
+            }
+            Helper::flash('success', 'Cập nhật giỏ hàng thành công');
+        }
         $categoryModel = new Category();
         $categories = $categoryModel->getAllCategory();
         $this->title_page = 'Giỏ hàng';
@@ -15,27 +30,37 @@ class CartController extends Controller
         require_once 'views/layouts/main.php';
     }
 
-    public function addCart(){
-        $product_id = $_GET['id'];
-        $product_model = new Product();
-        $product = $product_model->getProductById($product_id);
-        $cart = [
-            'name' => $product['title'],
-            'price' => $product['price'],
-            'avatar' => $product['avatar'],
-            'quantity' => 1
-        ];
-        if (!isset($_SESSION['cart'])) {
-            $_SESSION['cart'][$product_id] = $cart;
-        } else {
-            if (array_key_exists($product_id, $_SESSION['cart'])) {
-                $_SESSION['cart'][$product_id]['quantity']++;
+    public function addCart() {
+        if (isset($_POST['id']) && isset($_POST['quantity']) && $_POST['size']) {
+            $id =  $_POST['id'];
+            $size = isset($_POST['size']) ? $_POST['size'] : 'M';
+            $quantity = isset($_POST['quantity']) ? $_POST['quantity'] : 1;
+            $productModel = new Product();
+            $product = $productModel->getProductById($id);
+            $cart[$id] = [
+                'name' => $product['name'],
+                'size' => $size,
+                'quantity' => $quantity,
+                'price' => $product['price'],
+                'discount' => $product['discount'],
+                'image' => $product['image']
+            ];
+            if (!isset($_SESSION['cart'])) {
+                $_SESSION['cart'][$id] = $cart;
             } else {
-                $_SESSION['cart'][$product_id] = $cart;
+                if (!array_key_exists($id, $_SESSION['cart'])) {
+                    $_SESSION['cart'][$id] = $cart;
+                } else {
+                    $_SESSION['cart'][$id] = [
+                        'name' => $product['name'],
+                        'size' => $size,
+                        'quantity' => (int)$_SESSION['cart'][$id]['quantity'] + $quantity,
+                        'price' => $product['price'],
+                        'discount' => $product['discount'],
+                        'image' => $product['image']
+                    ];
+                }
             }
         }
-        echo "<pre>";
-        print_r($_SESSION['cart']);
-        echo "</pre>";
     }
 }

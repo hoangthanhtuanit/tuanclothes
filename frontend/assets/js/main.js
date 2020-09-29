@@ -444,14 +444,9 @@
     -------------------------------------------------*/
     $('.add-to-cart').click(function () {
         var id = $(this).attr('data-id');
-        var size = 'S';
-        var quantity = 1;
-        if ($('#quantity').val() != null) {
-            quantity = $('#quantity').val();
-        }
-        if ($('#size').val() != null) {
-            size = $('#size').val();
-        }
+        var size = $('#size').val();
+        var quantity = $('#quantity').val();
+
         $.post(
             "index.php?controller=cart&action=addCart",
             {'id': id, 'size': size, 'quantity': quantity},

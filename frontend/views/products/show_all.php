@@ -1,5 +1,5 @@
 <!-- Start Bradcaump area -->
-<div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(assets/images/bg/4.jpg) no-repeat scroll center center / cover ;">
+<div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url(../backend/assets/images/bg/4.jpg) no-repeat scroll center center / cover ;">
     <div class="ht__bradcaump__wrap">
         <div class="container">
             <div class="row">
@@ -46,8 +46,9 @@
                         <div class="shop__grid__view__wrap">
                             <div role="tabpanel" id="grid-view" class="single-grid-view tab-pane fade in active clearfix">
                                 <?php foreach ($products as $product) :
-                                    $pro_name = Helper::getSlug($pro_name);
+                                    $pro_name = Helper::getSlug($product['name']);
                                     $pro_link = 'san-pham/' . $product['id'] . '/' . $pro_name . '.html';
+                                    $add_link = 'them-gio-hang.html';
                                     ?>
                                 <!-- Start Single Product -->
                                 <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
@@ -61,7 +62,7 @@
                                             <ul class="product__action">
                                                 <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
 
-                                                <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
+                                                <li class="add-to-cart" data-id="<?php echo $product['id']; ?>"><a href="#"><i class="icon-handbag icons"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="fr__product__inner">

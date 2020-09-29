@@ -349,3 +349,32 @@
     </div>
 </div>
 <!-- End Banner Area -->
+<!-- Modal -->
+<div class="modal fade" id="showCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Thông tin mua hàng</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="" class="thumbnail">
+                            <img id="showCartImg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-6 ml-auto">
+                        <p>Tên sản phẩm: <span id="showCartName"></span></p><br>
+                        <p>Giá sản phẩm: <span id="showCartPrice"></span></p><br>
+                        <p>Số lượng: <span id="showCartQty"></span></p><br>
+                        <p>Kích thước: <span id="showCartSize"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -53,7 +53,7 @@
                         <div class="category">
                             <div class="ht__cat__thumb">
                                 <a href="<?php echo $new_product_link; ?>">
-                                    <img id="anh" width="290" height="385" src="../backend/assets/uploads/products/<?php echo $newProduct['image']; ?>" alt="product images">
+                                    <img width="290" height="385" src="../backend/assets/uploads/products/<?php echo $newProduct['image']; ?>" alt="product images">
                                 </a>
                             </div>
                             <div class="fr__hover__info">
@@ -64,10 +64,10 @@
                                 </ul>
                             </div>
                             <div class="fr__product__inner">
-                                <h4 id="ten"><a href="<?php echo $new_product_link; ?>"><?php echo $newProduct['name']; ?></a></h4>
+                                <h4><a href="<?php echo $new_product_link; ?>"><?php echo $newProduct['name']; ?></a></h4>
                                 <ul class="fr__pro__prize">
                                     <li class="old__prize">$<?php echo number_format($newProduct['price'], 0, '.', '.') ?></li>
-                                    <li id="gia">$<?php echo number_format($newProduct['price']*(100-$newProduct['discount'])/100, 0, '.', '.') ?></li>
+                                    <li>$<?php echo number_format($newProduct['price']*(100-$newProduct['discount'])/100, 0, '.', '.') ?></li>
                                 </ul>
                             </div>
                         </div>

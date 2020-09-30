@@ -464,17 +464,31 @@
                 'quantity': quantity
             },
             success: function (result) {
-                $('.ajax-message').html('Thêm vào giỏ hàng thành công');
-                $('.ajax-message').addClass('ajax-message-active');
-                setTimeout(function () {
-                    $('.ajax-message').removeClass('ajax-message-active');
-                }, 3000);
                 var cart_total = $('.cart-amount').text();
                 cart_total++;
                 $('.cart-amount').text(cart_total);
                 $('.cart-amount-mobile').text(cart_total);
             }
         });
+    });
+    /*-----------------------------------------------
+        223 Delete From Cart
+    -------------------------------------------------*/
+    $('.delete-cart').click(function () {
+        var product_id = $(this).attr('data-id');
+        $.ajax({
+            url: "index.php?controller=cart&action=delete&id=" + product_id,
+            method: "post",
+            data: {
+                'product_id': product_id 
+            },
+            success: function (result) {
+            }
+        });
+    });
+
+    $('.refresh-page').click(function () {
+        location.reload();
     });
 })(jQuery);
 

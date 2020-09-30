@@ -1,6 +1,6 @@
 <!-- Start Bradcaump area -->
 <div class="ht__bradcaump__area"
-     style="background: rgba(0, 0, 0, 0) url(assets/images/bg/4.jpg) no-repeat scroll center center / cover ;">
+     style="background: rgba(0, 0, 0, 0) url(../backend/assets/images/bg/4.jpg) no-repeat scroll center center / cover ;">
     <div class="ht__bradcaump__wrap">
         <div class="container">
             <div class="row">
@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
                 <div class="map-contacts--2">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7447.595052011125!2d105.774732!3d21.040786!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x70d71b071349fa94!2zQ8O0bmcgVHkgQ-G7lSBQaOG6p24gRGV2cHJvIFZp4buHdCBOYW0!5e0!3m2!1svi!2sus!4v1600856607338!5m2!1svi!2sus" width="650" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7447.595052011125!2d105.774732!3d21.040786!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x70d71b071349fa94!2zQ8O0bmcgVHkgQ-G7lSBQaOG6p24gRGV2cHJvIFZp4buHdCBOYW0!5e0!3m2!1svi!2sus!4v1600856607338!5m2!1svi!2sus" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
             <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">

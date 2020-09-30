@@ -1,10 +1,7 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME}% !-f
 RewriteCond %{REQUEST_FILENAME}% !-d
-#Cart
-RewriteRule ^gio-hang.html$ index.php?controller=cart&action=index
-RewriteRule ^them-gio-hang.html$ index.php?controller=cart&action=addCart
-RewriteRule ^xoa-san-pham/([0-9]+).html$ index.php?controller=cart&action=delete&id=$1 [QSA]
+
 #Home
 RewriteRule ^trang-chu.html$ index.php?controller=home&action=index
 #Blog
@@ -16,3 +13,7 @@ RewriteRule ^lien-he.html$ index.php?controller=contact&action=index
 RewriteRule ^danh-sach-san-pham.html$ index.php?controller=product&action=showAll
 RewriteRule ^danh-muc/([0-9]+)/([a-zA-Z0-9_-]+).html$ index.php?controller=product&action=showCategory&id=$1 [QSA]
 RewriteRule ^san-pham/([0-9]+)/([a-zA-Z0-9_-]+).html$ index.php?controller=product&action=detail&id=$1 [QSA]
+#Cart
+RewriteRule ^gio-hang.html$ index.php?controller=cart&action=index
+RewriteRule ^them-gio-hang.html$ index.php?controller=cart&action=addCart
+RewriteRule ^xoa-san-pham/([0-9]+).html$ index.php?controller=cart&action=delete&id=$1 [QSA]

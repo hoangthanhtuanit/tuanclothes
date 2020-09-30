@@ -5,8 +5,7 @@ require_once 'models/Product.php';
 
 class CartController extends Controller
 {
-    public function index()
-    {
+    public function index(){
         if (isset($_POST['submit'])) {
             foreach ($_SESSION['cart'] AS $product_id => $cart) {
                 if ($_POST[$product_id] < 0) {
@@ -54,5 +53,15 @@ class CartController extends Controller
                 $_SESSION['cart'][$product_id]['quantity'] = (int)$_SESSION['cart'][$product_id]['quantity'] + $quantity;
             }
         }
+        Helper::flash('success', 'Thêm vào giỏ hàng thành công');
+    }
+
+    public function delete(){
+        $product_id = $_POST['product_id'];
+        unset($_SESSION['cart'][$product_id]);
+        if (empty($_SESSION['cart'])) {
+            unset($_SESSION['cart']);
+        }
+        Helper::flash('success', 'Xoá sản phẩm thành công');
     }
 }

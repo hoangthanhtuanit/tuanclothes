@@ -296,7 +296,7 @@
                             <div class="ht__cat__thumb">
                                 <a href="<?php echo $new_pro_link; ?>">
                                     <img width="290" height="385"
-                                         src="assets/uploads/products/<?php echo $newProduct['image']; ?>"
+                                         src="../backend/assets/uploads/products/<?php echo $newProduct['image']; ?>"
                                          alt="product images">
                                 </a>
                             </div>

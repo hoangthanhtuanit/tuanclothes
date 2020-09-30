@@ -53,6 +53,7 @@
                     </div>
                 </div>
             </div>
+            <span class="ajax-message"></span>
             <div class="mobile-menu-area"></div>
         </div>
     </div>

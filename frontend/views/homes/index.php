@@ -46,7 +46,6 @@
                     <?php foreach ($newProducts as $newProduct) :
                         $pro_name = Helper::getSlug($newProduct['name']);
                         $new_product_link = 'san-pham/' . $newProduct['id'] . '/' . $pro_name . '.html';
-                        $add_link = 'them-gio-hang.html';
                     ?>
                     <!-- Start Single Category -->
                     <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
@@ -60,7 +59,7 @@
                                 <ul class="product__action">
                                     <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
 
-                                    <li class="add-to-cart" data-id="<?php echo $newProduct['id']; ?>"><a href="#"><i class="icon-handbag icons"></i></a></li>
+                                    <li data-id="<?php echo $newProduct['id']; ?>" class="add-to-cart"><a><i class="icon-handbag icons"></i></a></li>
                                 </ul>
                             </div>
                             <div class="fr__product__inner">
@@ -108,7 +107,7 @@
                             <ul class="product__action">
                                 <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
 
-                                <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
+                                <li data-id="<?php echo $hotProduct['id']; ?>" class="add-to-cart"><a><i class="icon-handbag icons"></i></a></li>
                             </ul>
                         </div>
                         <div class="fr__product__inner">
@@ -228,7 +227,7 @@
                         <div class="best__product__action">
                             <ul class="product__action--dft">
                                 <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
-                                <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
+                                <li data-id="<?php echo $topProduct['id']; ?>" class="add-to-cart"><a><i class="icon-handbag icons"></i></a></li>
                             </ul>
                         </div>
                     </div>

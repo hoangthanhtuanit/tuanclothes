@@ -54,10 +54,10 @@
                                         </ul>
                                     </td>
                                     <td class="product-price"><span class="amount">$<?php echo number_format($product['price'] * (100 - $product['discount']) / 100, 0, '.', '.') ?></span></td>
-                                    <td class="product-quantity"><input type="number" value="<?php echo $product['quantity']; ?>"/></td>
+                                    <td class="product-quantity"><input onchange="return updateCart(this.value, <?php echo $product_id; ?>);" type="number" value="<?php echo $product['quantity']; ?>"/></td>
                                     <td class="product-subtotal">
                                         <?php
-                                        $total_item = $product['quantity'] * number_format($product['price'] * (100 - $product['discount']) / 100, 0, '.', '.');
+                                        $total_item = $product['quantity'] * $product['price'] * (100 - $product['discount']) / 100;
                                         $total_cart += $total_item;
                                         ?>
                                         $<?php echo number_format($total_item, 0, '.', '.') ?>
@@ -165,3 +165,17 @@
     </ul>
 </div>
 <!-- End Banner Area -->
+<script type="text/javascript">
+    function updateCart(quantity, product_id) {
+        $.get(
+            'index.php?controller=cart&action=updateCart',
+            {
+                quantity: quantity,
+                product_id: product_id
+            },
+            function () {
+                location.reload();
+            }
+        );
+    }
+</script>

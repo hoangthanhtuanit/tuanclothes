@@ -56,6 +56,19 @@ class CartController extends Controller
         Helper::flash('success', 'Thêm vào giỏ hàng thành công');
     }
 
+    public function updateCart(){
+        $product_id = $_GET['product_id'];
+        $quantity = $_GET['quantity'];
+        $_SESSION['cart'][$product_id]['quantity'] =  $quantity;
+        if ($quantity == 0) {
+            unset($_SESSION['cart'][$product_id]);
+            if (empty($_SESSION['cart'])) {
+                unset($_SESSION['cart']);
+            }
+        }
+        Helper::flash('success', 'Cập nhật giỏ hàng thành công');
+    }
+
     public function delete(){
         $product_id = $_POST['product_id'];
         unset($_SESSION['cart'][$product_id]);

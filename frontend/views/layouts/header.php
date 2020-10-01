@@ -81,37 +81,46 @@
             </div>
             <?php if (isset($_SESSION['cart'])) : ?>
                 <div class="shp__cart__wrap">
-                    <?php foreach ($_SESSION['cart'] as $product_id => $product) :
+                    <?php
+                    $total_cart = 0;
+                    foreach ($_SESSION['cart'] as $product_id => $product) :
                         $product_link = "san-pham/" . $product_id . "/" . Helper::getSlug($product['name']) . ".html";
                         ?>
-                    <div class="shp__single__product">
-                        <div class="shp__pro__thumb">
-                            <a href="#">
-                                <img width="99" height="100" src="../backend/assets/uploads/products/<?php echo $product['image']; ?>" alt="product images">
-                            </a>
+                        <div class="shp__single__product">
+                            <div class="shp__pro__thumb">
+                                <a href="#">
+                                    <img width="99" height="100"
+                                         src="../backend/assets/uploads/products/<?php echo $product['image']; ?>"
+                                         alt="product images">
+                                </a>
+                            </div>
+                            <div class="shp__pro__details">
+                                <h2><a href="<?php echo $product_link; ?>"><?php echo $product['name']; ?></a></h2>
+                                <span class="quantity">Số lượng: <?php echo $product['quantity']; ?></span>
+                                <span class="size">Kích thước: <?php echo $product['size']; ?></span>
+                                <span class="shp__price">$<?php echo number_format($product['price'] * (100 - $product['discount']) / 100, 0, '.', '.') ?></span>
+                            </div>
+                            <div class="remove__btn">
+                                <a data-id="<?php echo $product_id; ?>" class="delete-cart refresh-page"
+                                   title="Remove this item"><i class="zmdi zmdi-close"></i></a>
+                            </div>
                         </div>
-                        <div class="shp__pro__details">
-                            <h2><a href="<?php echo $product_link; ?>"><?php echo $product['name']; ?></a></h2>
-                            <span class="quantity">Số lượng: <?php echo $product['quantity']; ?></span>
-                            <span class="size">Kích thước: <?php echo $product['size']; ?></span>
-                            <span class="shp__price">$<?php echo number_format($product['price'] * (100 - $product['discount']) / 100, 0, '.', '.') ?></span>
-                        </div>
-                        <div class="remove__btn">
-                            <a data-id="<?php echo $product_id; ?>" class="delete-cart refresh-page" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
-                        </div>
-                    </div>
-                    <?php endforeach; ?>
+                        <?php
+                        $total_item = $product['quantity'] * number_format($product['price'] * (100 - $product['discount']) / 100, 0, '.', '.');
+                        $total_cart += $total_item;
+                    endforeach; ?>
                 </div>
                 <ul class="shoping__total">
                     <li class="subtotal">Tổng tiền:</li>
-                    <li class="total__price">$130.00</li>
+                    <li class="total__price">$<?php echo number_format($total_cart, 0, '.', '.') ?></li>
                 </ul>
                 <ul class="shopping__btn">
                     <li><a href="gio-hang.html">Xem giỏ hàng</a></li>
                     <li class="shp__checkout"><a href="thanh-toan.html">Thanh toán</a></li>
                 </ul>
             <?php else: ?>
-                <h3 style="font-size: 18px; padding-bottom: 25px;" class="text-center">Không có sản phẩm nào trong giỏ hàng</h3>
+                <h3 style="font-size: 18px; padding-bottom: 25px;" class="text-center">Không có sản phẩm nào trong giỏ
+                    hàng</h3>
                 <ul class="shopping__btn">
                     <li><a href="danh-sach-san-pham.html">Tiếp tục mua sắm</a></li>
                 </ul>

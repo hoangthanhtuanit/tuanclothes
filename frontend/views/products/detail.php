@@ -123,7 +123,7 @@
                                 </ul>
                             </div>
                             <div class="contact-btn">
-                                <button data-id="<?php echo $product['id']; ?>" class="fv-btn add-to-cart">Mua hàng</button>
+                                <button data-id="<?php echo $product['id']; ?>" class="fv-btn add-to-cart refresh-page">Mua hàng</button>
                             </div>
                         </div>
                     </div>

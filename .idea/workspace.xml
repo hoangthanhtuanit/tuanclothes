@@ -2,15 +2,84 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddd07b90-d0b1-4d47-ad23-156aa4ad7f6b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/.idea/Tuan_Laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tuan_Laravel/.idea/Tuan_Laravel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tuan_Laravel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/admin_assets/img/screenshot/ss1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/admin_assets/vendor/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/banner/01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/banner/02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/banner/add.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/banner/banner-fashion-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/banner/banner-fashion-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/banner/banner-fashion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/bg/best-product.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/bg/brand-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/bg/breadcumb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/bg/breadcumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Tuan_Laravel/public/images/bg/breadcumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/bg/breadcumb2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/bg/breadcumb3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/bg/testimonial.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/blog/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/blog/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/blog/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/blog/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/blog/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/blog/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/blog/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/blog/about.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/blog/demo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/blog/skill.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/bodybg/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/bodybg/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/bodybg/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/bodybg/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/bodybg/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/bodybg/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/bodybg/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/bodybg/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/pattern/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/pattern/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/pattern/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/pattern/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/pattern/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/pattern/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/pattern/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/pattern/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/img_404.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/banner-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/banner-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/banner-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/rp01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/rp02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/rp03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/rp04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/s01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/s02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/slider/slider01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/slider/slider02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/team/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/team/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/team/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/team/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/team/branding.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/js/thng-k-doanh-thu-cc-ngy.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/js/thng-k-tnh-trng-n-hng.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/controllers/CartController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/views/carts/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/carts/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/contacts/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/contacts/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/homes/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/homes/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/views/layouts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/layouts/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/views/products/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/products/detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/products/show_all.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/products/show_all.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/views/products/show_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/products/show_category.php" afterDir="false" />
       <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/.idea/Tuan_Laravel.iml" beforeDir="false" afterPath="F:/Data Now Project/Now Project/Tuan_Laravel/.idea/Tuan_Laravel.iml" afterDir="false" />
       <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/.idea/workspace.xml" beforeDir="false" afterPath="F:/Data Now Project/Now Project/Tuan_Laravel/.idea/workspace.xml" afterDir="false" />
@@ -90,45 +159,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/views/carts/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="64" column="134" selection-start-line="64" selection-start-column="134" selection-end-line="64" selection-end-column="134" />
+            <state relative-caret-position="390">
+              <caret line="62" column="89" selection-start-line="62" selection-start-column="89" selection-end-line="62" selection-end-column="89" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/views/layouts/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="99" column="67" lean-forward="true" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="67" />
-              <folding>
-                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/controllers/CartController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="55" column="62" selection-start-line="55" selection-start-column="62" selection-end-line="55" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/assets/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="465" column="40" selection-start-line="465" selection-start-column="40" selection-end-line="465" selection-end-column="40" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="253">
+              <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -222,19 +267,19 @@
         <option value="$USER_HOME$/Desktop/PHP0320E/Day36_Demo_Project_Frontend_Part3_Payment_Teamwork_Laravel/mvc/frontend/assets/js/script.js" />
         <option value="$PROJECT_DIR$/frontend/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/frontend/assets/style.css" />
-        <option value="$PROJECT_DIR$/frontend/views/products/show_all.php" />
-        <option value="$PROJECT_DIR$/frontend/views/products/detail.php" />
         <option value="$USER_HOME$/Desktop/PHP0320E/Day36_Demo_Project_Frontend_Part3_Payment_Teamwork_Laravel/mvc/frontend/views/layouts/header.php" />
         <option value="$PROJECT_DIR$/frontend/views/carts/index.html" />
         <option value="$USER_HOME$/Desktop/PHP0320E/Day36_Demo_Project_Frontend_Part3_Payment_Teamwork_Laravel/mvc/frontend/views/carts/index.php" />
         <option value="$PROJECT_DIR$/frontend/.htaccess" />
         <option value="$PROJECT_DIR$/frontend/views/contacts/index.php" />
-        <option value="$PROJECT_DIR$/frontend/views/products/show_category.php" />
-        <option value="$PROJECT_DIR$/frontend/views/homes/index.php" />
-        <option value="$PROJECT_DIR$/frontend/controllers/CartController.php" />
         <option value="$PROJECT_DIR$/frontend/views/layouts/header.php" />
         <option value="$PROJECT_DIR$/frontend/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/frontend/views/homes/index.php" />
+        <option value="$PROJECT_DIR$/frontend/views/products/show_category.php" />
+        <option value="$PROJECT_DIR$/frontend/views/products/show_all.php" />
+        <option value="$PROJECT_DIR$/frontend/views/products/detail.php" />
         <option value="$PROJECT_DIR$/frontend/views/carts/index.php" />
+        <option value="$PROJECT_DIR$/frontend/controllers/CartController.php" />
       </list>
     </option>
   </component>
@@ -252,7 +297,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -269,19 +313,6 @@
               <item name="Tuan_MVC" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tuan_MVC" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tuan_MVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tuan_MVC" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tuan_MVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tuan_MVC" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -289,59 +320,17 @@
               <item name="Tuan_MVC" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tuan_MVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tuan_MVC" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="carts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tuan_MVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tuan_MVC" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="homes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tuan_MVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tuan_MVC" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tuan_MVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Day36_Demo_Project_Frontend_Part3_Payment_Teamwork_Laravel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tuan_MVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Day36_Demo_Project_Frontend_Part3_Payment_Teamwork_Laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="mvc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tuan_MVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Day36_Demo_Project_Frontend_Part3_Payment_Teamwork_Laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="mvc" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tuan_MVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Day36_Demo_Project_Frontend_Part3_Payment_Teamwork_Laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="mvc" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/PHP0320E/Day36_Demo_Project_Frontend_Part3_Payment_Teamwork_Laravel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Tuan_Laravel" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -457,18 +446,19 @@
       <workItem from="1601442494515" duration="5939000" />
       <workItem from="1601463750365" duration="3055000" />
       <workItem from="1601473609189" duration="428000" />
-      <workItem from="1601474881745" duration="2756000" />
+      <workItem from="1601474881745" duration="3018000" />
+      <workItem from="1601546362751" duration="4017000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="236986000" />
+    <option name="totallyTimeSpent" value="241265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20405406" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20743243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -524,8 +514,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/assets/images/banner/big-img/2.png" />
-    <entry file="file://$PROJECT_DIR$/frontend/assets/images/blog/big-images/1.jpg" />
     <entry file="file://$PROJECT_DIR$/frontend/assets/images/blog/bl-sm-2/1.png" />
     <entry file="file://$USER_HOME$/Desktop/PHP0520E/Day33_Project_Part9_Frontend_Payment/Codes_demo/mvc_demo/frontend/assets/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -678,23 +666,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/views/carts/index.html" />
-    <entry file="file://$PROJECT_DIR$/frontend/views/products/detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="63" column="29" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="63" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/controllers/BannerController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1386" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/PHP0320E/Day36_Demo_Project_Frontend_Part3_Payment_Teamwork_Laravel/mvc/frontend/views/carts/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-684">
-          <caret line="69" column="81" lean-forward="true" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="81" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/PHP0320E/Day36_Demo_Project_Frontend_Part3_Payment_Teamwork_Laravel/mvc/frontend/.htaccess">
@@ -731,23 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/products/show_all.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="1" column="40" lean-forward="true" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/products/show_category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1155">
-          <caret line="1" column="84" selection-start-line="1" selection-start-column="84" selection-end-line="1" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/PHP0320E/Day36_Demo_Project_Frontend_Part3_Payment_Teamwork_Laravel/mvc/frontend/assets/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -762,13 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/controllers/CartController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="55" column="62" selection-start-line="55" selection-start-column="62" selection-end-line="55" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1474">
@@ -776,13 +726,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/assets/js/main.js">
+    <entry file="file://$PROJECT_DIR$/frontend/views/layouts/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="465" column="40" selection-start-line="465" selection-start-column="40" selection-end-line="465" selection-end-column="40" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="885">
+          <caret line="114" column="99" selection-start-line="114" selection-start-column="99" selection-end-line="114" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Tuan_Laravel/app/Http/Controllers/PagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="332" column="5" lean-forward="true" selection-start-line="332" selection-start-column="5" selection-end-line="332" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -793,20 +747,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/layouts/header.php">
+    <entry file="file://$PROJECT_DIR$/frontend/assets/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="99" column="67" lean-forward="true" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="67" />
+        <state relative-caret-position="489">
+          <caret line="490" column="26" lean-forward="true" selection-start-line="490" selection-start-column="8" selection-end-line="490" selection-end-column="26" />
           <folding>
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Tuan_Laravel/resources/views/pages/cart.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="157" column="32" lean-forward="true" selection-start-line="157" selection-start-column="32" selection-end-line="157" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/products/show_all.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="63" column="123" selection-start-line="63" selection-start-column="123" selection-end-line="63" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/products/show_category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="62" column="127" selection-start-line="62" selection-start-column="127" selection-end-line="62" selection-end-column="127" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/products/detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="125" column="118" selection-start-line="125" selection-start-column="118" selection-end-line="125" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/PHP0320E/Day36_Demo_Project_Frontend_Part3_Payment_Teamwork_Laravel/mvc/frontend/views/carts/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="69" column="81" lean-forward="true" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="81" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/views/carts/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="64" column="134" selection-start-line="64" selection-start-column="134" selection-end-line="64" selection-end-column="134" />
+        <state relative-caret-position="390">
+          <caret line="62" column="89" selection-start-line="62" selection-start-column="89" selection-end-line="62" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/controllers/CartController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
         </state>
       </provider>
     </entry>

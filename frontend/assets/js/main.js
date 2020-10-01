@@ -463,7 +463,7 @@
                 'size': size,
                 'quantity': quantity
             },
-            success: function (result) {
+            success: function () {
                 var cart_total = $('.cart-amount').text();
                 cart_total++;
                 $('.cart-amount').text(cart_total);
@@ -482,7 +482,7 @@
             data: {
                 'product_id': product_id 
             },
-            success: function (result) {
+            success: function () {
             }
         });
     });

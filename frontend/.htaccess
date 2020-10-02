@@ -17,3 +17,5 @@ RewriteRule ^san-pham/([0-9]+)/([a-zA-Z0-9_-]+).html$ index.php?controller=produ
 RewriteRule ^gio-hang.html$ index.php?controller=cart&action=index
 RewriteRule ^them-gio-hang.html$ index.php?controller=cart&action=addCart
 RewriteRule ^xoa-san-pham/([0-9]+).html$ index.php?controller=cart&action=delete&id=$1 [QSA]
+#Payment
+RewriteRule ^thanh-toan.html$ index.php?controller=payment&action=index

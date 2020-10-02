@@ -75,8 +75,7 @@
                                         <a href="danh-sach-san-pham.html">Tiếp tục mua hàng</a>
                                     </div>
                                     <div class="buttons-cart checkout--btn">
-                                        <a href="#">Cập nhật giỏ hàng</a>
-                                        <a href="thanh-toan.html">Tiến hành thanh toán</a>
+                                        <button type="submit"><a href="thanh-toan.html">Tiến hành thanh toán</a></button>
                                     </div>
                                 </div>
                             </div>

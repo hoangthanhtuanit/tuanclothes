@@ -110,7 +110,7 @@
                                         <span>$<?php echo number_format($total_cart, 0, '.', '.') ?></span>
                                     </div>
                                     <ul class="payment__btn">
-                                        <li class="active"><a href="#">Thanh Toán</a></li>
+                                        <li class="active"><a href="thanh-toan.html">Thanh Toán</a></li>
                                         <li><a href="danh-sach-san-pham.html">Tiếp tục mua hàng</a></li>
                                     </ul>
                                 </div>

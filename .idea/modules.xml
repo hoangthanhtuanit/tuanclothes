@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$USER_HOME$/Desktop/PHP0320E/Day36_Demo_Project_Frontend_Part3_Payment_Teamwork_Laravel/.idea/Day36_Demo_Project_Frontend_Part3_Payment_Teamwork_Laravel.iml" filepath="$USER_HOME$/Desktop/PHP0320E/Day36_Demo_Project_Frontend_Part3_Payment_Teamwork_Laravel/.idea/Day36_Demo_Project_Frontend_Part3_Payment_Teamwork_Laravel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Tuan_Laravel/.idea/Tuan_Laravel.iml" filepath="$PROJECT_DIR$/../Tuan_Laravel/.idea/Tuan_Laravel.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Tuan_MVC.iml" filepath="$PROJECT_DIR$/.idea/Tuan_MVC.iml" />
     </modules>
   </component>

@@ -1,10 +1,4 @@
 <?php
-require_once 'configs/PHPMailer/src/PHPMailer.php';
-require_once 'configs/PHPMailer/src/SMTP.php';
-require_once 'configs/PHPMailer/src/Exception.php';
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
 require_once 'controllers/Controller.php';
 require_once 'models/Order.php';
 require_once 'models/OrderDetail.php';
@@ -37,6 +31,9 @@ class PaymentController extends Controller
                 $this->error = 'Số điện thoại không được để trống';
             } else {
                 $orderModel = new Order();
+                if ($_SESSION['user']) {
+                    $orderModel->user_id = $_SESSION['user']['id'];
+                }
                 $orderModel->full_name = $full_name;
                 $orderModel->address = $address;
                 $orderModel->phone_number = $phone_number;
@@ -99,9 +96,5 @@ class PaymentController extends Controller
         $this->content =
             $this->render('configs/nganluong/index.php');
         echo $this->content;
-    }
-
-    public function sendMail(){
-        
     }
 }

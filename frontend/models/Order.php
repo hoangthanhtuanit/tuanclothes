@@ -17,9 +17,10 @@ class Order extends Model
     public $updated_at;
 
     public function insert(){
-        $sqlInsert = "INSERT INTO orders (`full_name`, `address`, `phone_number`, `email`, `note`, `price_total`, `payment_method`, `status`) VALUES (:full_name, :address, :phone_number, :email, :note, :price_total, :payment_method, :status)";
+        $sqlInsert = "INSERT INTO orders (`user_id`, `full_name`, `address`, `phone_number`, `email`, `note`, `price_total`, `payment_method`, `status`) VALUES (:user_id, :full_name, :address, :phone_number, :email, :note, :price_total, :payment_method, :status)";
         $objInsert = $this->connection->prepare($sqlInsert);
         $arrInsert = [
+            ':user_id' => $this->user_id,
             ':full_name' => $this->full_name,
             ':address' => $this->address,
             ':phone_number' => $this->phone_number,

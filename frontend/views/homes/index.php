@@ -46,6 +46,7 @@
                     <?php foreach ($newProducts as $newProduct) :
                         $pro_name = Helper::getSlug($newProduct['name']);
                         $new_product_link = 'san-pham/' . $newProduct['id'] . '/' . $pro_name . '.html';
+                        $liked_link = 'san-pham/' . $newProduct['id'] . '/liked.html';
                     ?>
                     <!-- Start Single Category -->
                     <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
@@ -57,7 +58,7 @@
                             </div>
                             <div class="fr__hover__info">
                                 <ul class="product__action">
-                                    <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
+                                    <li class="liked"><a href="index.php?controller=product&action=liked&id=<?php echo $newProduct['id']; ?>&status=liked"><i class="icon-heart icons"></i></a></li>
 
                                     <li data-id="<?php echo $newProduct['id']; ?>" class="add-to-cart refresh-page"><a><i class="icon-handbag icons"></i></a></li>
                                 </ul>
@@ -105,7 +106,7 @@
                         </div>
                         <div class="fr__hover__info">
                             <ul class="product__action">
-                                <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
+                                <li><a href="index.php?controller=product&action=liked&id=<?php echo $hotProduct['id']; ?>&status=liked"><i class="icon-heart icons"></i></a></li>
 
                                 <li data-id="<?php echo $hotProduct['id']; ?>" class="add-to-cart"><a><i class="icon-handbag icons"></i></a></li>
                             </ul>
@@ -226,7 +227,7 @@
                         </ul>
                         <div class="best__product__action">
                             <ul class="product__action--dft">
-                                <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
+                                <li><a href="index.php?controller=product&action=liked&id=<?php echo $topProduct['id']; ?>&status=liked"><i class="icon-heart icons"></i></a></li>
                                 <li data-id="<?php echo $topProduct['id']; ?>" class="add-to-cart"><a><i class="icon-handbag icons"></i></a></li>
                             </ul>
                         </div>

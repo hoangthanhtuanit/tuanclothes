@@ -112,7 +112,10 @@
         </div>
     </div>
     <!-- End Brand Area -->
-<?php else:
+<?php
+    unset($_SESSION['cart']);
+    unset($_SESSION['success']);
+    else:
     header('Location: trang-chu.html');
     exit();
     ?>

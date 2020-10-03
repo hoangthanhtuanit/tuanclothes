@@ -85,4 +85,15 @@ class Product extends Model
         $objSelect->execute();
         return $objSelect->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function update($id){
+        $sqlUpdate = "UPDATE products SET liked = :liked, updated_at = :updated_at WHERE id = :id";
+        $objUpdate = $this->connection->prepare($sqlUpdate);
+        $arrUpdate = [
+            ':liked' => $this->liked,
+            ':updated_at' => $this->updated_at,
+            ':id' => $id
+        ];
+        return $objUpdate->execute($arrUpdate);
+    }
 }

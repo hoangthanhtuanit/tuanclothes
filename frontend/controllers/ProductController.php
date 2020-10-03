@@ -103,4 +103,38 @@ class ProductController extends Controller
         ]);
         require_once 'views/layouts/main.php';
     }
+
+    public function liked(){
+        if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
+            Helper::flash('error', 'ID không hợp lệ');
+            header('Location: trang-chu.html');
+            exit();
+        }
+
+        if (!isset($_GET['status'])) {
+            Helper::flash('error', 'Trạng thái không hợp lệ');
+            header('Location: trang-chu.html');
+            exit();
+        }
+        $id = $_GET['id'];
+        $status = $_GET['status'];
+        $productModel = new Product();
+        $product = $productModel->getProductById($id);
+        if ($product) {
+            switch ($status) {
+                case 'liked':
+                    $productModel->liked = $product['liked'] + 1;
+                    break;
+            }
+            $productModel->updated_at = date('Y-m-d H:i:s');
+            $isUpdate = $productModel->update($id);
+            if ($isUpdate) {
+                Helper::flash('success', 'Đã thêm vào sản phẩm yêu thích');
+            } else {
+                Helper::flash('error', 'Thêm thất bại thất bại');
+            }
+            header('Location: trang-chu.html');
+            exit();
+        }
+    }
 }

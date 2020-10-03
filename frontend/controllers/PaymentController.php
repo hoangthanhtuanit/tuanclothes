@@ -1,4 +1,10 @@
 <?php
+require_once 'configs/PHPMailer/src/PHPMailer.php';
+require_once 'configs/PHPMailer/src/SMTP.php';
+require_once 'configs/PHPMailer/src/Exception.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 require_once 'controllers/Controller.php';
 require_once 'models/Order.php';
 require_once 'models/OrderDetail.php';
@@ -53,11 +59,22 @@ class PaymentController extends Controller
                 }
                 if ($isInsert) {
                     Helper::flash('success', 'Đặt hàng thành công');
-                } else {
-                    Helper::flash('error', 'Đặt hàng thất bại');
                 }
-                header('Location: trang-chu.html');
-                exit();
+                if ($_SESSION['success']) {
+                    if ($payment_method == 0) {
+                        $_SESSION['payment_info'] = [
+                            'price_total' => $price_total,
+                            'full_name' => $full_name,
+                            'email' => $email,
+                            'phone_number' => $phone_number
+                        ];
+                        header("Location: thanh-toan-online.html");
+                        exit();
+                    } else {
+                        header('Location: dat-hang-thanh-cong.html');
+                        exit();
+                    }
+                }
             }
         }
 
@@ -66,5 +83,25 @@ class PaymentController extends Controller
             'categories' => $categories
         ]);
         require_once 'views/layouts/main.php';
+    }
+
+    public function thank(){
+        $categoryModel = new Category();
+        $categories = $categoryModel->getAllCategory();
+        $this->title_page = 'Thanh toán';
+        $this->content = $this->render('views/payments/complete-order.php', [
+            'categories' => $categories
+        ]);
+        require_once 'views/layouts/main.php';
+    }
+
+    public function online(){
+        $this->content =
+            $this->render('configs/nganluong/index.php');
+        echo $this->content;
+    }
+
+    public function sendMail(){
+        
     }
 }

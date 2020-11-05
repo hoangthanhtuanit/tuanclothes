@@ -4,6 +4,7 @@ require_once 'models/Order.php';
 require_once 'models/OrderDetail.php';
 require_once 'models/Category.php';
 require_once 'helpers/Helper.php';
+require_once 'models/Product.php';
 
 class PaymentController extends Controller
 {
@@ -53,6 +54,10 @@ class PaymentController extends Controller
                     $orderDetailModel->quantity = $product['quantity'];
                     $orderDetailModel->size = $product['size'];
                     $isInsert = $orderDetailModel->insert();
+                    $productModel = new Product();
+                    $product_update = $productModel->getProductById($product_id);
+                    $productModel->quantity_in_stock = $product_update['quantity_in_stock'] - $product['quantity'];
+                    $productModel->updateQuantity($product_id);
                 }
                 if ($isInsert) {
                     Helper::flash('success', 'Đặt hàng thành công');

@@ -47,6 +47,10 @@ class OrderController extends Controller
         $status = $_GET['status'];
         $orderModel = new Order();
         $order = $orderModel->getOrderById($id);
+        echo "<pre>";
+        print_r($orderModel->getProductIdByOrderId($id));
+        echo "</pre>";
+        die();
         if ($order) {
             switch ($status) {
                 case 'process':

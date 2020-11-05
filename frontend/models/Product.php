@@ -4,6 +4,9 @@ require_once 'models/Pagination.php';
 
 class Product extends Model
 {
+    public $id;
+    public $quantity_in_stock;
+
     public function getNewProduct(){
         $sqlSelect = "SELECT * FROM products WHERE STATUS = 1 ORDER BY RAND() LIMIT 8";
         $objSelect = $this->connection->prepare($sqlSelect);
@@ -93,6 +96,15 @@ class Product extends Model
             ':liked' => $this->liked,
             ':updated_at' => $this->updated_at,
             ':id' => $id
+        ];
+        return $objUpdate->execute($arrUpdate);
+    }
+
+    public function updateQuantity($id){
+        $sqlUpdate = "UPDATE products SET quantity_in_stock = :quantity_in_stock WHERE id = $id";
+        $objUpdate = $this->connection->prepare($sqlUpdate);
+        $arrUpdate = [
+            ':quantity_in_stock' => $this->quantity_in_stock
         ];
         return $objUpdate->execute($arrUpdate);
     }

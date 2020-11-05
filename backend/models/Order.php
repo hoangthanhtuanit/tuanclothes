@@ -24,7 +24,17 @@ class Order extends Model
     }
 
     public function getOrderById($id){
-        $sqlSelect = "SELECT orders.*, products.name AS name, products.color AS color, products.discount AS discount, products.price AS price, products.image AS image, order_details.quantity AS quantity, order_details.size AS size FROM orders INNER JOIN order_details ON orders.id = order_details.order_id INNER JOIN products ON order_details.product_id = products.id WHERE orders.id = :id";
+        $sqlSelect = "SELECT orders.*, products.name AS name, products.color AS color, products.discount AS discount, products.price AS price, products.image AS image, order_details.quantity AS quantity, order_details.size AS size, order_details.product_id AS product_id FROM orders INNER JOIN order_details ON orders.id = order_details.order_id INNER JOIN products ON order_details.product_id = products.id WHERE orders.id = :id";
+        $objSelect = $this->connection->prepare($sqlSelect);
+        $arrSelect = [
+            ':id' => $id
+        ];
+        $objSelect->execute($arrSelect);
+        return $objSelect->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function getProductIdByOrderId($id){
+        $sqlSelect = "SELECT product_id FROM order_details WHERE order_id = :id";
         $objSelect = $this->connection->prepare($sqlSelect);
         $arrSelect = [
             ':id' => $id

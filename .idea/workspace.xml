@@ -2,160 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddd07b90-d0b1-4d47-ad23-156aa4ad7f6b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/.idea/Tuan_Laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tuan_Laravel/.idea/Tuan_Laravel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tuan_Laravel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/admin_assets/img/screenshot/ss1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/admin_assets/vendor/bootstrap/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/banner/01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/banner/02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/banner/add.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/banner/banner-fashion-02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/banner/banner-fashion-03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/banner/banner-fashion.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/bg/best-product.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/bg/brand-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/bg/breadcumb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/bg/breadcumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Tuan_Laravel/public/images/bg/breadcumb.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/bg/breadcumb2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/bg/breadcumb3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/bg/testimonial.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/blog/01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/blog/02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/blog/03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/blog/04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/blog/05.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/blog/06.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/blog/07.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/blog/about.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/blog/demo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/blog/skill.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/bodybg/01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/bodybg/02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/bodybg/03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/bodybg/04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/bodybg/05.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/bodybg/06.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/bodybg/07.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/bodybg/08.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/pattern/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/pattern/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/pattern/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/pattern/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/pattern/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/pattern/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/pattern/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/customizer/pattern/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/img_404.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/05.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/06.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/07.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/08.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/banner-01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/banner-02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/banner-03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/rp01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/rp02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/rp03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/rp04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/s01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/product/s02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/slider/slider01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/slider/slider02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/team/01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/team/02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/team/03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/team/04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/images/team/branding.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/js/thng-k-doanh-thu-cc-ngy.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tuan_Laravel/public/js/thng-k-tnh-trng-n-hng.xls" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Tuan_MVC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Tuan_MVC.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/controllers/PaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/controllers/PaymentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/models/Order.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/carts/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/carts/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/homes/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/homes/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/payments/complete-order.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/payments/complete-order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/products/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/products/detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/products/show_all.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/products/show_all.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/products/show_category.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/products/show_category.php" afterDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/.idea/Tuan_Laravel.iml" beforeDir="false" afterPath="F:/Data Now Project/Now Project/Tuan_Laravel/.idea/Tuan_Laravel.iml" afterDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/.idea/workspace.xml" beforeDir="false" afterPath="F:/Data Now Project/Now Project/Tuan_Laravel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/admin_assets/img/screenshot/ss1.png" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/admin_assets/vendor/bootstrap/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/banner/01.png" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/banner/02.png" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/banner/add.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/banner/banner-fashion-02.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/banner/banner-fashion-03.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/banner/banner-fashion.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/bg/best-product.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/bg/brand-bg.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/bg/breadcumb.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/bg/breadcumb.png" beforeDir="false" afterPath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/bg/breadcumb.png" afterDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/bg/breadcumb2.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/bg/breadcumb3.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/bg/testimonial.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/blog/01.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/blog/02.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/blog/03.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/blog/04.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/blog/05.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/blog/06.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/blog/07.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/blog/about.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/blog/demo.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/blog/skill.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/customizer/bodybg/01.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/customizer/bodybg/02.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/customizer/bodybg/03.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/customizer/bodybg/04.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/customizer/bodybg/05.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/customizer/bodybg/06.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/customizer/bodybg/07.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/customizer/bodybg/08.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/customizer/pattern/1.png" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/customizer/pattern/2.png" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/customizer/pattern/3.png" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/customizer/pattern/4.png" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/customizer/pattern/5.png" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/customizer/pattern/6.png" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/customizer/pattern/7.png" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/customizer/pattern/8.png" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/img_404.png" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/product/01.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/product/02.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/product/03.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/product/04.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/product/05.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/product/06.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/product/07.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/product/08.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/product/banner-01.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/product/banner-02.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/product/banner-03.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/product/rp01.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/product/rp02.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/product/rp03.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/product/rp04.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/product/s01.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/product/s02.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/slider/slider01.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/slider/slider02.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/team/01.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/team/02.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/team/03.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/team/04.jpg" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/images/team/branding.png" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/js/thng-k-doanh-thu-cc-ngy.xls" beforeDir="false" />
-      <change beforePath="F:/Data Now Project/Now Project/Tuan_Laravel/public/js/thng-k-tnh-trng-n-hng.xls" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -164,12 +19,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/views/products/show_category.php">
+        <entry file="file://$PROJECT_DIR$/backend/views/orders/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="61" column="129" selection-start-line="61" selection-start-column="129" selection-end-line="61" selection-end-column="129" />
+            <state relative-caret-position="594">
+              <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -226,7 +81,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/models/Cart.php" />
         <option value="$PROJECT_DIR$/frontend/models/Color.php" />
         <option value="$PROJECT_DIR$/frontend/models/Size.php" />
         <option value="F:/Data Now Project/Now Project/Tuan_Laravel/public/css/style.css" />
@@ -262,14 +116,10 @@
         <option value="$PROJECT_DIR$/frontend/views/payments/complete-order.php" />
         <option value="$PROJECT_DIR$/frontend/views/carts/index.php" />
         <option value="$PROJECT_DIR$/frontend/models/Order.php" />
-        <option value="$PROJECT_DIR$/frontend/controllers/PaymentController.php" />
         <option value="$PROJECT_DIR$/backend/views/orders/handling.php" />
         <option value="$PROJECT_DIR$/backend/models/OrderDetail.php" />
         <option value="$PROJECT_DIR$/backend/views/orders/detail.php" />
-        <option value="$PROJECT_DIR$/backend/models/Order.php" />
-        <option value="$PROJECT_DIR$/backend/controllers/OrderController.php" />
         <option value="$PROJECT_DIR$/backend/views/orders/index.php" />
-        <option value="$PROJECT_DIR$/frontend/models/Product.php" />
         <option value="$PROJECT_DIR$/frontend/assets/js/main.js" />
         <option value="$PROJECT_DIR$/frontend/controllers/ProductController.php" />
         <option value="$PROJECT_DIR$/frontend/.htaccess" />
@@ -277,6 +127,11 @@
         <option value="$PROJECT_DIR$/frontend/views/products/detail.php" />
         <option value="$PROJECT_DIR$/frontend/views/products/show_all.php" />
         <option value="$PROJECT_DIR$/frontend/views/products/show_category.php" />
+        <option value="$PROJECT_DIR$/frontend/models/Product.php" />
+        <option value="$PROJECT_DIR$/frontend/controllers/PaymentController.php" />
+        <option value="$PROJECT_DIR$/backend/models/Product.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/OrderController.php" />
+        <option value="$PROJECT_DIR$/backend/models/Order.php" />
       </list>
     </option>
   </component>
@@ -293,7 +148,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -304,25 +158,26 @@
             <path>
               <item name="Tuan_MVC" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tuan_MVC" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tuan_MVC" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tuan_MVC" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tuan_MVC" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tuan_MVC" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="products" type="462c0819:PsiDirectoryNode" />
+              <item name="orders" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -331,7 +186,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -452,18 +307,27 @@
       <workItem from="1601651012884" duration="4944000" />
       <workItem from="1601710251314" duration="6000000" />
       <workItem from="1601725091865" duration="4300000" />
-      <workItem from="1601744029783" duration="3629000" />
+      <workItem from="1601744029783" duration="3682000" />
+      <workItem from="1602322887670" duration="623000" />
+      <workItem from="1602324053531" duration="632000" />
+      <workItem from="1602410417460" duration="2903000" />
+      <workItem from="1602496662169" duration="591000" />
+      <workItem from="1602662656058" duration="669000" />
+      <workItem from="1603201562442" duration="301000" />
+      <workItem from="1603617374101" duration="1076000" />
+      <workItem from="1604120733177" duration="737000" />
+      <workItem from="1604587600127" duration="621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270969000" />
+    <option name="totallyTimeSpent" value="279175000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22702703" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23986487" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -476,7 +340,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32991204" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32551318" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32844576" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -516,6 +380,9 @@
       <path value="$USER_HOME$/Desktop/PHP0320E" />
       <path value="$USER_HOME$/Desktop/PHP0520E" />
       <path value="$PROJECT_DIR$/../Tuan_Laravel" />
+      <path value="E:/Data Now Project/Now Project/Tuan_Laravel" />
+      <path value="F:/Data Now Project/Now Project/Tuan_Laravel" />
+      <path value="F:/Devpro/php441/php44" />
     </ignored-roots>
   </component>
   <component name="XDebuggerManager">
@@ -530,49 +397,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/configs/PHPMailer/get_oauth_token.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3687" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/configs/PHPMailer/composer.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/configs/PHPMailer/VERSION">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/configs/PHPMailer/SECURITY.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/configs/PHPMailer/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/configs/PHPMailer/LICENSE">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/configs/PHPMailer/COMMITMENT">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/configs/PHPMailer/src/Exception.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-303" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/configs/PHPMailer/src/OAuth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1287" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/configs/PHPMailer/src/PHPMailer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-158094" />
@@ -618,23 +442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="430">
           <caret line="116" column="28" selection-start-line="116" selection-start-column="28" selection-end-line="116" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/controllers/PaymentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="34" column="67" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/orders/handling.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/models/Order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="16" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -743,26 +550,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/orders/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="34" column="65" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-336" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/models/Order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="43" column="47" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="43" selection-end-column="47" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Tuan_Laravel/app/Http/Controllers/PagesController.php">
@@ -776,13 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="68" column="65" lean-forward="true" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/models/Product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
-          <caret line="93" column="47" lean-forward="true" selection-start-line="93" selection-start-column="47" selection-end-line="93" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -800,13 +583,6 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/controllers/OrderController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -849,6 +625,92 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
           <caret line="61" column="129" selection-start-line="61" selection-start-column="129" selection-end-line="61" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/ProductController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5742" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/controllers/PaymentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="58" column="114" lean-forward="true" selection-start-line="58" selection-start-column="114" selection-end-line="58" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/orders/handling.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/models/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="42" column="32" lean-forward="true" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/models/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2451">
+          <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/OrderController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/models/Banner.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/models/Blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-396" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/models/Category.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/models/Contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-321" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/models/Model.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/models/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/models/OrderDetail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/models/Pagination.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4059" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/models/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2937">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/orders/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
         </state>
       </provider>
     </entry>

@@ -77,6 +77,17 @@ class Product extends Model
         return $objUpdate->execute($arrUpdate);
     }
 
+    public function updateQuantity($id){
+        $sqlUpdate = "UPDATE products SET quantity_in_stock = :quantity_in_stock, quantity_sold = :quantity_sold WHERE id = :id";
+        $objUpdate = $this->connection->prepare($sqlUpdate);
+        $arrUpdate = [
+            ':quantity_in_stock' => $this->quantity_in_stock,
+            ':quantity_sold' => $this->quantity_sold,
+            ':id' => $id
+        ];
+        return $objUpdate->execute($arrUpdate);
+    }
+
     public function delete($id){
         $sqlDelete = "DELETE FROM products WHERE id = :id";
         $objDelete = $this->connection->prepare($sqlDelete);

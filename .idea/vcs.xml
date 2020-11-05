@@ -2,9 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../Tuan_Laravel" vcs="Git" />
-    <mapping directory="E:/Data Now Project/Now Project/Tuan_Laravel" vcs="" />
-    <mapping directory="F:/Data Now Project/Now Project/Tuan_Laravel" vcs="Git" />
-    <mapping directory="F:/Devpro/php441/php44" vcs="Git" />
   </component>
 </project>

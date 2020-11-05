@@ -24,8 +24,7 @@ class Product extends Model
         $sqlSelect = "SELECT * FROM products";
         $objSelect = $this->connection->prepare($sqlSelect);
         $objSelect->execute();
-        $products = $objSelect->fetchAll(PDO::FETCH_ASSOC);
-        return $products;
+        return $objSelect->fetchAll(PDO::FETCH_ASSOC);
     }
 
     public function insert(){

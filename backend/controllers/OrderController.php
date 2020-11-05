@@ -1,11 +1,13 @@
 <?php
 require_once 'controllers/Controller.php';
 require_once 'models/Order.php';
+require_once 'models/Product.php';
 require_once 'helpers/Helper.php';
 
 class OrderController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         $orderModel = new Order();
         $orders = $orderModel->index();
         $this->title_page = 'Danh sách đơn hàng';
@@ -15,7 +17,8 @@ class OrderController extends Controller
         require_once 'views/layouts/main.php';
     }
 
-    public function detail(){
+    public function detail()
+    {
         if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
             Helper::flash('error', 'ID không hợp lệ');
             header('Location: index.php?controller=order&action=index');
@@ -31,7 +34,8 @@ class OrderController extends Controller
         require_once 'views/layouts/main.php';
     }
 
-    public function update(){
+    public function update()
+    {
         if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
             Helper::flash('error', 'ID không hợp lệ');
             header('Location: index.php?controller=order&action=index');
@@ -45,22 +49,36 @@ class OrderController extends Controller
         }
         $id = $_GET['id'];
         $status = $_GET['status'];
+        $productModel = new Product();
         $orderModel = new Order();
-        $order = $orderModel->getOrderById($id);
-        echo "<pre>";
-        print_r($orderModel->getProductIdByOrderId($id));
-        echo "</pre>";
-        die();
-        if ($order) {
+        $orderDetails = $orderModel->getOrderById($id);
+        $arrProductId = $orderModel->getProductIdByOrderId($id);
+        if ($orderDetails) {
             switch ($status) {
                 case 'process':
                     $orderModel->status = 1;
                     break;
                 case 'success':
                     $orderModel->status = 2;
+                    foreach ($arrProductId as $valueId) {
+                        $product = $productModel->getProductById($valueId['product_id']);
+                        foreach ($orderDetails as $value) {
+                            $productModel->quantity_in_stock = $product['quantity_in_stock'];
+                            $productModel->quantity_sold = $product['quantity_sold'] + $value['quantity'];
+                            $productModel->updateQuantity($valueId['product_id']);
+                        }
+                    }
                     break;
                 case 'cancel':
-                    $order->status = 3;
+                    $orderModel->status = 3;
+                    foreach ($arrProductId as $valueId) {
+                        $product = $productModel->getProductById($valueId['product_id']);
+                        foreach ($orderDetails as $value) {
+                            $productModel->quantity_in_stock = $product['quantity_in_stock'] + $value['quantity'];
+                            $productModel->quantity_sold = $product['quantity_sold'];
+                            $productModel->updateQuantity($valueId['product_id']);
+                        }
+                    }
                     break;
             }
             $orderModel->updated_at = date('Y-m-d H:i:s');
@@ -75,7 +93,8 @@ class OrderController extends Controller
         }
     }
 
-    public function delete(){
+    public function delete()
+    {
         if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
             Helper::flash('error', 'ID không hợp lệ');
             header('Location: index.php?controller=order&action=index');

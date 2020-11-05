@@ -32,7 +32,7 @@
                                     <tbody>
                                     <?php foreach ($order_details as $order_detail) : ?>
                                         <tr style="text-align: center;">
-                                            <td><?php echo $order_detail['id']; ?></td>
+                                            <td><?php echo $order_detail['product_id']; ?></td>
                                             <td><?php echo $order_detail['full_name']; ?></td>
                                             <td>
                                                 <?php if (!empty($order_detail['image'])): ?>

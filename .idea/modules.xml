@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../PHP0520E/Day28_Project_Part4_Backend_Resgister_Login/.idea/Day28_Project_Part4_Backend_Resgister_Login.iml" filepath="$PROJECT_DIR$/../PHP0520E/Day28_Project_Part4_Backend_Resgister_Login/.idea/Day28_Project_Part4_Backend_Resgister_Login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PHP0520E/Day35_Project_Part11_Frontend_Filter_Laravel/.idea/Day35_Project_Part11_Frontend_Filter_Laravel.iml" filepath="$PROJECT_DIR$/../PHP0520E/Day35_Project_Part11_Frontend_Filter_Laravel/.idea/Day35_Project_Part11_Frontend_Filter_Laravel.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Tuan_MVC.iml" filepath="$PROJECT_DIR$/.idea/Tuan_MVC.iml" />
     </modules>
   </component>

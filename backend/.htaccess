@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME}% !-f
+RewriteCond %{REQUEST_FILENAME}% !-d
+
+#Login
+RewriteRule ^dang-nhap.html$ index.php?controller=login&action=index

@@ -20,8 +20,7 @@ class User extends Model
         $sqlSelect = "SELECT * FROM users";
         $objSelect = $this->connection->prepare($sqlSelect);
         $objSelect->execute();
-        $users = $objSelect->fetchAll(PDO::FETCH_ASSOC);
-        return $users;
+        return $objSelect->fetchAll(PDO::FETCH_ASSOC);
     }
 
     public function insert(){
@@ -75,5 +74,16 @@ class User extends Model
             ':id' => $id
         ];
         return $objDelete->execute($arrDelete);
+    }
+
+    public function getUserByEmailAndPassword($email, $password) {
+        $sqlSelect = "SELECT * FROM users WHERE email=:email AND password=:password AND level = 1 AND status = 1 LIMIT 1";
+        $objSelect = $this->connection->prepare($sqlSelect);
+        $arrSelect = [
+            ':email' => $email,
+            ':password' => $password,
+        ];
+        $objSelect->execute($arrSelect);
+        return $objSelect->fetch(PDO::FETCH_ASSOC);
     }
 }

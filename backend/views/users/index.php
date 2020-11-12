@@ -37,10 +37,10 @@
                                                 $admin_text = '';
                                                 switch ($user['level']) {
                                                     case 0:
-                                                        $customer_text = 'Customer';
+                                                        $customer_text = 'Khách hàng';
                                                         break;
                                                     case 1:
-                                                        $admin_text = 'Admin';
+                                                        $admin_text = 'Quản trị viên';
                                                         break;
                                                 }
                                                 ?>

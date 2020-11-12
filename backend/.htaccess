@@ -4,3 +4,5 @@ RewriteCond %{REQUEST_FILENAME}% !-d
 
 #Login
 RewriteRule ^dang-nhap.html$ index.php?controller=login&action=index
+#Dashboard
+RewriteRule ^trang-dieu-khien.html$ index.php?controller=dashboard&action=index

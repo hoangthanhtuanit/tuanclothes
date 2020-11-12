@@ -5,6 +5,14 @@ require_once 'helpers/Helper.php';
 
 class BannerController extends Controller
 {
+    public function __construct(){
+        if (!isset($_SESSION['user_admin'])) {
+            Helper::flash('error', 'Đăng nhập để tiếp tục');
+            header('Location: dang-nhap.html');
+            exit();
+        }
+    }
+
     public function index(){
         $bannerModel = new Banner();
         $banners = $bannerModel->index();

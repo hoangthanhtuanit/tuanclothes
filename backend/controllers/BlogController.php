@@ -5,6 +5,14 @@ require_once 'models/Blog.php';
 
 class BlogController extends Controller
 {
+    public function __construct(){
+        if (!isset($_SESSION['user_admin'])) {
+            Helper::flash('error', 'Đăng nhập để tiếp tục');
+            header('Location: dang-nhap.html');
+            exit();
+        }
+    }
+
     public function index(){
         $blogModel = new Blog();
         $blogs = $blogModel->index();

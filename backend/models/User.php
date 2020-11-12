@@ -77,7 +77,7 @@ class User extends Model
     }
 
     public function getUserByEmailAndPassword($email, $password) {
-        $sqlSelect = "SELECT * FROM users WHERE email=:email AND password=:password AND level = 1 AND status = 1 LIMIT 1";
+        $sqlSelect = "SELECT * FROM users WHERE email=:email AND password=:password LIMIT 1";
         $objSelect = $this->connection->prepare($sqlSelect);
         $arrSelect = [
             ':email' => $email,

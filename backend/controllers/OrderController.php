@@ -6,8 +6,15 @@ require_once 'helpers/Helper.php';
 
 class OrderController extends Controller
 {
-    public function index()
-    {
+    public function __construct(){
+        if (!isset($_SESSION['user_admin'])) {
+            Helper::flash('error', 'Đăng nhập để tiếp tục');
+            header('Location: dang-nhap.html');
+            exit();
+        }
+    }
+
+    public function index(){
         $orderModel = new Order();
         $orders = $orderModel->index();
         $this->title_page = 'Danh sách đơn hàng';
@@ -17,8 +24,7 @@ class OrderController extends Controller
         require_once 'views/layouts/main.php';
     }
 
-    public function detail()
-    {
+    public function detail(){
         if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
             Helper::flash('error', 'ID không hợp lệ');
             header('Location: index.php?controller=order&action=index');
@@ -34,8 +40,7 @@ class OrderController extends Controller
         require_once 'views/layouts/main.php';
     }
 
-    public function update()
-    {
+    public function update(){
         if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
             Helper::flash('error', 'ID không hợp lệ');
             header('Location: index.php?controller=order&action=index');
@@ -93,8 +98,7 @@ class OrderController extends Controller
         }
     }
 
-    public function delete()
-    {
+    public function delete(){
         if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
             Helper::flash('error', 'ID không hợp lệ');
             header('Location: index.php?controller=order&action=index');
